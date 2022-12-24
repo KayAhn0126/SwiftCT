@@ -152,11 +152,18 @@ var arr = [1,2,3]
 for n in arr {
     print(n)
 }
- 
+
+// enumerated() 사용 예시 1
 for (index, value) in arr.enumerated() {
     print("\(index), \(value)")
 }
- 
+
+// enumerated() 사용 예시 2
+arr.enumerated().forEach {
+    print($0.offset) // 인덱스
+    print($0.element) // 값
+}
+
 for i in 0..<arr.count {
     print(arr[i])
 }
