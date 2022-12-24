@@ -58,4 +58,125 @@ let zeroArray1 = [Int](repeating: 0, count: 10) // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 let zeroArray2 = Array(repeating: 0, count: 10) // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
  
 // zeroArray1과 zeroArray2는 완전히 동일합니다.
+
+let arr2: [[Int]] = Array(repeating:Array(repeating:1, count: 5), count: 3) 
+// 안쪽 count가 행, 바깥 count가 열
+arr2[i][j]
+```
+
+### 📖 메서드
+#### 정렬
+```swift
+var arr = [1,3,2,4]
+ 
+arr.sort()        // 오름차순 [1,2,3,4]
+arr.sort(by: >) // 내림차순 [4,3,2,1]
+//sort() - 원본 순서변경으로 배열 정렬
+//sorted() - 원본 변경없이 정렬한 배열을 새 배열에 담아 반환.
+```
+
+#### 나머지
+```swift
+arr.append(6) // [1,2,3,4,5,6]
+// arr now contains 1 value of type Int
+ 
+// 인덱스로 원소 확인
+arr[2] // 3
+ 
+// 원소로 인덱스 확인 (옵셔널, 값이 없으면 오류)
+arr.firstIndex(of: 3)! // 2
+ 
+// 인덱스로 원소 지우기
+arr.remove(at: 2) // [1,2,4,5,6]
+ 
+// 맨 뒤 원소를 지우고 return (옵셔널이 아님, 배열이 비어있으면 에러)
+arr.removeLast() // [1,2,4,5]
+ 
+// 특정 인덱스에 원소 넣기
+arr.insert(3, at: 2) // [1,2,3,4,5]
+ 
+// 특정 원소 있는지 체크 bool type
+arr.contains(3) // true
+ 
+// 순서 반전
+arr.reverse() // [5,4,3,2,1]
+ 
+// 첫 원소를 지우고 return (옵셔널이 아님, 배열이 비어있으면 에러)
+arr.removeFirst() // [4,3,2,1]
+ 
+// 첫 원소 return (옵셔널, 값이 없으면 오류)
+arr.first! // 4
+ 
+// 마지막 원소 지우고 return (옵셔널, 배열이 비어있으면 return nil)
+arr.popLast()!
+ 
+// 마지막 원소 return (옵셔널)
+arr.last!
+ 
+// 원소의 최대값, 최소값 (옵셔널)
+var min = arr.min()! // 1
+var max = arr.max()! // 5
+ 
+// 모든 원소 지우기
+arr.removeAll()
+ 
+// 조건을 만족하는 모든 원소 지우기 
+arr.removeAll(where: {$0 % 2 == 0}) 
+//arr.removeAll{$0 % 2 == 0} // 위 코드 함축
+ 
+// 원소 스왑
+arr.swapAt(_:, _:)
+```
+
+#### 고차함수
+```swift
+// map
+var testStr = ["1","2","3","4"]
+var resultStr = testStr.map { Int($0)! } // void 메서드 아님 + 타입이 바뀌었으므로 새로운 배열에 할당하기
+print(resultStr)
+
+// filter
+var arr = [1,2,3]
+arr = arr.filter { $0 % 2 == 0 } // void 메서드 아님
+print(arr)
+
+// reduce
+var array = [1,2,3,4]
+//array.reduce("", +)// 문자열 합
+print(array.reduce(0, +)) // 숫자 합
+```
+
+#### 배열 인덱스와 값 순회 참조
+```swift
+var arr = [1,2,3]
+for n in arr {
+    print(n)
+}
+ 
+for (index, value) in arr.enumerated() {
+    print("\(index), \(value)")
+}
+ 
+for i in 0..<arr.count {
+    print(arr[i])
+}
+ 
+for i in arr.indices {
+    print(arr[i])
+}
+```
+
+#### 배열 뒤집기
+```swift
+var arr = [1,2,3]
+arr.reverse() // 해당 배열에서 리버스 O(n)
+arr.reversed() // 해당 배열을 역순으로 access하게 도와줌
+
+var array = [1,2,3,4]
+for num in array.reversed() {
+    print(num) // 4 3 2 1
+}
+
+array.reverse()
+print(array) // [4,3,2,1]
 ```
