@@ -103,3 +103,9 @@ let endString = String(pattern[pattern.index(after: starIndex)...pattern.index(b
 // endIndex 주의
 // 만약 "Hello"라면 endIndex는 4가 아니라 5다.
 ```
+
+## 🍎 ~으로 시작하고 ~으로 끝나는지 확인하기
+```swift
+.hasPrefix(String) -> Bool
+.hasSuffix(String) -> Bool
+```
