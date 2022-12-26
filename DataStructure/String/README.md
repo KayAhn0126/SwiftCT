@@ -86,3 +86,20 @@ let text = "$12$ \-\ $25$" // 안됨
 let text = #"$12$ \-\ $25$"# // 됨!
 ```
 - swift5에서 특수문자를 string으로 받는법이 소개되었는데 좌우를 #과 "으로 감싸면 가장 밖에 있는 " " 안에 있는 모든 문자들을 문자열로 인식한다.
+
+## 🍎 아스키코드 치환
+- char to ascii
+    - Int(char.asciiValue!)!
+- ascii to char
+    - String(UnicodeScalar(97)!)
+
+## 🍎 특정 인덱스를 중심으로 문자열을 둘로 나눌때
+```swift
+var starIndex = pattern.firstIndex(of: "*")!
+let startString = String(pattern[pattern.startIndex..<starIndex])
+let endString = String(pattern[pattern.index(after: starIndex)...pattern.index(before: pattern.endIndex)])
+// index(after:) 메서드와 index(before:)메서드 사용하기
+
+// endIndex 주의
+// 만약 "Hello"라면 endIndex는 4가 아니라 5다.
+```
