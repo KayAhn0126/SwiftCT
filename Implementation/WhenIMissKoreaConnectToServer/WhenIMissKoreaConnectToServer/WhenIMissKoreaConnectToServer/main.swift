@@ -27,3 +27,4 @@ let startString = String(pattern[pattern.startIndex..<starIndex])
 let endString = String(pattern[pattern.index(after: starIndex)...pattern.index(before: pattern.endIndex)])
 
 checkPattern(checkArr, startString: startString, endString: endString)
+checkPatternWithNumber(checkArr, startString: startString, endString: endString)
