@@ -15,9 +15,8 @@ let nums = readLine()!.components(seperatedBy:" ")
 // String Type [import Foundation] 필수.
 
 /*
-입력을 split을 사용하여 받아온다면 mapping으로 변수를 사용할 수 있다.
-다른 방법으로는 components를 사용하는 방법이 있는데, components는 foundation의 instance method이므로 
-이를 사용하려면 import Foundation 해주어야 한다.
+split, components + mapping!
+components는 foundation의 instance method이므로 이를 사용하려면 import Foundation 해주어야 한다.
 */
 ```
 - Int값 바로 읽어오기
