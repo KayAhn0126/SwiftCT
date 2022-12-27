@@ -20,12 +20,14 @@ str = str.lowercased() // 전체 소문자로 변경 "abcdef
 ```
 
 ### 📖 문자열 치환
+- import Foundation 필수
 ```swift
 import Foundation
-var str = "asap"
+var str = "abcd"
 var str2 = str.replacingOccurrences(of: "a", with: "b")
+
 print(str)  // 원본에 영향 없음
-print(str2) // bbcdef
+print(str2) // bbcd
 ```
 
 ### 📖 포함하는 값 찾기 (output: Bool)
@@ -50,11 +52,16 @@ let mathValue = mathExpression.expressionValue(with: nil, context: nil) as! Int
 import Foundation
  
 // 문자열 원소 접근
-var str = "as soon as posible"
-//str[0] // 직접 접근 불가능, String 인덱스로 접근가능
-str[str.startIndex] // "a" 시작 원소
+var str = "Hello World!"
+//str[0] // 직접 접근 불가능, String.Index로 접근가능
+
+print(str.prefix(n)) // 앞에서부터 n글자 가져오기
+print(str[str.startIndex]) // "a" 시작 원소
+
 let secondIndex = str.index(after: str.startIndex) // 2번째 원소
+
 let second = str[secondIndex]
+
 let endIndex = str.index(before: str.endIndex) // 마지막 원소
  
 // n번째 문자 가져오기 n == 3
@@ -63,11 +70,8 @@ str[index] // "c"
  
 // 일정 범위의 문자열만 가져오기
 let sub = str[str.startIndex...index] // "abc"
- 
-// 특정 character replace
-str.replacingOccurrences(of:" ", with:"+") // import Foundation 필수
- 
-// 특정 원소 값으로 인덱스 찾기 (옵셔널 값) 해당하는 원소값이 없으면 에러
+  
+// 특정 원소 값으로 인덱스 찾기 (옵셔널 값) 해당하는 원소값이 없으면 에러(nil)
 str.firstIndex(of: "n")!
  
 // subString 구하는 법 특정 원소 첫 return 까지
