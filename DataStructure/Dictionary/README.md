@@ -61,6 +61,17 @@ dict1.updateValue(100, forKey: "weight")             // 해당 Key가 없다면,
 dict1.updateValue(200, forKey: "height")             // 해당 Key가 있다면, Value 덮어쓰고 덮어쓰기 전 값 리턴 (update)
 ```
 
+### 📖 요소를 추가하고 업데이트를 해야하는 상황
+```swift
+if let _ = map[category] {
+    map[category]! += 1
+} else {
+    map[category] = 1
+}
+```
+- 꼭 먼저 만들고 그 다음에 업데이트를 해줘야한다.
+- C++처럼 map[category]! += 1과 같은 방식으로 하면 처음엔 딕셔너리가 없는 상태라 nil을 강제 언래핑하는 상황이 되므로 크래시가 발생한다.
+
 ### 📖 요소 삭제하기
 ```swift
 var dict1 = ["height": 165, "age" : 100]
@@ -126,3 +137,4 @@ dict1.filter(condition)                            // ["height": 165]
 - 딕셔너리 요소 검색은 클로져를 이용해서 검색
 - 클로저의 파라미터 타입은 딕셔너리의 타입과 같아야하고 반환 타입은 무조건 Bool 타입이여야 한다.
 - 만약 [String : String] 딕셔너리에서 요소를 검색한다면 ((String : String)) -> Bool 이렇게 작성해야한다.
+
