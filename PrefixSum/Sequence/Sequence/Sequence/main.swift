@@ -17,15 +17,17 @@ let inputArr = readLine()!.split(separator: " ").map { Int($0)! }
 let N = inputArr[0]
 let K = inputArr[1]
 
-let temperatureArr = readLine()!.split(separator: " ").map { Int($0)!}
-var psum = [Int](repeating: 0, count: N)
+var temperatureArr = readLine()!.split(separator: " ").map { Int($0)!}
+temperatureArr.insert(0, at: 0)
+
+var psum = [Int](repeating: 0, count: N + 1)
 var max = -10000000
 
-for i in 1..<temperatureArr.count {
-    psum[i] = psum[i-1] + temperatureArr[i-1]
+for i in 1...N {
+    psum[i] = psum[i-1] + temperatureArr[i]
 }
 
-for i in K..<N {
+for i in K...N {
     let challengeNumber = psum[i] - psum[i-K]
     max = challengeNumber > max ? challengeNumber : max
 }
