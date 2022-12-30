@@ -25,12 +25,5 @@ func dfs(_ node: Int) {
 adjList[1].append(2)
 adjList[1].append(3)
 adjList[2].append(4)
-adjList[4].append(2)
 adjList[2].append(5)
 dfs(1)
-
-
-
-
-
-
