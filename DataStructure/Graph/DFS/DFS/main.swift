@@ -7,23 +7,43 @@
 
 import Foundation
 
-var size = 6
-var adjList = [[Int]](repeating: [], count: size) // 인접 리스트 구현
-var visited = [Bool](repeating: false, count: size) // 방문 노드 체크 배열 구현
+var n = 3
 
-func dfs(_ node: Int) {
-    visited[node] = true
-    print(node)
-    adjList[node].enumerated().forEach {
-        if visited[$0.element] == false {
-            dfs($0.element)
-        }
+let dy = [-1,0,1,0]
+let dx = [0,1,0,-1]
+
+var adjList = [[Int]]() // 인접 행렬 구현
+var visited = [[Bool]](repeating: [Bool](repeating: false, count: n), count: n) // 방문 노드 체크 배열 구현
+
+func dfs(_ y: Int, _ x: Int) {
+    visited[y][x] = true
+    print("\(y), \(x), is \(adjList[y][x])")
+    for i in 0..<4 {
+        let ny = y + dy[i]
+        let nx = x + dx[i]
+        if ny < 0 || nx < 0 || ny >= n || nx >= n { continue } // 언더플로우, 오버플로우 체크
+        if adjList[ny][nx] == 0 { continue }
+        if visited[ny][nx] { continue }
+        dfs(ny,nx)
     }
-    print("\(node)내 함수가 종료되었습니다.")
 }
 
-adjList[1].append(2)
-adjList[1].append(3)
-adjList[2].append(4)
-adjList[2].append(5)
-dfs(1)
+for _ in 0..<n {
+    adjList.append(Array(readLine()!.split(separator: " ") .map { Int(String($0))! }))
+    /*
+     1 0 0
+     1 0 1
+     1 1 1
+     */
+}
+
+dfs(0,0)
+
+/*
+ 0, 0, is 1
+ 1, 0, is 1
+ 2, 0, is 1
+ 2, 1, is 1
+ 2, 2, is 1
+ 1, 2, is 1
+ */
