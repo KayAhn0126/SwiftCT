@@ -5,6 +5,12 @@
 //  Created by Kay on 2022/12/31.
 //
 
+/*
+#2178
+ 미로탐색
+ */
+
+// 2nd week fast-campus
 import Foundation
 
 struct Queue<T> {
