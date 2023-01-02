@@ -7,4 +7,5 @@
 | [Stack](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure/Stack) | - |
 | [Queue](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure/Queue)| - |
 | [DeQueue](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure/DoubleEndedQueue) | - |
-| | |
+| [DoublyLinkedList](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure/DoublyLinkedList) | - |
+| [Graph](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure/Graph) | - |
