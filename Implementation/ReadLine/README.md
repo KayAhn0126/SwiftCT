@@ -29,3 +29,27 @@ let n: Int = Int(readLine()!)!
 ```swift
 let numbers: [Int] = readLine()!.split(separator: " ").map { Int(String($0))! }
 ```
+
+## 🍎 EOF
+
+### 📖 문자열 받을때
+```swift
+while let line = readLine() {
+    let testCase = line
+}
+```
+### 📖 숫자 배열 받을때
+```swift
+ while let line = readLine() {
+     let testCase = line.components(separatedBy: " ").map { Int($0)! }
+     print(testCase)
+ }
+```
+
+### 📖 1개 숫자 받을때
+```swift
+while let number = readLine() {
+    let number = Int(number)!
+    print(number)
+}
+```
