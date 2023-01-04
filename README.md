@@ -8,7 +8,7 @@
 | [Prefix Sum](https://github.com/KayAhn0126/SwiftCT/tree/main/PrefixSum) | 누적합 |
 | [The Number Of Cases](https://github.com/KayAhn0126/SwiftCT/tree/main/TheNumberOfCases) | 경우의 수 |
 | [Graph](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph) | 그래프 |
-| | |
-| | |
+| [Recursive](https://github.com/KayAhn0126/SwiftCT/tree/main/Recursive) | 재귀 |
+| [Greedy](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy) | 그리디 |
 | | |
 | | |
