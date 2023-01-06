@@ -17,7 +17,7 @@
 | [비밀번호 발음하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/PronouncePassword) | 구현 및 <br> 특정 상황까지 입력받기 | [4659](https://www.acmicpc.net/problem/4659) |
 | [수학 숙제](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MathHomework) | 문자열 처리 및 정렬 | [2870](https://www.acmicpc.net/problem/2870) |
 | [기상캐스터](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/WeatherCaster) | 구현 | [10709](https://www.acmicpc.net/problem/10709) |
-| [교수가 된 현우](https://www.acmicpc.net/problem/3474) | 수학 | [3474](https://www.acmicpc.net/problem/3474) |
+| [교수가 된 현우](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ProfessorHyunwoo) | 수학 | [3474](https://www.acmicpc.net/problem/3474) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)
