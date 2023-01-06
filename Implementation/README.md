@@ -1,6 +1,6 @@
 # Implementation
 | 제목 | 키워드 | 풀어보기 |
-| :-: | :-: | :-:|
+| :-: | :-: | :-: |
 | [알파벳 개수](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/CountingAlphabet) | 카운팅 배열 | [10808](https://www.acmicpc.net/problem/10808) |
 | [트럭 주차](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/TruckParking) | 카운팅배열 | [2979](https://www.acmicpc.net/problem/2979) |
 | [펠린드롬인지 확인하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/CheckPalindrome) | 문자열 | [10988](https://www.acmicpc.net/problem/10988)|
@@ -12,6 +12,12 @@
 | [좋은 단어](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/GoodWord) | 스택 | [3986](https://www.acmicpc.net/problem/3986) |
 | [곱셈](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Multiply) | 분할정복 및 예외처리 |[1629](https://www.acmicpc.net/problem/1629) |
 | [벌집](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Honeycomb) | 패턴 찾기 | [2292](https://www.acmicpc.net/problem/2292) |
+| [시험 감독](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ExamViewer) | 구현 | [13458](https://www.acmicpc.net/problem/13458) |
+| [빈도 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/FrequencySort) | 딕셔너리 활용 및 2단 정렬 | [2910](https://www.acmicpc.net/problem/2910) |
+| [비밀번호 발음하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/PronouncePassword) | 구현 및 <br> 특정 상황까지 입력받기 | [4659](https://www.acmicpc.net/problem/4659) |
+| [수학 숙제](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MathHomework) | 문자열 처리 및 정렬 | [2870](https://www.acmicpc.net/problem/2870) |
+| [기상캐스터](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/WeatherCaster) | 구현 | [10709](https://www.acmicpc.net/problem/10709) |
+| [교수가 된 현우](https://www.acmicpc.net/problem/3474) | 수학 | [3474](https://www.acmicpc.net/problem/3474) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)
