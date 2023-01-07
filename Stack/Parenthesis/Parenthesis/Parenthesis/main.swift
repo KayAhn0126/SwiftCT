@@ -5,6 +5,12 @@
 //  Created by Kay on 2023/01/07.
 //
 
+/*
+ 9012
+ 괄호
+ */
+// 2nd week fast campus
+
 import Foundation
 
 struct Stack<T> {
