@@ -36,6 +36,7 @@
 - 반시계 방향으로 90도 돌렸을 때, 테트리스처럼 같은 단어끼리 만나면 터져 없어진다고 생각을 하고, 다 터져 없어지면 좋은단어, 무언가 남아있다면 좋은단어가 아니다.
 
 ## 🍎 시간 초과
+- testString을 입력 받고 testString을 for문으로 돌면서 문제를 해결하려 했는데 시간초과가 났다.
 - 처음엔 로직이 잘못되었나 싶어서 시간복잡도를 다시 계산해봤다.
 - 1 <= N <= 100
 - 단어의 길이 2 <= len(word) <= 100,000
@@ -56,7 +57,7 @@ for _ in 0..<number {
 }
 print(result)
 ```
-- 이를 RandomAccessCollction의 접근 시간복잡도가 O(1)인 점을 이용해 해결했다.
+- 이를 **Array가 RandomAccessCollction의 접근 시간복잡도가 O(1)인 점을 이용해 해결했다.**
 - 간단하게 testString을 배열화 시켰다.
 - Array는 RandomAccessCollection 프로토콜을 준수하고 있고, RandomAccessCollection에서의 접근 시간복잡도는 O(1)을 보장하기 때문이다.
 ```swift
