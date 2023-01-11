@@ -11,7 +11,7 @@ func checkPatternWithNumber(_ testArray: [String], startString: String, endStrin
     
     testArray.enumerated().forEach {
         if $0.element.hasPrefix(startString) && $0.element.hasSuffix(endString) {
-            if $0.element.count >= startString.count + endString.count {
+            if $0.element.count >= startString.count + endString.count { // 예를 들어 패턴이 AB*BD일때 ABD가 DA로 판별나는것을 방지
                 print("DA")
             } else {
                 print("NE")
