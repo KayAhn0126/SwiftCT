@@ -19,26 +19,27 @@
 import Foundation
 
 struct Queue<T> {
-    private var queue: [T] = []
+    var enQueue: [T] = []
+    var deQueue: [T] = []
     
     var count: Int {
-        return queue.count
+        return enQueue.count + deQueue.count
     }
     
     var isEmpty: Bool {
-        return queue.isEmpty
+        return enQueue.isEmpty && deQueue.isEmpty
     }
     
     mutating func enqueue(_ element: T) {
-        queue.append(element)
+        enQueue.append(element)
     }
     
-    // isEmpty로 항상 체크하기
     mutating func dequeue() -> T {
-        queue = queue.reversed()
-        let number = queue.popLast()!
-        queue = queue.reversed()
-        return number
+        if deQueue.isEmpty {
+            deQueue = enQueue.reversed()
+            enQueue.removeAll()
+        }
+        return deQueue.popLast()!
     }
 }
 
