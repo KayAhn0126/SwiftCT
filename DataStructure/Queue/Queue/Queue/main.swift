@@ -8,39 +8,27 @@
 import Foundation
 
 struct Queue<T> {
-    private var queue: [T?] = []
-    private var head: Int = 0
+    var enQueue: [T] = []
+    var deQueue: [T] = []
     
-    public var count: Int {
-        return queue.count
+    var count: Int {
+        return enQueue.count + deQueue.count
     }
     
-    public var isEmpty: Bool {
-        return queue.isEmpty
+    var isEmpty: Bool {
+        return enQueue.isEmpty && deQueue.isEmpty
     }
     
-    public mutating func enqueue(_ element: T) {
-        queue.append(element)
+    mutating func enqueue(_ element: T) {
+        enQueue.append(element)
     }
     
-    public mutating func dequeue() -> T? {
-        guard head <= queue.count, let element = queue[head] else { return nil }
-        queue[head] = nil
-        head += 1
-        
-        if head > 50 {
-            queue.removeFirst(head)
-            head = 0
+    mutating func dequeue() -> T {
+        if deQueue.isEmpty {
+            deQueue = enQueue.reversed()
+            enQueue.removeAll()
         }
-        return element
+        return deQueue.popLast()!
     }
 }
-
-var myQueue = Queue<Int>()
-myQueue.enqueue(3)
-myQueue.enqueue(4)
-myQueue.enqueue(5)
-let dequeueNum = myQueue.dequeue()
-print(dequeueNum)
-print(myQueue.count)
 
