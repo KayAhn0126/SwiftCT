@@ -18,6 +18,9 @@
 | [수학 숙제](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MathHomework) | 문자열 처리 및 정렬 | [2870](https://www.acmicpc.net/problem/2870) |
 | [기상캐스터](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/WeatherCaster) | 구현 | [10709](https://www.acmicpc.net/problem/10709) |
 | [교수가 된 현우](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ProfessorHyunwoo) | 수학 | [3474](https://www.acmicpc.net/problem/3474) |
+| [분수 찾기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/FindingFraction) | 패턴 찾기 | [1193](https://www.acmicpc.net/problem/1193) |
+| [1](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/One) | 패턴찾기 및 <br> 정수론 | [4375](https://www.acmicpc.net/problem/4375) |
+| [NBA 농구](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/NBABasketBall) | 구현 및 <br> 시간 계산 | [2852](https://www.acmicpc.net/problem/2852) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)

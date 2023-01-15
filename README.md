@@ -10,5 +10,6 @@
 | [Graph](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph) | 그래프 |
 | [Recursive](https://github.com/KayAhn0126/SwiftCT/tree/main/Recursive) | 재귀 |
 | [Greedy](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy) | 그리디 |
-| | |
-| | |
+| [Brute Force](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce) | 브루트 포스 |
+| [Stack](https://github.com/KayAhn0126/SwiftCT/tree/main/Stack) | 스택 |
+| [Tree](https://github.com/KayAhn0126/SwiftCT/tree/main/Tree) | 트리 |
