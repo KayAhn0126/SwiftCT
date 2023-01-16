@@ -55,7 +55,7 @@ func fillListsFromMatrix() {
     }
 }
 
-// MARK: - 3 개의 벽 세우고
+// MARK: - 3 개의 벽 세우고 바이러스 뿌리기
 func buildRandomWallAndCheck() {
     let currentlyZeroCount = wallPossibleListFromGiven.count
     for i in 0..<currentlyZeroCount {
