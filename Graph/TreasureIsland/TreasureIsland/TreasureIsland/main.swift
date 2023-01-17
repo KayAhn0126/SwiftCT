@@ -63,40 +63,33 @@ for i in 0..<N {
     }
 }
 
-print(landList)
 func bfs(_ y: Int, _ x: Int) -> Int {
-    var counter = 1
+    var max = -987654321
     var queue = Queue<(Int,Int)>()
     var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
-    visited[y][x] = counter
+    visited[y][x] = 1
     queue.enqueue((y,x))
     while !queue.isEmpty {
         let currentLocation = queue.dequeue()!
         let currentY = currentLocation.0
         let currentX = currentLocation.1
-        counter += 1
         for i in 0..<4 {
             let ny = currentY + dy[i]
             let nx = currentX + dx[i]
             if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
             if adjMatrix[ny][nx] == "W" { continue }
             if visited[ny][nx] != 0 { continue }
-            visited[ny][nx] = counter
+            visited[ny][nx] = visited[currentY][currentX] + 1
+            max = max > visited[ny][nx] ? max : visited[ny][nx]
             queue.enqueue((ny,nx))
         }
     }
-    return counter
+    return max
 }
 
 var maximum = -987654321
-
-landList.enumerated().forEach {
-    print($0.element)
-}
-
 for i in 0..<landList.count {
     let tryNumber = bfs(landList[i].0, landList[i].1)
-    print(tryNumber)
     maximum = tryNumber > maximum ? tryNumber : maximum
 }
-print(maximum)
+print(maximum - 1)
