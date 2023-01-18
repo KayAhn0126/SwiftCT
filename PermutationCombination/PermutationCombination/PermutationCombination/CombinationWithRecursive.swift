@@ -12,22 +12,59 @@ func combinationWithRecursive<T: Comparable>(_ array: [T], _ n: Int) -> [[T]] {
     var result = [[T]]()
     if array.count < n { return result }
 
-    func cycle(_ index: Int, _ now: [T]) {
+    func cycle(_ now: [T], _ index: Int) {
         if now.count == n {
             result.append(now)
             return
         }
 
         for i in index..<array.count {
-            cycle(i + 1, now + [array[i]])
+            cycle(now + [array[i]], i + 1)
         }
     }
-
-    cycle(0,[])
+    cycle([], 0)
 
     return result
 }
 
+/*
+
+ 백트래킹으로 조합 만드는 순서
+ var arr4 = [1,2,3,4,5]
+ 
+ for i in index..<array.count {
+     cycle(now + [array[i]], i + 1)
+ }
+ 
+ 0 in index..<array.count {
+    cycle([1], 1)
+ }
+ 
+ 1 in index..<array.count {
+    cycle([1,2], 2)
+ }
+ 
+ 2 in index..<array.count {
+    cycle([1,2,3], 3) return
+ }
+ 
+ 2 in index..<array.count {
+    cycle([1,2,4], 3) return
+ }
+ 
+ 2 in index..<array.count {
+    cycle([1,2,5], 3) return
+ }
+ 
+ 1 in index..<array.count {
+    cycle([1,3], 2)
+ }
+ 
+ 2 in index..<array.count {
+    cycle([1,3,4], 3) return
+ }
+ 
+ */
 
 
 /*
