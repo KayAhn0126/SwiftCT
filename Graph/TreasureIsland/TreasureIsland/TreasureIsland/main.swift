@@ -80,7 +80,7 @@ func bfs(_ y: Int, _ x: Int) -> Int {
             if adjMatrix[ny][nx] == "W" { continue }
             if visited[ny][nx] != 0 { continue }
             visited[ny][nx] = visited[currentY][currentX] + 1
-            max = max > visited[ny][nx] ? max : visited[ny][nx]
+            max = visited[ny][nx]
             queue.enqueue((ny,nx))
         }
     }
