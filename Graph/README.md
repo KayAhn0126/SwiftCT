@@ -13,8 +13,10 @@
 | [연구소](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory) | 설계, 시간복잡도, DFS, 조합 | [14502](https://www.acmicpc.net/problem/14502) |
 | [치즈](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Cheese) | 시뮬레이션, DFS | [2636](https://www.acmicpc.net/problem/2636) |
 | [토마토](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Tomato) | 시작점이 여러곳인 BFS | [7576](https://www.acmicpc.net/problem/7576) |
-| | | |
-| | | |
-| | | |
-| | | |
+| [보물섬](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/TreasureIsland) | BFS + 최단거리 | [2589](https://www.acmicpc.net/problem/2589) |
+| [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 구현, 특정 상황까지 DFS 탐색 | [16234](https://www.acmicpc.net/problem/16234) |
+| [불!](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Fire) | BFS, 구현 | [4179](https://www.acmicpc.net/problem/4179) |
+| [뮤탈리스크](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Mutalisk) | 순열, BFS | [12869](https://www.acmicpc.net/problem/12869) |
+| [숨바꼭질](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek) | BFS, 브루트포스 | [1697](https://www.acmicpc.net/problem/1697) |
+| [숨바꼭질2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek2) | BFS, 구현 | [12851](https://www.acmicpc.net/problem/12851) |
 | | | |
