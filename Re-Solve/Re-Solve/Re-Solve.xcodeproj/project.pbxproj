@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A7350702985580D001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73506F2985580D001F0255 /* main.swift */; };
 		6A73507D29855836001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73507C29855836001F0255 /* main.swift */; };
+		6A735088298561C0001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A735087298561C0001F0255 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6A735083298561C0001F0255 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		6A73506F2985580D001F0255 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A73507A29855836001F0255 /* CountingAlphabet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountingAlphabet; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A73507C29855836001F0255 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A735085298561C0001F0255 /* TruckParking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TruckParking; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A735087298561C0001F0255 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A735082298561C0001F0255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +81,7 @@
 			children = (
 				6A73506E2985580D001F0255 /* Re-Solve */,
 				6A73507B29855836001F0255 /* CountingAlphabet */,
+				6A735086298561C0001F0255 /* TruckParking */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				6A73506C2985580D001F0255 /* Re-Solve */,
 				6A73507A29855836001F0255 /* CountingAlphabet */,
+				6A735085298561C0001F0255 /* TruckParking */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +110,14 @@
 				6A73507C29855836001F0255 /* main.swift */,
 			);
 			path = CountingAlphabet;
+			sourceTree = "<group>";
+		};
+		6A735086298561C0001F0255 /* TruckParking */ = {
+			isa = PBXGroup;
+			children = (
+				6A735087298561C0001F0255 /* main.swift */,
+			);
+			path = TruckParking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,23 @@
 			productReference = 6A73507A29855836001F0255 /* CountingAlphabet */;
 			productType = "com.apple.product-type.tool";
 		};
+		6A735084298561C0001F0255 /* TruckParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A73508B298561C0001F0255 /* Build configuration list for PBXNativeTarget "TruckParking" */;
+			buildPhases = (
+				6A735081298561C0001F0255 /* Sources */,
+				6A735082298561C0001F0255 /* Frameworks */,
+				6A735083298561C0001F0255 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruckParking;
+			productName = TruckParking;
+			productReference = 6A735085298561C0001F0255 /* TruckParking */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +188,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					6A73507929855836001F0255 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6A735084298561C0001F0255 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -161,6 +210,7 @@
 			targets = (
 				6A73506B2985580D001F0255 /* Re-Solve */,
 				6A73507929855836001F0255 /* CountingAlphabet */,
+				6A735084298561C0001F0255 /* TruckParking */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A73507D29855836001F0255 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A735081298561C0001F0255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A735088298561C0001F0255 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +392,24 @@
 			};
 			name = Release;
 		};
+		6A735089298561C0001F0255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A73508A298561C0001F0255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +436,15 @@
 			buildConfigurations = (
 				6A73507F29855836001F0255 /* Debug */,
 				6A73508029855836001F0255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A73508B298561C0001F0255 /* Build configuration list for PBXNativeTarget "TruckParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A735089298561C0001F0255 /* Debug */,
+				6A73508A298561C0001F0255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
