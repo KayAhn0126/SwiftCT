@@ -13,6 +13,7 @@
 		6A735088298561C0001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A735087298561C0001F0255 /* main.swift */; };
 		6A73509329856C10001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73509229856C10001F0255 /* main.swift */; };
 		6A9A04BE298B5FD900430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04BD298B5FD900430218 /* main.swift */; };
+		6A9A04C9298B708700430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04C8298B708700430218 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6A9A04C4298B708700430218 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +95,8 @@
 		6A73509229856C10001F0255 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A9A04BB298B5FD900430218 /* WhenIMissKoreaConnectToServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhenIMissKoreaConnectToServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A04BD298B5FD900430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A9A04C6298B708700430218 /* PocketmonMasterLee */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PocketmonMasterLee; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9A04C8298B708700430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A9A04C3298B708700430218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -150,6 +169,7 @@
 				6A73509129856C10001F0255 /* BasketBallGame */,
 				6A513B8F298AA83400CD22D6 /* ROT13 */,
 				6A9A04BC298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
+				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,6 +183,7 @@
 				6A73509029856C10001F0255 /* BasketBallGame */,
 				6A513B8E298AA83400CD22D6 /* ROT13 */,
 				6A9A04BB298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
+				6A9A04C6298B708700430218 /* PocketmonMasterLee */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +226,14 @@
 				6A9A04BD298B5FD900430218 /* main.swift */,
 			);
 			path = WhenIMissKoreaConnectToServer;
+			sourceTree = "<group>";
+		};
+		6A9A04C7298B708700430218 /* PocketmonMasterLee */ = {
+			isa = PBXGroup;
+			children = (
+				6A9A04C8298B708700430218 /* main.swift */,
+			);
+			path = PocketmonMasterLee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +341,23 @@
 			productReference = 6A9A04BB298B5FD900430218 /* WhenIMissKoreaConnectToServer */;
 			productType = "com.apple.product-type.tool";
 		};
+		6A9A04C5298B708700430218 /* PocketmonMasterLee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9A04CA298B708700430218 /* Build configuration list for PBXNativeTarget "PocketmonMasterLee" */;
+			buildPhases = (
+				6A9A04C2298B708700430218 /* Sources */,
+				6A9A04C3298B708700430218 /* Frameworks */,
+				6A9A04C4298B708700430218 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketmonMasterLee;
+			productName = PocketmonMasterLee;
+			productReference = 6A9A04C6298B708700430218 /* PocketmonMasterLee */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -340,6 +386,9 @@
 					6A9A04BA298B5FD900430218 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A9A04C5298B708700430218 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A7350672985580D001F0255 /* Build configuration list for PBXProject "Re-Solve" */;
@@ -361,6 +410,7 @@
 				6A73508F29856C10001F0255 /* BasketBallGame */,
 				6A513B8D298AA83400CD22D6 /* ROT13 */,
 				6A9A04BA298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
+				6A9A04C5298B708700430218 /* PocketmonMasterLee */,
 			);
 		};
 /* End PBXProject section */
@@ -411,6 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A04BE298B5FD900430218 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9A04C2298B708700430218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9A04C9298B708700430218 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +696,24 @@
 			};
 			name = Release;
 		};
+		6A9A04CB298B708700430218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A9A04CC298B708700430218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +776,15 @@
 			buildConfigurations = (
 				6A9A04BF298B5FD900430218 /* Debug */,
 				6A9A04C0298B5FD900430218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9A04CA298B708700430218 /* Build configuration list for PBXNativeTarget "PocketmonMasterLee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9A04CB298B708700430218 /* Debug */,
+				6A9A04CC298B708700430218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
