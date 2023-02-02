@@ -63,7 +63,7 @@ var stack: [([T], [Bool])] = array.enumerated().map {
     ([3], [false, false, true])
 ]
 ```
-- 배열 arr은 [1,2,3]이고, arr 배열의 요소를 각각 array.enumerated().forEach에서 생성된 Bool 타입 배열과 zip으로 묶어준다.
+- 배열 arr은 [1,2,3]이고, arr 배열의 요소를 각각 array.enumerated().forEach에서 생성된 Bool 타입 배열과 튜플로 묶어준다.
 - 왜 이렇게 복잡하게 만들었을까?
 - 밑에 while문에서 stack.count > 0 조건문이 거짓이 될때 까지 계속 RemoveLast를 해준다.
 ```swift
@@ -72,7 +72,7 @@ let now = stack.removeLast()
 let elements = now.0
 var visited = now.1
 ```
-- while 문에 들어가자마자 stack의 맨 마지막 요소(zip 형태)를 빼서 zip의 첫번째 요소는 element, 두번째 요소는 visited 변수에 담아준다.
+- while 문에 들어가자마자 stack의 맨 마지막 요소(튜플 형태)를 빼서 튜플의 첫번째 요소는 element, 두번째 요소는 visited 변수에 담아준다.
 ```swift
 if elements.count == n {
     result.append(elements)
