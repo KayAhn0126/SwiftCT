@@ -22,6 +22,7 @@
 		6AB2DD19298D15DA00C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD18298D15DA00C7831C /* main.swift */; };
 		6AB2DD24298D337500C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD23298D337500C7831C /* main.swift */; };
 		6AB2DD2F298D38A400C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD2E298D38A400C7831C /* main.swift */; };
+		6AB2DD3A298D452400C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD39298D452400C7831C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -160,6 +161,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AB2DD35298D452400C7831C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +203,8 @@
 		6AB2DD23298D337500C7831C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB2DD2C298D38A400C7831C /* One */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = One; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB2DD2E298D38A400C7831C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AB2DD37298D452400C7831C /* NBABasketBall */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NBABasketBall; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB2DD39298D452400C7831C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +313,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AB2DD34298D452400C7831C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -330,6 +349,7 @@
 				6AB2DD17298D15DA00C7831C /* WeatherCaster */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6AB2DD2D298D38A400C7831C /* One */,
+				6AB2DD38298D452400C7831C /* NBABasketBall */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -352,6 +372,7 @@
 				6AB2DD16298D15DA00C7831C /* WeatherCaster */,
 				6AB2DD21298D337500C7831C /* ProfessorHyunwoo */,
 				6AB2DD2C298D38A400C7831C /* One */,
+				6AB2DD37298D452400C7831C /* NBABasketBall */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,6 +487,14 @@
 				6AB2DD2E298D38A400C7831C /* main.swift */,
 			);
 			path = One;
+			sourceTree = "<group>";
+		};
+		6AB2DD38298D452400C7831C /* NBABasketBall */ = {
+			isa = PBXGroup;
+			children = (
+				6AB2DD39298D452400C7831C /* main.swift */,
+			);
+			path = NBABasketBall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -726,6 +755,23 @@
 			productReference = 6AB2DD2C298D38A400C7831C /* One */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AB2DD36298D452400C7831C /* NBABasketBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB2DD3B298D452400C7831C /* Build configuration list for PBXNativeTarget "NBABasketBall" */;
+			buildPhases = (
+				6AB2DD33298D452400C7831C /* Sources */,
+				6AB2DD34298D452400C7831C /* Frameworks */,
+				6AB2DD35298D452400C7831C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBABasketBall;
+			productName = NBABasketBall;
+			productReference = 6AB2DD37298D452400C7831C /* NBABasketBall */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -781,6 +827,9 @@
 					6AB2DD2B298D38A400C7831C = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AB2DD36298D452400C7831C = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A7350672985580D001F0255 /* Build configuration list for PBXProject "Re-Solve" */;
@@ -811,6 +860,7 @@
 				6AB2DD15298D15DA00C7831C /* WeatherCaster */,
 				6AB2DD20298D337500C7831C /* ProfessorHyunwoo */,
 				6AB2DD2B298D38A400C7831C /* One */,
+				6AB2DD36298D452400C7831C /* NBABasketBall */,
 			);
 		};
 /* End PBXProject section */
@@ -933,6 +983,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB2DD2F298D38A400C7831C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB2DD33298D452400C7831C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB2DD3A298D452400C7831C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1322,6 +1380,24 @@
 			};
 			name = Release;
 		};
+		6AB2DD3C298D452400C7831C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AB2DD3D298D452400C7831C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1465,6 +1541,15 @@
 			buildConfigurations = (
 				6AB2DD31298D38A400C7831C /* Debug */,
 				6AB2DD32298D38A400C7831C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB2DD3B298D452400C7831C /* Build configuration list for PBXNativeTarget "NBABasketBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB2DD3C298D452400C7831C /* Debug */,
+				6AB2DD3D298D452400C7831C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
