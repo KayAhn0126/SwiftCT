@@ -10,9 +10,9 @@
  치킨배달
  */
 
-// 브루트 포스 + 순열 + BFS
-
 /*
+ 브루트 포스 + 조합
+ 
  문제 해석:
  
  N * N
@@ -40,16 +40,30 @@
 
 import Foundation
 
-let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
-
-let N = NM[0]
-let M = NM[1]
-
-var matrix = [[Int]](repeating: [Int](), count: N)
-
-for row in 0..<N {
-    matrix[row].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
+struct Queue<T> {
+    var enQueueList: [T] = []
+    var deQueueList: [T] = []
+    
+    var count: Int {
+        return enQueueList.count + deQueueList.count
+    }
+    
+    var isEmpty: Bool {
+        return enQueueList.isEmpty && deQueueList.isEmpty
+    }
+    
+    mutating func enqueue(_ element: T) {
+        enQueueList.append(element)
+    }
+    
+    mutating func dequeue() -> T? {
+        if deQueueList.isEmpty {
+            deQueueList = enQueueList.reversed()
+        }
+        return deQueueList.popLast()
+    }
 }
+
 
 func combination<T>(_ arr: [T], _ limit: Int) -> [[T]] {
     var result = [[T]]()
@@ -69,6 +83,17 @@ func combination<T>(_ arr: [T], _ limit: Int) -> [[T]] {
     return result
 }
 
+let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NM[0]
+let M = NM[1]
+
+var matrix = [[Int]](repeating: [Int](), count: N)
+
+for row in 0..<N {
+    matrix[row].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
+}
+
+
 var homeLocationList = [(Int,Int)]()
 var chickenLocationList = [(Int,Int)]()
 
@@ -84,9 +109,34 @@ for row in 0..<N {
 
 var combinationChickenLocation = combination(chickenLocationList, M)
 
+/*
+ 치킨집 조합이 주어진다.
+ 하나의 집에서 치킨집들의 위치를 비교하면서 가장 가까운 거리를 구한다.
+ 조합을 바꿔서 다시 실행
+ 
+ 임의의 두 칸(r1, c1)과 (r2, c2)사이의 거리는 |r1 - r2| + |c1 - c2| 이다.
+ */
+var result = 987654321
+for chickenLocation in combinationChickenLocation {
+    var roundTotal = 0
+    for homeLocation in homeLocationList {
+        let homeY = homeLocation.0
+        let homeX = homeLocation.1
+        var nearestValue = 987654321
+        for chickLocation in chickenLocation {
+            let chickenY = chickLocation.0
+            let chickenX = chickLocation.1
+            let distance =  abs(chickenY - homeY) + abs(chickenX - homeX)
+            nearestValue = nearestValue > distance ? distance : nearestValue
+        }
+        roundTotal += nearestValue
+    }
+    result = result > roundTotal ? roundTotal : result
+}
 
+print(result)
 
-
+// 2시간 ~ 3시간
 
 
 
