@@ -23,6 +23,7 @@
 		6A73509329856C10001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73509229856C10001F0255 /* main.swift */; };
 		6A7C4BA2298CC30600B5F6BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C4BA1298CC30600B5F6BA /* main.swift */; };
 		6A7C4BAD298CDD2F00B5F6BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C4BAC298CDD2F00B5F6BA /* main.swift */; };
+		6A90C73D2999EBA8002AFB10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90C73C2999EBA8002AFB10 /* main.swift */; };
 		6A9A04BE298B5FD900430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04BD298B5FD900430218 /* main.swift */; };
 		6A9A04C9298B708700430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04C8298B708700430218 /* main.swift */; };
 		6A9A04E7298B8E7A00430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04E6298B8E7A00430218 /* main.swift */; };
@@ -176,6 +177,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A7C4BA8298CDD2F00B5F6BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A90C7382999EBA8002AFB10 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -345,6 +355,8 @@
 		6A7C4BA1298CC30600B5F6BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A7C4BAA298CDD2F00B5F6BA /* MathHomework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MathHomework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7C4BAC298CDD2F00B5F6BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A90C73A2999EBA8002AFB10 /* SafeArea */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SafeArea; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A90C73C2999EBA8002AFB10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A9A04BB298B5FD900430218 /* WhenIMissKoreaConnectToServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhenIMissKoreaConnectToServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A04BD298B5FD900430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A9A04C6298B708700430218 /* PocketmonMasterLee */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PocketmonMasterLee; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -482,6 +494,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A7C4BA7298CDD2F00B5F6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A90C7372999EBA8002AFB10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -702,6 +721,7 @@
 				6A495A222998F2F5006D0385 /* Tree */,
 				6A495A2D29991B48006D0385 /* MazeSearch */,
 				6A495A3829992ADC006D0385 /* Cabbage */,
+				6A90C73B2999EBA8002AFB10 /* SafeArea */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -739,6 +759,7 @@
 				6A495A212998F2F5006D0385 /* Tree */,
 				6A495A2C29991B48006D0385 /* MazeSearch */,
 				6A495A3729992ADC006D0385 /* Cabbage */,
+				6A90C73A2999EBA8002AFB10 /* SafeArea */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -789,6 +810,14 @@
 				6A7C4BAC298CDD2F00B5F6BA /* main.swift */,
 			);
 			path = MathHomework;
+			sourceTree = "<group>";
+		};
+		6A90C73B2999EBA8002AFB10 /* SafeArea */ = {
+			isa = PBXGroup;
+			children = (
+				6A90C73C2999EBA8002AFB10 /* main.swift */,
+			);
+			path = SafeArea;
 			sourceTree = "<group>";
 		};
 		6A9A04BC298B5FD900430218 /* WhenIMissKoreaConnectToServer */ = {
@@ -1178,6 +1207,23 @@
 			productReference = 6A7C4BAA298CDD2F00B5F6BA /* MathHomework */;
 			productType = "com.apple.product-type.tool";
 		};
+		6A90C7392999EBA8002AFB10 /* SafeArea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A90C7402999EBA8002AFB10 /* Build configuration list for PBXNativeTarget "SafeArea" */;
+			buildPhases = (
+				6A90C7362999EBA8002AFB10 /* Sources */,
+				6A90C7372999EBA8002AFB10 /* Frameworks */,
+				6A90C7382999EBA8002AFB10 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafeArea;
+			productName = SafeArea;
+			productReference = 6A90C73A2999EBA8002AFB10 /* SafeArea */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A9A04BA298B5FD900430218 /* WhenIMissKoreaConnectToServer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A9A04C1298B5FD900430218 /* Build configuration list for PBXNativeTarget "WhenIMissKoreaConnectToServer" */;
@@ -1474,6 +1520,9 @@
 					6A7C4BA9298CDD2F00B5F6BA = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A90C7392999EBA8002AFB10 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A9A04BA298B5FD900430218 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -1561,6 +1610,7 @@
 				6A495A202998F2F5006D0385 /* Tree */,
 				6A495A2B29991B48006D0385 /* MazeSearch */,
 				6A495A3629992ADC006D0385 /* Cabbage */,
+				6A90C7392999EBA8002AFB10 /* SafeArea */,
 			);
 		};
 /* End PBXProject section */
@@ -1691,6 +1741,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7C4BAD298CDD2F00B5F6BA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A90C7362999EBA8002AFB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A90C73D2999EBA8002AFB10 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2210,6 +2268,24 @@
 			};
 			name = Release;
 		};
+		6A90C73E2999EBA8002AFB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A90C73F2999EBA8002AFB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6A9A04BF298B5FD900430218 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2614,6 +2690,15 @@
 			buildConfigurations = (
 				6A7C4BAF298CDD2F00B5F6BA /* Debug */,
 				6A7C4BB0298CDD2F00B5F6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A90C7402999EBA8002AFB10 /* Build configuration list for PBXNativeTarget "SafeArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A90C73E2999EBA8002AFB10 /* Debug */,
+				6A90C73F2999EBA8002AFB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
