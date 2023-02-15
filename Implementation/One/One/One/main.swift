@@ -21,7 +21,7 @@ while let number = readLine() {
         var count = 1
         var num = 1
         while num != 0 {
-            num = ((num % N) * (10 % N) + (1 % N)) % N
+            num = (num * 10 + 1) % N
             count += 1
         }
         print(count)
