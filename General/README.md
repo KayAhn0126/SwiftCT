@@ -34,7 +34,7 @@
     func twoSum(_ arr: [Int], _ target: Int) -> Bool {
         arr.sort()
         var l = 0
-        var r = 0
+        var r = arr.count - 1
         while l < r {
             if target > arr[l] + arr[r] { l += 1 }
             else if target < arr[l] + arr[r] { r -= 1 }
