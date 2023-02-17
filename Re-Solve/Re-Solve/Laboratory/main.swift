@@ -51,8 +51,79 @@ for i in 0..<N {
     adjMatrix[i].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
 }
 
-var virusLocation: [(Int,Int)] = []
-var wallLocation: [(Int,Int)] = []
 var emptyLocation: [(Int,Int)] = []
+var wallLocation: [(Int,Int)] = []
+var virusLocation: [(Int,Int)] = []
 
-// 25분 + 
+var result = 0
+
+let dy = [-1,0,1,0]
+let dx = [0,1,0,-1]
+
+for i in 0..<N {
+    for j in 0..<M {
+        if adjMatrix[i][j] == 0 {
+            emptyLocation.append((i,j))
+        } else if adjMatrix[i][j] == 1 {
+            wallLocation.append((i,j))
+        } else {
+            virusLocation.append((i,j))
+        }
+    }
+}
+
+var combination: [[(Int,Int)]] = combination(emptyLocation, 3)
+var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
+
+func clearVisited() {
+    for i in 0..<N {
+        for j in 0..<M {
+            visited[i][j] = 0
+        }
+    }
+}
+
+func dfs(_ y: Int, _ x: Int) {
+    visited[y][x] = 2
+    for i in 0..<4 {
+        let ny = y + dy[i]
+        let nx = x + dx[i]
+        if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
+        if visited[ny][nx] == 2  || adjMatrix[ny][nx] == 1  || adjMatrix[ny][nx] == 2 { continue }
+        dfs(ny,nx)
+    }
+}
+
+
+func countZeroes() {
+    var temp = 0
+    for i in 0..<N {
+        for j in 0..<M {
+            if visited[i][j] == 0 && adjMatrix[i][j] == 0 {
+                temp += 1
+            }
+        }
+    }
+    result = temp > result ? temp : result
+}
+
+func spreadVirus() {
+    for location in virusLocation {
+        dfs(location.0, location.1)
+    }
+}
+
+for combi in combination {
+    adjMatrix[combi[0].0][combi[0].1] = 1
+    adjMatrix[combi[1].0][combi[1].1] = 1
+    adjMatrix[combi[2].0][combi[2].1] = 1
+    spreadVirus()
+    countZeroes()
+    adjMatrix[combi[0].0][combi[0].1] = 0
+    adjMatrix[combi[1].0][combi[1].1] = 0
+    adjMatrix[combi[2].0][combi[2].1] = 0
+    clearVisited()
+}
+print(result)
+
+// 2시간++
