@@ -11,8 +11,14 @@
  */
 import Foundation
 
-//MARK: 시간복잡도 -> (바이러스의 위치들 C M) * M
-// 조합은 가운데로 갈수록 값이 크다 -> 10C5 * 5 = 252 * 5
+//MARK: - 시간복잡도
+/*
+- (바이러스의 위치 갯수 C M)
+- 조합은 가운데로 갈수록 값이 크다 -> 10C5 = 252
+- M의 최대 숫자 10
+- 맵 탐색 2500
+- 252 * 10 * 2500 =~ 6300000
+*/
 
 //MARK: Queue 구현
 struct Queue<T> {
@@ -189,9 +195,8 @@ func bfs() -> Int {
 
 var queue = Queue<(Int,Int)>()
 var result = 987654321
-var flag = true
 
-//MARK: 메인 로직 1 시작.
+//MARK: 메인 로직 1 시작. -> M개의 바이러스 조합을 모두 BFS에 넣어 최단시간 구하고 해당 값에 따라 분기처리
 combinationArr.enumerated().forEach {
     queue.clear()
     visitedClear()
