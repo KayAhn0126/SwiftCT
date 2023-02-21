@@ -79,14 +79,11 @@ for i in 0..<N {
     sanggeunArr.append(fIO.readInt())
 }
 
-// sanggeunArr.append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
-
 let M = fIO.readInt()
 var checkArr = [Int]()
 for i in 0..<M {
     checkArr.append(fIO.readInt())
 }
-//checkArr.append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
 
 var countArr = [Int](repeating: 0, count: 20000001)
 
