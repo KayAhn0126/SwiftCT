@@ -1,8 +1,10 @@
 # 1325 효율적인 해킹
 
 ## 🍎 키워드
+- 빠른 IO
+- 배열과 인덱스를 이용한 Queue
 - 인접 리스트 설계
-- DFS
+- BFS
 - 최대값이 2개 이상일때 처리 방법 + 오름차순
 
 ## 🍎 문제 설계
@@ -41,14 +43,12 @@
     - [10][11]
     - [N][N+1]  -> N번을 신뢰하는 N+1번 컴퓨터
 - 10000 * 10000? 브루트포스 레츠고!
-- dfs를 이용해서 한 depth씩 들어갈때마다 해킹 숫자에 +1을 해준다.
-- 숫자 하나하나 dfs를 통해서 값을 구하고 아래와 같이 해당 숫자를 인덱스로 값을 넣을수 있게 배열을 하나 만들어 주고 그 안에 값을 넣어준다.
+- bfs를 이용해서 한 depth씩 들어갈때마다 해킹 숫자에 +1을 해준다.
 ```swift
 for i in 1...N {
-    clearVisited()
-    let number = dfs(i)
-    biggestList[i] = number
-    biggestNum = biggestList[i] > biggestNum ? biggestList[i] : biggestNum
+    let result = bfs(i)
+    biggestNum = biggestNum > result ? biggestNum : result
+    biggestList[i] = result
 }
 ```
 - biggestNum은 최대값을 갱신하는 변수이고 biggestList는 값들이 저장되는 배열이다.
@@ -83,5 +83,26 @@ for i in 1...N {
     if biggestNum == biggestList[i] {
         print(i, terminator: " ")
     }
+}
+```
+
+## 🍎 배열과 idx변수를 Queue처럼 사용하기
+```swift
+func bfs(_ node: Int) -> Int {
+    var bfsQueue = [Int](), idx = 0
+    var visited = [Int](repeating: 0, count: N + 1)
+    var count = 1
+    visited[node] = count
+    bfsQueue.append(node)
+    while idx < bfsQueue.count {
+        let number = bfsQueue[idx]; idx += 1
+        for element in adjList[number] {
+            if visited[element] != 0 { continue }
+            count += 1
+            visited[element] = 1
+            bfsQueue.append(element)
+        }
+    }
+    return count
 }
 ```

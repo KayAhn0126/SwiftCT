@@ -11,73 +11,95 @@
  */
 // 2nd week fast campus
 
-/*
- DFS로 풀었다가 시간초과가 나서 생각해보니 BFS로 풀어야 할것 같음
- */
 import Foundation
 
-struct Queue<T> {
-    var enqueueList: [T] = []
-    var dequeueList: [T] = []
-    
-    var count: Int {
-        return enqueueList.count + dequeueList.count
+final class FileIO {
+    private let buffer:[UInt8]
+    private var index: Int = 0
+
+    init(fileHandle: FileHandle = FileHandle.standardInput) {
+        
+        buffer = Array(try! fileHandle.readToEnd()!)+[UInt8(0)] // 인덱스 범위 넘어가는 것 방지
     }
-    
-    var isEmpty: Bool {
-        return enqueueList.isEmpty && dequeueList.isEmpty
+
+    @inline(__always) private func read() -> UInt8 {
+        defer { index += 1 }
+
+        return buffer[index]
     }
-    
-    mutating func clear() {
-        enqueueList.removeAll()
-        dequeueList.removeAll()
-    }
-    
-    mutating func enqueue(_ element: T) {
-        enqueueList.append(element)
-    }
-    
-    mutating func dequeue() -> T? {
-        if dequeueList.isEmpty {
-            dequeueList = enqueueList.reversed()
-            enqueueList.removeAll()
-            return dequeueList.popLast()
+
+    @inline(__always) func readInt() -> Int {
+        var sum = 0
+        var now = read()
+        var isPositive = true
+
+        while now == 10
+                || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        if now == 45 { isPositive.toggle(); now = read() } // 음수 처리
+        while now >= 48, now <= 57 {
+            sum = sum * 10 + Int(now-48)
+            now = read()
         }
-        return dequeueList.popLast()
+
+        return sum * (isPositive ? 1:-1)
+    }
+
+    @inline(__always) func readString() -> String {
+        var now = read()
+
+        while now == 10 || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        let beginIndex = index-1
+
+        while now != 10,
+              now != 32,
+              now != 0 { now = read() }
+
+        return String(bytes: Array(buffer[beginIndex..<(index-1)]), encoding: .ascii)!
+    }
+
+    @inline(__always) func readByteSequenceWithoutSpaceAndLineFeed() -> [UInt8] {
+        var now = read()
+
+        while now == 10 || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        let beginIndex = index-1
+
+        while now != 10,
+              now != 32,
+              now != 0 { now = read() }
+
+        return Array(buffer[beginIndex..<(index-1)])
     }
 }
 
-let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
-let N = NM[0]
-let M = NM[1]
+let fIO = FileIO()
+
+let N = fIO.readInt()
+let M = fIO.readInt()
 
 var adjList = [[Int]](repeating: [Int](), count: N + 1)
 
 var biggestList = [Int](repeating: 0, count: N + 1)
 var biggestNum = -100000
 
-
-for i in 0..<M {
-    let trustRelation = readLine()!.split(separator: " ").map { Int(String($0))! }
-    let by = trustRelation[0]
-    let trusted = trustRelation[1]
+for _ in 0..<M {
+    let by = fIO.readInt()
+    let trusted = fIO.readInt()
     adjList[trusted].append(by)
 }
 
-
 func bfs(_ node: Int) -> Int {
-    var bfsQueue = Queue<Int>()
+    var bfsQueue = [Int](), idx = 0
     var visited = [Int](repeating: 0, count: N + 1)
     var count = 1
     visited[node] = count
-    bfsQueue.enqueue(node)
-    while !bfsQueue.isEmpty {
-        let number = bfsQueue.dequeue()!
-        for i in 0..<adjList[number].count {
-            if visited[adjList[number][i]] != 0 { continue }
+    bfsQueue.append(node)
+    while idx < bfsQueue.count {
+        let number = bfsQueue[idx]; idx += 1
+        for element in adjList[number] {
+            if visited[element] != 0 { continue }
             count += 1
-            visited[adjList[number][i]] = 1
-            bfsQueue.enqueue(adjList[number][i])
+            visited[element] = 1
+            bfsQueue.append(element)
         }
     }
     return count
