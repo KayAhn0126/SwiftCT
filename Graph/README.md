@@ -11,6 +11,8 @@
 | [알고리즘 수업 - 너비 우선 탐색 1](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AlgorithmLectureBFS1) | BFS <br> 오름차순 방문 | [24444](https://www.acmicpc.net/problem/24444) |
 | [알고리즘 수업 - 너비 우선 탐색 2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AlgorithmLectureBFS2) | BFS <br> 내림차순 방문 | [24445](https://www.acmicpc.net/problem/24445) |
 | [연구소](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory) | 설계, 시간복잡도, DFS, 조합 | [14502](https://www.acmicpc.net/problem/14502) |
+| [연구소 2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory2) | 설계, 시간복잡도, BFS, 조합 | [17141](https://www.acmicpc.net/problem/17141) |
+| [연구소 3](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory3) | 조합, BFS, 특정상황에서 카운팅 | [17142](https://www.acmicpc.net/problem/17142) |
 | [치즈](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Cheese) | 시뮬레이션, DFS | [2636](https://www.acmicpc.net/problem/2636) |
 | [토마토](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Tomato) | 시작점이 여러곳인 BFS | [7576](https://www.acmicpc.net/problem/7576) |
 | [보물섬](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/TreasureIsland) | BFS + 최단거리 | [2589](https://www.acmicpc.net/problem/2589) |
@@ -19,4 +21,4 @@
 | [뮤탈리스크](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Mutalisk) | 순열, BFS | [12869](https://www.acmicpc.net/problem/12869) |
 | [숨바꼭질](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek) | BFS, 브루트포스 | [1697](https://www.acmicpc.net/problem/1697) |
 | [숨바꼭질2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek2) | BFS, 구현 | [12851](https://www.acmicpc.net/problem/12851) |
-| | | |
+| [효율적인 해킹](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/EffectiveHacking) | 빠른 I/O, <br> 배열을 이용한 큐 | [1325](https://www.acmicpc.net/problem/1325) |
