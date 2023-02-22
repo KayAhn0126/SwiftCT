@@ -13,3 +13,5 @@
 | [Brute Force](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce) | 브루트 포스 |
 | [Stack](https://github.com/KayAhn0126/SwiftCT/tree/main/Stack) | 스택 |
 | [Tree](https://github.com/KayAhn0126/SwiftCT/tree/main/Tree) | 트리 |
+| [Binary Search](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch) | 이분 탐색 |
+| [다시 풀기](https://github.com/KayAhn0126/SwiftCT/tree/main/Re-Solve) | 다시 풀기 모음 |
