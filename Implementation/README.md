@@ -22,9 +22,12 @@
 | [1](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/One) | 패턴찾기 및 <br> 정수론 | [4375](https://www.acmicpc.net/problem/4375) |
 | [NBA 농구](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/NBABasketBall) | 구현 및 <br> 시간 계산 | [2852](https://www.acmicpc.net/problem/2852) |
 | [손익분기점](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/BreakEvenPoint) | 구현 | [1712](https://www.acmicpc.net/problem/1712) |
+| [공](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Ball) | 시뮬레이션 | [1547](https://www.acmicpc.net/problem/1547) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)
 
+## 🍎 File I/O
+- [빠른 입출력 및 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/FileIO)
 ## 🍎 Loop
 - [for / while 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Loop)
