@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A22F3BA29A6035D0073E2E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A22F3B929A6035D0073E2E1 /* main.swift */; };
 		6A2B5896299255B000752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B5895299255B000752F1C /* main.swift */; };
 		6A2B58A129925C2A00752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B58A029925C2A00752F1C /* main.swift */; };
 		6A2B58AC29926C7E00752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B58AB29926C7E00752F1C /* main.swift */; };
@@ -44,6 +45,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6A22F3B529A6035D0073E2E1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6A2B5891299255AF00752F1C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +363,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A22F3B729A6035D0073E2E1 /* Cheese */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cheese; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A22F3B929A6035D0073E2E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A2B5893299255AF00752F1C /* SumOfIntervals4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SumOfIntervals4; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2B5895299255B000752F1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A2B589E29925C2A00752F1C /* FashionKing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FashionKing; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -424,6 +436,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A22F3B429A6035D0073E2E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A2B5890299255AF00752F1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,6 +684,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A22F3B829A6035D0073E2E1 /* Cheese */ = {
+			isa = PBXGroup;
+			children = (
+				6A22F3B929A6035D0073E2E1 /* main.swift */,
+			);
+			path = Cheese;
+			sourceTree = "<group>";
+		};
 		6A2B5894299255B000752F1C /* SumOfIntervals4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -782,6 +809,7 @@
 				6A8E5871299E2C8400E231DB /* MeasureArea */,
 				6A8E587C299E45AF00E231DB /* DFSBFS */,
 				6AB64BBD299E65E50074D213 /* Laboratory */,
+				6A22F3B829A6035D0073E2E1 /* Cheese */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -823,6 +851,7 @@
 				6A8E5870299E2C8400E231DB /* MeasureArea */,
 				6A8E587B299E45AF00E231DB /* DFSBFS */,
 				6AB64BBC299E65E50074D213 /* Laboratory */,
+				6A22F3B729A6035D0073E2E1 /* Cheese */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1022,6 +1051,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A22F3B629A6035D0073E2E1 /* Cheese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A22F3BD29A6035D0073E2E1 /* Build configuration list for PBXNativeTarget "Cheese" */;
+			buildPhases = (
+				6A22F3B329A6035D0073E2E1 /* Sources */,
+				6A22F3B429A6035D0073E2E1 /* Frameworks */,
+				6A22F3B529A6035D0073E2E1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheese;
+			productName = Cheese;
+			productReference = 6A22F3B729A6035D0073E2E1 /* Cheese */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A2B5892299255AF00752F1C /* SumOfIntervals4 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A2B5897299255B000752F1C /* Build configuration list for PBXNativeTarget "SumOfIntervals4" */;
@@ -1610,6 +1656,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					6A22F3B629A6035D0073E2E1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A2B5892299255AF00752F1C = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -1761,11 +1810,20 @@
 				6A8E586F299E2C8400E231DB /* MeasureArea */,
 				6A8E587A299E45AF00E231DB /* DFSBFS */,
 				6AB64BBB299E65E50074D213 /* Laboratory */,
+				6A22F3B629A6035D0073E2E1 /* Cheese */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A22F3B329A6035D0073E2E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A22F3BA29A6035D0073E2E1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A2B588F299255AF00752F1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2041,6 +2099,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6A22F3BB29A6035D0073E2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A22F3BC29A6035D0073E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6A2B5898299255B000752F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2769,6 +2845,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A22F3BD29A6035D0073E2E1 /* Build configuration list for PBXNativeTarget "Cheese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A22F3BB29A6035D0073E2E1 /* Debug */,
+				6A22F3BC29A6035D0073E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A2B5897299255B000752F1C /* Build configuration list for PBXNativeTarget "SumOfIntervals4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
