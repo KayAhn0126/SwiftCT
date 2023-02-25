@@ -60,24 +60,24 @@ if N == K {
 } else {
     if 0 <= N && N <= 100000 && 0 <= K && K <= 100000 {
         while !bfsQueue.isEmpty {
-            let number = bfsQueue.dequeue()!
+            let currentNumber = bfsQueue.dequeue()!
             
             for i in 1...3 {
-                var currentNumber = number
+                var nextNumber = currentNumber
                 if i == 1 {
-                    currentNumber -= 1
+                    nextNumber -= 1
                 } else if i == 2 {
-                    currentNumber += 1
+                    nextNumber += 1
                 } else {
-                    currentNumber *= 2
+                    nextNumber *= 2
                 }
-                if currentNumber < 0 || currentNumber > 200000 { continue }
-                if visited[currentNumber] == 0 {
-                    visited[currentNumber] = visited[number] + 1
-                    waysToFind[currentNumber] += waysToFind[number]
-                    bfsQueue.enqueue(currentNumber)
-                } else if visited[currentNumber] == visited[number] + 1 {
-                    waysToFind[currentNumber] += waysToFind[number]
+                if nextNumber < 0 || nextNumber > 200000 { continue }
+                if visited[nextNumber] == 0 {
+                    visited[nextNumber] = visited[currentNumber] + 1
+                    waysToFind[nextNumber] += waysToFind[currentNumber]
+                    bfsQueue.enqueue(nextNumber)
+                } else if visited[nextNumber] == visited[currentNumber] + 1 {
+                    waysToFind[nextNumber] += waysToFind[currentNumber]
                 }
                 
             }

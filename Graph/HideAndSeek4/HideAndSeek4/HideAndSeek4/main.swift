@@ -36,12 +36,12 @@ bfsQueue.append(N)
 visited[N] = 1
 
 while idx < bfsQueue.count {
-    let number = bfsQueue[idx]; idx += 1
-    if number == K {
+    let currentNumber = bfsQueue[idx]; idx += 1
+    if currentNumber == K {
         break
     }
     for i in 1...3 {
-        var nextNumber = number
+        var nextNumber = currentNumber
         if i == 1 {
             nextNumber -= 1
         } else if i == 2 {
@@ -51,8 +51,8 @@ while idx < bfsQueue.count {
         }
         if nextNumber < 0 || nextNumber > 100000 { continue }
         if visited[nextNumber] > 0 { continue }
-        visited[nextNumber] = visited[number] + 1
-        prev[nextNumber] = number
+        visited[nextNumber] = visited[currentNumber] + 1
+        prev[nextNumber] = currentNumber
         bfsQueue.append(nextNumber)
     }
 }

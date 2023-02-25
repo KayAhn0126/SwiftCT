@@ -60,23 +60,23 @@ if 0 <= N && N <= 100000 && 0 <= K && K <= 100000 {
     bfsQueue.enqueue(N)
 
     while !bfsQueue.isEmpty {
-        let num = bfsQueue.dequeue()!
-        if num == K {
+        let currentNumber = bfsQueue.dequeue()!
+        if currentNumber == K {
             break
         }
         for i in 1...3 {
-            var currentNumber = num
+            var nextNumber = currentNumber
             if i == 1 {
-                currentNumber -= 1
+                nextNumber -= 1
             } else if i == 2 {
-                currentNumber += 1
+                nextNumber += 1
             } else {
-                currentNumber *= 2
+                nextNumber *= 2
             }
-            if currentNumber < 0 || currentNumber > 200000 { continue }
-            if visited[currentNumber] != 0 { continue }
-            visited[currentNumber] = visited[num] + 1
-            bfsQueue.enqueue(currentNumber)
+            if nextNumber < 0 || nextNumber > 200000 { continue }
+            if visited[nextNumber] != 0 { continue }
+            visited[nextNumber] = visited[currentNumber] + 1
+            bfsQueue.enqueue(nextNumber)
         }
     }
     print(visited[K]-1)
