@@ -43,6 +43,7 @@
 		6AB8175729978170009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8175629978170009C0AE8 /* main.swift */; };
 		6AB8176229979A4D009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8176129979A4D009C0AE8 /* main.swift */; };
 		6AB8176D2997A201009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8176C2997A201009C0AE8 /* main.swift */; };
+		6AD31A3A29AB4BD30093E4B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD31A3929AB4BD30093E4B3 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -370,6 +371,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AD31A3529AB4BD30093E4B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -445,6 +455,8 @@
 		6AB8176129979A4D009C0AE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB8176A2997A201009C0AE8 /* ChickenDelivery */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChickenDelivery; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB8176C2997A201009C0AE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AD31A3729AB4BD30093E4B3 /* Fire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fire; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD31A3929AB4BD30093E4B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -700,6 +712,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AD31A3429AB4BD30093E4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -838,6 +857,7 @@
 				6AB64BBD299E65E50074D213 /* Laboratory */,
 				6A22F3B829A6035D0073E2E1 /* Cheese */,
 				6A22F3C329A638CC0073E2E1 /* Tomato */,
+				6AD31A3829AB4BD30093E4B3 /* Fire */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -881,6 +901,7 @@
 				6AB64BBC299E65E50074D213 /* Laboratory */,
 				6A22F3B729A6035D0073E2E1 /* Cheese */,
 				6A22F3C229A638CC0073E2E1 /* Tomato */,
+				6AD31A3729AB4BD30093E4B3 /* Fire */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1075,6 +1096,14 @@
 				6AB8176C2997A201009C0AE8 /* main.swift */,
 			);
 			path = ChickenDelivery;
+			sourceTree = "<group>";
+		};
+		6AD31A3829AB4BD30093E4B3 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				6AD31A3929AB4BD30093E4B3 /* main.swift */,
+			);
+			path = Fire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1692,6 +1721,23 @@
 			productReference = 6AB8176A2997A201009C0AE8 /* ChickenDelivery */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AD31A3629AB4BD30093E4B3 /* Fire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD31A3D29AB4BD30093E4B3 /* Build configuration list for PBXNativeTarget "Fire" */;
+			buildPhases = (
+				6AD31A3329AB4BD30093E4B3 /* Sources */,
+				6AD31A3429AB4BD30093E4B3 /* Frameworks */,
+				6AD31A3529AB4BD30093E4B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fire;
+			productName = Fire;
+			productReference = 6AD31A3729AB4BD30093E4B3 /* Fire */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1810,6 +1856,9 @@
 					6AB817692997A201009C0AE8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AD31A3629AB4BD30093E4B3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A7350672985580D001F0255 /* Build configuration list for PBXProject "Re-Solve" */;
@@ -1861,6 +1910,7 @@
 				6AB64BBB299E65E50074D213 /* Laboratory */,
 				6A22F3B629A6035D0073E2E1 /* Cheese */,
 				6A22F3C129A638CC0073E2E1 /* Tomato */,
+				6AD31A3629AB4BD30093E4B3 /* Fire */,
 			);
 		};
 /* End PBXProject section */
@@ -2151,6 +2201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB8176D2997A201009C0AE8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD31A3329AB4BD30093E4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD31A3A29AB4BD30093E4B3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2918,6 +2976,24 @@
 			};
 			name = Release;
 		};
+		6AD31A3B29AB4BD30093E4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AD31A3C29AB4BD30093E4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3250,6 +3326,15 @@
 			buildConfigurations = (
 				6AB8176F2997A201009C0AE8 /* Debug */,
 				6AB817702997A201009C0AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD31A3D29AB4BD30093E4B3 /* Build configuration list for PBXNativeTarget "Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD31A3B29AB4BD30093E4B3 /* Debug */,
+				6AD31A3C29AB4BD30093E4B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
