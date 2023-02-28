@@ -107,3 +107,14 @@ func binarySearch(_ array: [Int], num: Int) -> Bool {
     return false
 }
 ```
+
+## 🍎 실행 속도 측정
+```swift
+func checkTime() { 
+    let startTime = CFAbsoluteTimeGetCurrent()    
+    //로직
+    let durationTime = CFAbsoluteTimeGetCurrent() - startTime  
+    print("경과 시간: \(durationTime)")
+}
+checkTime()
+```
