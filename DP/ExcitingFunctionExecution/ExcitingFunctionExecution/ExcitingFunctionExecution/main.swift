@@ -15,7 +15,7 @@ import Foundation
 var dp = [[[Int]]](repeating: [[Int]](repeating: [Int](repeating: 0, count: 51), count: 51), count: 51)
 
 func solve(_ a: Int, _ b: Int, _ c: Int) -> Int {
-    if a <= 0 || b <= 0 || c <= 0{
+    if a <= 0 || b <= 0 || c <= 0 {
         return 1
     } else if dp[a][b][c] != 0 {
         return dp[a][b][c]
