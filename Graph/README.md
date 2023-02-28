@@ -1,6 +1,7 @@
 # Graph List
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
+| [단지번호붙이기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/NumberingOnHouse) | 인접행렬 BFS | [2667](https://www.acmicpc.net/problem/2667) |
 | [미로찾기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/MazeSearch) | 인접행렬 BFS | [2178](https://www.acmicpc.net/problem/2178) |
 | [유기농 배추](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Cabbage) | 인접행렬 DFS | [1012](https://www.acmicpc.net/problem/1012) |
 | [안전영역](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/SafeArea) | Connected Component, <br> DFS, 예외처리 | [2468](https://www.acmicpc.net/problem/2468) |
@@ -19,6 +20,15 @@
 | [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 구현, 특정 상황까지 DFS 탐색 | [16234](https://www.acmicpc.net/problem/16234) |
 | [불!](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Fire) | BFS, 구현 | [4179](https://www.acmicpc.net/problem/4179) |
 | [뮤탈리스크](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Mutalisk) | 순열, BFS | [12869](https://www.acmicpc.net/problem/12869) |
+| [나이트의 이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/MovingOfKnights) | BFS + 최단거리 | [7562](https://www.acmicpc.net/problem/7562) |
 | [숨바꼭질](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek) | BFS, 브루트포스 | [1697](https://www.acmicpc.net/problem/1697) |
 | [숨바꼭질2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek2) | BFS, 구현 | [12851](https://www.acmicpc.net/problem/12851) |
+| [숨바꼭질4](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/HideAndSeek4) | BFS + 최단거리 + Trace | [13913](https://www.acmicpc.net/problem/13913) |
 | [효율적인 해킹](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/EffectiveHacking) | 빠른 I/O, <br> 배열을 이용한 큐 | [1325](https://www.acmicpc.net/problem/1325) |
+| [바이러스](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Virus) | 인접리스트 | [2606](https://www.acmicpc.net/problem/2606) |
+|[촌수계산](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/CountingKinship) | 구현, BFS + 최단거리 | [2644](https://www.acmicpc.net/problem/2644) |
+| [벽 부수고 이동하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/GoThroughTheWall) | 3차원 배열 + BFS + 최단거리 | [2206](https://www.acmicpc.net/problem/2206) |
+| | | |
+| | | |
+| | | |
+| | | |
