@@ -23,20 +23,20 @@ let M = NM[1]
 
 var arr = readLine()!.split(separator: " ").map { Int(String($0))! }
 
-func checkIsPossible(_ settingNumber: Int) -> Bool {
+func checkIsPossible(_ sawLength: Int) -> Bool {
     var tempTotal = 0
     for element in arr {
-        if element >= settingNumber {
-            tempTotal += element - settingNumber
+        if element >= sawLength {
+            tempTotal += element - sawLength
         }
-        if tempTotal >= M {
+        if tempTotal >= M { // 현재 톱날로 잘랐을때 떨어지는 나무들의 합이 M보다 크다 ( 상근이가 가져갈 수 있지만 상근이는 딱 떨어지게 가져가고 싶다, 그럴려면 settingNumber가 커야한다.
             return true
         }
     }
     return false
 }
 
-func binarySearchForSettingNumber() -> Int {
+func binarySearchForSawLength() -> Int {
     var result = 0
     var start = 0, end = 2000000000, mid = 0
     while start <= end {
@@ -51,4 +51,4 @@ func binarySearchForSettingNumber() -> Int {
     return result
 }
 
-print(binarySearchForSettingNumber())
+print(binarySearchForSawLength())
