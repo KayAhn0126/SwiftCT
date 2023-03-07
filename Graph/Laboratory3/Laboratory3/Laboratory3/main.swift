@@ -141,7 +141,7 @@ func bfs() -> Int {
     }
 }
 
-func makeNegativeOne() {
+func makeNegativeTwo() {
     virusList.enumerated().forEach {
         let Y = $0.element.0
         let X = $0.element.1
@@ -161,7 +161,7 @@ let combiVirusList = combination(virusList, M)
 
 var result = 987654321
 combiVirusList.enumerated().forEach {
-    makeNegativeOne()
+    makeNegativeTwo()
     visitedClear()
     $0.element.enumerated().forEach {
         let currentYX = $0.element
