@@ -30,4 +30,4 @@
 | [벽 부수고 이동하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/GoThroughTheWall) | 3차원 배열 + BFS + 최단거리 | [2206](https://www.acmicpc.net/problem/2206) |
 | [주난의 난](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Junan) | 플러드 필 알고리즘, BFS + 최단거리 | [14497](https://www.acmicpc.net/problem/14497) |
 | [스타트링크](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/StartLink) | 인접리스트, BFS | [5014](https://www.acmicpc.net/problem/5014) |
-| | | |
+| [적록색약](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/RGColorBlind) | 구현 + DFS | [10026](https://www.acmicpc.net/problem/10026) |
