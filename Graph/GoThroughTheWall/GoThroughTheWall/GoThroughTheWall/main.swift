@@ -46,57 +46,6 @@ for i in 0..<N {
     adjMatrix[i].append(contentsOf: readLine()!.map { Int(String($0))! })
 }
 
-/*
-var oneLocation: [(Int, Int)] = []
-for i in 0..<N {
-    for j in 0..<M {
-        if adjMatrix[i][j] == 1 {
-            oneLocation.append((i,j))
-        }
-    }
-}
-
-let dy = [-1,0,1,0]
-let dx = [0,1,0,-1]
-
-var result = 987654321
-for i in oneLocation {
-    var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
-    var bfsQueue: [(Int,Int)] = [], idx = 0
-    adjMatrix[i.0][i.1] = 0
-    
-    visited[0][0] = 1
-    bfsQueue.append((0,0))
-    
-    while idx < bfsQueue.count {
-        let currentLocation = bfsQueue[idx]; idx += 1
-        let currentY = currentLocation.0
-        let currentX = currentLocation.1
-        for i in 0..<4 {
-            let ny = currentY + dy[i]
-            let nx = currentX + dx[i]
-            if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
-            if visited[ny][nx] > 0 || adjMatrix[ny][nx] == 1 { continue }
-            visited[ny][nx] = visited[currentY][currentX] + 1
-            bfsQueue.append((ny,nx))
-        }
-    }
-    adjMatrix[i.0][i.1] = 1
-    let roundResult = visited[N-1][M-1]
-    if roundResult == 0 { // 가는 방법이 없다면
-        continue
-    } else { // 가는 방법이 있다면
-        result = result > roundResult ? roundResult : result
-    }
-    
-}
-if result == 987654321 {
-    print(-1)
-} else {
-    print(result)
-}
-*/
-
 let dy = [-1,0,1,0]
 let dx = [0,1,0,-1]
 
@@ -112,7 +61,7 @@ func bfs() -> Int {
         let currentY = currentLocation.0
         let currentX = currentLocation.1
         let currentShatterStatus = currentLocation.2
-        if currentY == N - 1 && currentX == M - 1 {
+        if currentY == N - 1 && currentX == M - 1 { // 목표 위치에 도달 했다면..?
             return visited[N-1][M-1][currentShatterStatus]
         }
         for i in 0..<4 {
@@ -120,10 +69,10 @@ func bfs() -> Int {
             let nx = currentX + dx[i]
             if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
             if visited[ny][nx][currentShatterStatus] > 0 { continue } // 문제의 특성상 여기서 벽 체크 하지 않음
-            if adjMatrix[ny][nx] == 0 { // 일반적인 BFS 상황처럼 흘러감
+            if adjMatrix[ny][nx] == 0 { // 맵에서 다음 가려는 곳이 벽이 아니라면..? -> 일반적인 BFS 상황처럼 흘러감
                 visited[ny][nx][currentShatterStatus] = visited[currentY][currentX][currentShatterStatus] + 1
                 bfsQueue.append((ny,nx,currentShatterStatus))
-            } else {
+            } else { // 맵에서 다음 가려는 곳이 벽이라면..?? -> 이전에 벽을 부쉈는지 체크 후 분기처리
                 if currentShatterStatus == 0 { // 아직 벽을 부시지 않음
                     visited[ny][nx][1] = visited[currentY][currentX][currentShatterStatus] + 1
                     bfsQueue.append((ny,nx,1))
@@ -136,5 +85,3 @@ func bfs() -> Int {
     return -1
 }
 print(bfs())
-
-
