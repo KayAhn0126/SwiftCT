@@ -58,7 +58,7 @@ zeroBfsQueue.append((junanLocationY, junanLocationX))
 var result = 0
 // 도둑의 위치가 "0"이 아닐때 까지
 while adjMatrix[theftLocationY][theftLocationX] != "0" {
-    result += 1 // 1을 만날때마다 올라간다. -> 만약 나중에 다시 이 설명을 본다면 이해가 안될수 있으니 
+    result += 1 // 1을 만날때마다 올라간다. -> 만약 나중에 다시 이 설명을 본다면 이해가 안될수 있으니 문제를 다시 읽고 코드를 보자.
     var oneBfsQueue = [(Int,Int)]()
     while zeroIndex < zeroBfsQueue.count { // zeroQueue가 빌 때까지 진행된다.
         let currentLocation = zeroBfsQueue[zeroIndex]; zeroIndex += 1
