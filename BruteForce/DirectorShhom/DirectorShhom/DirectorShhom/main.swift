@@ -13,34 +13,34 @@
 
 import Foundation
 
-let input = Int(readLine()!)!
+let userInput = Int(readLine()!)!
 
-var count = 0
-
-func hasContainThreeSix(_ number: Int) -> Bool {
-    var temp = number
-    while temp >= 666 {
-        if temp % 1000 == 666 {
-            return true
+// 1666
+// 26663
+func checkThreeSix(_ number: Int) -> Bool {
+    var testNumber = number
+    var counter = 0
+    while testNumber > 0 {
+        if testNumber % 10 == 6 {
+            counter += 1
+            if counter == 3 {
+                return true
+            }
+        } else {
+            counter = 0
         }
-        temp /= 10
+        testNumber /= 10
     }
     return false
 }
 
-if input == 0 {
-    print("0")
-} else {
-    for i in 666...666 * 10000 { // 666부터 6660000
-        if hasContainThreeSix(i) {
-            count += 1
-        }
-        if count == input {
-            print(i)
-            break
-        }
+var counter = 0
+for i in 666..<666*10000 {
+    if checkThreeSix(i) == true {
+        counter += 1
+    }
+    if counter == userInput {
+        print(i)
+        break
     }
 }
-
-
-
