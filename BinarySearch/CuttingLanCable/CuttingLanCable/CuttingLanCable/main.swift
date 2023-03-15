@@ -30,16 +30,16 @@ let KN = readLine()!.split(separator: " ").map { Int(String($0))! }
 let K = KN[0] // 오영식이 이미 가지고 있는 랜선의 개수
 let N = KN[1] // 필요한 랜선의 개수 N
 
-var arr = [Int](repeating: 0, count: N)
+var currentLanCables = [Int](repeating: 0, count: N)
 
 for i in 0..<K {
-    arr[i] = Int(readLine()!)!
+    currentLanCables[i] = Int(readLine()!)!
 }
 
-func checkIsBigger(_ lanCableLength: Int) -> Bool {
+func checkIsEnough(_ cuttingLength: Int) -> Bool {
     var tempCount = 0
-    for element in arr {
-        tempCount += element / lanCableLength
+    for cable in currentLanCables {
+        tempCount += cable / cuttingLength
         if tempCount >= N {
             return true
         }
@@ -53,7 +53,7 @@ func binarySearchForBestNumber() -> Int {
     var start = 0, end = 10987654321, mid = 0
     while start <= end {
         mid = (start + end) / 2
-        if checkIsBigger(mid) == true {
+        if checkIsEnough(mid) == true {
             result = mid
             start = mid + 1
         } else {
