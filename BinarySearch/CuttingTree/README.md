@@ -22,14 +22,22 @@
 
 ## 🍎 전체 코드
 ```swift
-func checkIsPossible(_ sawLength: Int) -> Bool {
+import Foundation
+
+let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NM[0]
+let M = NM[1]
+
+var treeList = readLine()!.split(separator: " ").map { Int(String($0))! }
+
+func checkIsEnoughTree(_ sawLength: Int) -> Bool {
     var tempTotal = 0
-    for element in arr {
-        if element >= sawLength {
-            tempTotal += element - sawLength
+    for tree in treeList {
+        if tree >= sawLength {
+            tempTotal += tree - sawLength
         }
-        if tempTotal >= M { // 현재 톱날로 잘랐을때 떨어지는 나무들의 합이 M보다 크다
-            return true     //상근이가 가져갈 수 있지만 상근이는 딱 떨어지게 가져가고 싶다, 그럴려면 sawLength가 커야한다.
+        if tempTotal >= M { // 현재 톱날로 잘랐을때 떨어지는 나무들의 합이 M보다 크다 ( 상근이가 가져갈 수 있지만 상근이는 딱 떨어지게 가져가고 싶다, 그럴려면 sawLength가 커야한다.
+            return true
         }
     }
     return false
@@ -40,7 +48,7 @@ func binarySearchForSawLength() -> Int {
     var start = 0, end = 2000000000, mid = 0
     while start <= end {
         mid = (start + end) / 2
-        if checkIsPossible(mid) == true {
+        if checkIsEnoughTree(mid) == true {
             result = mid
             start = mid + 1
         } else {
