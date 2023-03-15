@@ -10,8 +10,6 @@
  수 찾기
  */
 
-// 140만 + (이분탐색 10 * logn) 140만 = 280만
-
 import Foundation
 
 var firstArr = [Int]()
