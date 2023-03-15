@@ -14,7 +14,7 @@
 ## 🍎 문제 해결
 - 두개의 함수를 만들어 문제 해결
 - 톱날의 길이가 주어졌을때, 해당 톱날로 자르고 남은 나무의 총 합이 M이 넘는지 확인하는 함수.
-    - func checkIsPossible(_ settingNumber: Int) -> Bool
+    - func checkIsEnoughTree(_ settingNumber: Int) -> Bool
 - 이분 탐색으로 해당 톱날이 크기가 최대가 되도록 만들어 주는 함수.
     - func binarySearchForSawLength() -> Int
 - 중요한 포인트
