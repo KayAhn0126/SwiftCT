@@ -13,6 +13,7 @@
 		6A2B58A129925C2A00752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B58A029925C2A00752F1C /* main.swift */; };
 		6A2B58AC29926C7E00752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B58AB29926C7E00752F1C /* main.swift */; };
 		6A2B58B729928A5500752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B58B629928A5500752F1C /* main.swift */; };
+		6A35B2BE29C4AF67001F43C5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A35B2BD29C4AF67001F43C5 /* main.swift */; };
 		6A495A0E2998A7CE006D0385 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A495A0D2998A7CE006D0385 /* main.swift */; };
 		6A495A192998DB7D006D0385 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A495A182998DB7D006D0385 /* main.swift */; };
 		6A495A242998F2F5006D0385 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A495A232998F2F5006D0385 /* main.swift */; };
@@ -98,6 +99,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A2B58B229928A5500752F1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A35B2B929C4AF67001F43C5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -445,6 +455,8 @@
 		6A2B58AB29926C7E00752F1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A2B58B429928A5500752F1C /* ApplePickingGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ApplePickingGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2B58B629928A5500752F1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A35B2BB29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhenIMissKoreaConnectToServerAgain; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A35B2BD29C4AF67001F43C5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A495A0B2998A7CE006D0385 /* Parenthesis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Parenthesis; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A495A0D2998A7CE006D0385 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A495A162998DB7D006D0385 /* BalancedWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BalancedWorld; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -556,6 +568,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A2B58B129928A5500752F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A35B2B829C4AF67001F43C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -865,6 +884,14 @@
 			path = ApplePickingGame;
 			sourceTree = "<group>";
 		};
+		6A35B2BC29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */ = {
+			isa = PBXGroup;
+			children = (
+				6A35B2BD29C4AF67001F43C5 /* main.swift */,
+			);
+			path = WhenIMissKoreaConnectToServerAgain;
+			sourceTree = "<group>";
+		};
 		6A495A0C2998A7CE006D0385 /* Parenthesis */ = {
 			isa = PBXGroup;
 			children = (
@@ -958,6 +985,7 @@
 				6A8709E829C442FC00F65F98 /* MakeToOne */,
 				6A92B3E229C44F71005DBF5A /* Ball */,
 				6AA86E8229C4759D007C072A /* FindingFraction */,
+				6A35B2BC29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1007,6 +1035,7 @@
 				6A8709E729C442FC00F65F98 /* MakeToOne */,
 				6A92B3E129C44F71005DBF5A /* Ball */,
 				6AA86E8129C4759C007C072A /* FindingFraction */,
+				6A35B2BB29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1354,6 +1383,23 @@
 			name = ApplePickingGame;
 			productName = ApplePickingGame;
 			productReference = 6A2B58B429928A5500752F1C /* ApplePickingGame */;
+			productType = "com.apple.product-type.tool";
+		};
+		6A35B2BA29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A35B2C129C4AF67001F43C5 /* Build configuration list for PBXNativeTarget "WhenIMissKoreaConnectToServerAgain" */;
+			buildPhases = (
+				6A35B2B729C4AF67001F43C5 /* Sources */,
+				6A35B2B829C4AF67001F43C5 /* Frameworks */,
+				6A35B2B929C4AF67001F43C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhenIMissKoreaConnectToServerAgain;
+			productName = WhenIMissKoreaConnectToServerAgain;
+			productReference = 6A35B2BB29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */;
 			productType = "com.apple.product-type.tool";
 		};
 		6A495A0A2998A7CE006D0385 /* Parenthesis */ = {
@@ -1996,6 +2042,9 @@
 					6A2B58B329928A5500752F1C = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A35B2BA29C4AF67001F43C5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A495A0A2998A7CE006D0385 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -2161,6 +2210,7 @@
 				6A8709E629C442FC00F65F98 /* MakeToOne */,
 				6A92B3E029C44F71005DBF5A /* Ball */,
 				6AA86E8029C4759C007C072A /* FindingFraction */,
+				6A35B2BA29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */,
 			);
 		};
 /* End PBXProject section */
@@ -2211,6 +2261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A2B58B729928A5500752F1C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A35B2B729C4AF67001F43C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A35B2BE29C4AF67001F43C5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2605,6 +2663,24 @@
 			name = Debug;
 		};
 		6A2B58BA29928A5500752F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A35B2BF29C4AF67001F43C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A35B2C029C4AF67001F43C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -3427,6 +3503,15 @@
 			buildConfigurations = (
 				6A2B58B929928A5500752F1C /* Debug */,
 				6A2B58BA29928A5500752F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A35B2C129C4AF67001F43C5 /* Build configuration list for PBXNativeTarget "WhenIMissKoreaConnectToServerAgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A35B2BF29C4AF67001F43C5 /* Debug */,
+				6A35B2C029C4AF67001F43C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
