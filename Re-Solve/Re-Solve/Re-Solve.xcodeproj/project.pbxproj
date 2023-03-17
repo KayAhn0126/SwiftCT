@@ -37,6 +37,7 @@
 		6A9A04E7298B8E7A00430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04E6298B8E7A00430218 /* main.swift */; };
 		6A9A04F2298BFC8000430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04F1298BFC8000430218 /* main.swift */; };
 		6A9A04FD298C089800430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04FC298C089800430218 /* main.swift */; };
+		6AA86E8429C4759D007C072A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA86E8329C4759D007C072A /* main.swift */; };
 		6AB2DD19298D15DA00C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD18298D15DA00C7831C /* main.swift */; };
 		6AB2DD24298D337500C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD23298D337500C7831C /* main.swift */; };
 		6AB2DD2F298D38A400C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD2E298D38A400C7831C /* main.swift */; };
@@ -321,6 +322,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AA86E7F29C4759C007C072A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AB2DD14298D15DA00C7831C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,6 +493,8 @@
 		6A9A04F1298BFC8000430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A9A04FA298C089800430218 /* FrequencySort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FrequencySort; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A04FC298C089800430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AA86E8129C4759C007C072A /* FindingFraction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FindingFraction; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA86E8329C4759D007C072A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB2DD16298D15DA00C7831C /* WeatherCaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WeatherCaster; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB2DD18298D15DA00C7831C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB2DD21298D337500C7831C /* ProfessorHyunwoo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProfessorHyunwoo; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -718,6 +730,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AA86E7E29C4759C007C072A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AB2DD13298D15DA00C7831C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -938,6 +957,7 @@
 				6A8709DD29C41F8500F65F98 /* RightBiggerNumberAgain */,
 				6A8709E829C442FC00F65F98 /* MakeToOne */,
 				6A92B3E229C44F71005DBF5A /* Ball */,
+				6AA86E8229C4759D007C072A /* FindingFraction */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -986,6 +1006,7 @@
 				6A8709DC29C41F8500F65F98 /* RightBiggerNumberAgain */,
 				6A8709E729C442FC00F65F98 /* MakeToOne */,
 				6A92B3E129C44F71005DBF5A /* Ball */,
+				6AA86E8129C4759C007C072A /* FindingFraction */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1132,6 +1153,14 @@
 				6A9A04FC298C089800430218 /* main.swift */,
 			);
 			path = FrequencySort;
+			sourceTree = "<group>";
+		};
+		6AA86E8229C4759D007C072A /* FindingFraction */ = {
+			isa = PBXGroup;
+			children = (
+				6AA86E8329C4759D007C072A /* main.swift */,
+			);
+			path = FindingFraction;
 			sourceTree = "<group>";
 		};
 		6AB2DD17298D15DA00C7831C /* WeatherCaster */ = {
@@ -1735,6 +1764,23 @@
 			productReference = 6A9A04FA298C089800430218 /* FrequencySort */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AA86E8029C4759C007C072A /* FindingFraction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA86E8729C4759D007C072A /* Build configuration list for PBXNativeTarget "FindingFraction" */;
+			buildPhases = (
+				6AA86E7D29C4759C007C072A /* Sources */,
+				6AA86E7E29C4759C007C072A /* Frameworks */,
+				6AA86E7F29C4759C007C072A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindingFraction;
+			productName = FindingFraction;
+			productReference = 6AA86E8129C4759C007C072A /* FindingFraction */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AB2DD15298D15DA00C7831C /* WeatherCaster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB2DD1C298D15DA00C7831C /* Build configuration list for PBXNativeTarget "WeatherCaster" */;
@@ -2022,6 +2068,9 @@
 					6A9A04F9298C089800430218 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AA86E8029C4759C007C072A = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AB2DD15298D15DA00C7831C = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -2111,6 +2160,7 @@
 				6A8709DB29C41F8500F65F98 /* RightBiggerNumberAgain */,
 				6A8709E629C442FC00F65F98 /* MakeToOne */,
 				6A92B3E029C44F71005DBF5A /* Ball */,
+				6AA86E8029C4759C007C072A /* FindingFraction */,
 			);
 		};
 /* End PBXProject section */
@@ -2353,6 +2403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A04FD298C089800430218 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA86E7D29C4759C007C072A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA86E8429C4759D007C072A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3100,6 +3158,24 @@
 			};
 			name = Release;
 		};
+		6AA86E8529C4759D007C072A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AA86E8629C4759D007C072A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AB2DD1A298D15DA00C7831C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3576,6 +3652,15 @@
 			buildConfigurations = (
 				6A9A04FF298C089800430218 /* Debug */,
 				6A9A0500298C089800430218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA86E8729C4759D007C072A /* Build configuration list for PBXNativeTarget "FindingFraction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA86E8529C4759D007C072A /* Debug */,
+				6AA86E8629C4759D007C072A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
