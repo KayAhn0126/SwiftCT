@@ -43,6 +43,7 @@
 		6AA7902729C567F100AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7902629C567F100AEF580 /* main.swift */; };
 		6AA7903229C5761500AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7903129C5761500AEF580 /* main.swift */; };
 		6AA7903D29C58BA700AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7903C29C58BA700AEF580 /* main.swift */; };
+		6AA7905329C5BD5200AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7905229C5BD5200AEF580 /* main.swift */; };
 		6AA86E8429C4759D007C072A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA86E8329C4759D007C072A /* main.swift */; };
 		6AB2DD19298D15DA00C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD18298D15DA00C7831C /* main.swift */; };
 		6AB2DD24298D337500C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD23298D337500C7831C /* main.swift */; };
@@ -382,6 +383,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AA7904E29C5BD5200AEF580 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AA86E7F29C4759C007C072A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,6 +575,8 @@
 		6AA7903129C5761500AEF580 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AA7903A29C58BA700AEF580 /* MathHomeworkAgain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MathHomeworkAgain; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA7903C29C58BA700AEF580 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AA7905029C5BD5200AEF580 /* RobotCleaner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotCleaner; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA7905229C5BD5200AEF580 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AA86E8129C4759C007C072A /* FindingFraction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FindingFraction; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA86E8329C4759D007C072A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB2DD16298D15DA00C7831C /* WeatherCaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WeatherCaster; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -844,6 +856,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AA7904D29C5BD5200AEF580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AA86E7E29C4759C007C072A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1086,6 +1105,7 @@
 				6AA7902529C567F100AEF580 /* HoneyComb */,
 				6AA7903029C5761500AEF580 /* MakePalindrome */,
 				6AA7903B29C58BA700AEF580 /* MathHomeworkAgain */,
+				6AA7905129C5BD5200AEF580 /* RobotCleaner */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1141,6 +1161,7 @@
 				6AA7902429C567F100AEF580 /* HoneyComb */,
 				6AA7902F29C5761500AEF580 /* MakePalindrome */,
 				6AA7903A29C58BA700AEF580 /* MathHomeworkAgain */,
+				6AA7905029C5BD5200AEF580 /* RobotCleaner */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1327,6 +1348,14 @@
 				6AA7903C29C58BA700AEF580 /* main.swift */,
 			);
 			path = MathHomeworkAgain;
+			sourceTree = "<group>";
+		};
+		6AA7905129C5BD5200AEF580 /* RobotCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				6AA7905229C5BD5200AEF580 /* main.swift */,
+			);
+			path = RobotCleaner;
 			sourceTree = "<group>";
 		};
 		6AA86E8229C4759D007C072A /* FindingFraction */ = {
@@ -2040,6 +2069,23 @@
 			productReference = 6AA7903A29C58BA700AEF580 /* MathHomeworkAgain */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AA7904F29C5BD5200AEF580 /* RobotCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA7905629C5BD5200AEF580 /* Build configuration list for PBXNativeTarget "RobotCleaner" */;
+			buildPhases = (
+				6AA7904C29C5BD5200AEF580 /* Sources */,
+				6AA7904D29C5BD5200AEF580 /* Frameworks */,
+				6AA7904E29C5BD5200AEF580 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotCleaner;
+			productName = RobotCleaner;
+			productReference = 6AA7905029C5BD5200AEF580 /* RobotCleaner */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AA86E8029C4759C007C072A /* FindingFraction */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA86E8729C4759D007C072A /* Build configuration list for PBXNativeTarget "FindingFraction" */;
@@ -2362,6 +2408,9 @@
 					6AA7903929C58BA700AEF580 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AA7904F29C5BD5200AEF580 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AA86E8029C4759C007C072A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -2461,6 +2510,7 @@
 				6AA7902329C567F100AEF580 /* HoneyComb */,
 				6AA7902E29C5761500AEF580 /* MakePalindrome */,
 				6AA7903929C58BA700AEF580 /* MathHomeworkAgain */,
+				6AA7904F29C5BD5200AEF580 /* RobotCleaner */,
 			);
 		};
 /* End PBXProject section */
@@ -2751,6 +2801,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA7903D29C58BA700AEF580 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA7904C29C5BD5200AEF580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA7905329C5BD5200AEF580 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3614,6 +3672,24 @@
 			};
 			name = Release;
 		};
+		6AA7905429C5BD5200AEF580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AA7905529C5BD5200AEF580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AA86E8529C4759D007C072A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4162,6 +4238,15 @@
 			buildConfigurations = (
 				6AA7903F29C58BA700AEF580 /* Debug */,
 				6AA7904029C58BA700AEF580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA7905629C5BD5200AEF580 /* Build configuration list for PBXNativeTarget "RobotCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA7905429C5BD5200AEF580 /* Debug */,
+				6AA7905529C5BD5200AEF580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
