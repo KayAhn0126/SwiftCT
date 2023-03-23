@@ -23,7 +23,12 @@
  3-2. 기존 큐가 끝나면 X의 위치가 들어있던 큐를 기존큐에 넣어준다.
  4. 3번이 한번씩 끝날때마다 날짜를 늘려주고, 백조끼리 만날 수 있는지 체크한다.
  
- 
+ */
+
+
+/*
+ 물은 물의 큐에서 시간에 지남에 따라 녹게 만들고
+ 백조는 X를 만난곳에서 계속 BFS를 한다. -> 시간이 점점 짧아진다. + visited는 continue해서 더 빨라진다.
  */
 import Foundation
 
@@ -53,67 +58,82 @@ for i in 0..<N {
     }
 }
 
-var meetVisited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
+var found = false // 백조가 다른 백조를 찾았는지??
 
-//MARK: meetVisited 초기화 함수
-func clearMeetVisited() {
-    meetVisited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
-}
+//MARK: 백조가 움직이는 것 관련
+var swanQueue: [(Int,Int)] = [], swanIdx = 0
+var nextSwanQueue: [(Int,Int)] = []
+var swanVisited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
 
-// 백조끼리 만날수 있는지 확인하는 DFS 함수 adjMatrix는 그대로 이용하되 이 함수 전용 visted 배열이 필요하다.
-// 이 함수는 체크 할 때, 인자로 하나의 백조(L)의 위치를 넣고 체크할 때는 다른 하나의 백조(L)의 위치가 1인지 체크해야한다.
-// 1 -> "도달 할 수 있다"라는 말
-func checkPossibleToMeet(_ y: Int, _ x: Int) {
-    meetVisited[y][x] = result
-    for i in 0..<4 {
-        let ny = y + dy[i]
-        let nx = x + dx[i]
-        if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
-        if meetVisited[ny][nx] == result { continue }
-        if adjMatrix[ny][nx] == "X" { continue }
-        checkPossibleToMeet(ny,nx)
+swanQueue.append((swanLocation[0].0, swanLocation[0].1))
+swanVisited[swanLocation[0].0][swanLocation[0].1] = 1
+
+
+func swanBFS() {
+    while swanIdx < swanQueue.count {
+        let swanLocation = swanQueue[swanIdx]; swanIdx += 1
+        for i in 0..<4 {
+            let ny = swanLocation.0 + dy[i]
+            let nx = swanLocation.1 + dx[i]
+            if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
+            if swanVisited[ny][nx] != 0 { continue }
+            
+            swanVisited[ny][nx] = 1
+            if adjMatrix[ny][nx] == "." {
+                swanQueue.append((ny,nx))
+            } else if adjMatrix[ny][nx] == "X" {
+                nextSwanQueue.append((ny,nx))
+            } else if adjMatrix[ny][nx] == "L" {
+                found = true
+                break
+            }
+        }
     }
 }
 
-var bfsQueue: [(Int,Int)] = [], idx = 0
-var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
 
-var tempQueue: [(Int,Int)] = []
-var result = 0
+//MARK: 물 주변의 얼음을 녹이는 과정
+var waterLocationQueue: [(Int,Int)] = [], waterIdx = 0
+var nextWaterLocationQueue: [(Int,Int)] = []
 
 // 물의 위치 넣어주기
 waterLocation.enumerated().forEach {
-    bfsQueue.append(($0.element.0, $0.element.1))
+    waterLocationQueue.append(($0.element.0, $0.element.1))
 }
 
 // 백조가 있는곳(물 위)도 물 !
 swanLocation.enumerated().forEach {
-    bfsQueue.append(($0.element.0, $0.element.1))
+    waterLocationQueue.append(($0.element.0, $0.element.1))
 }
 
-while true {
-    while idx < bfsQueue.count {
-        let currentYX = bfsQueue[idx]; idx += 1
+func waterMeltsIceBFS() {
+    while waterIdx < waterLocationQueue.count {
+        let currentYX = waterLocationQueue[waterIdx]; waterIdx += 1
         for i in 0..<4 {
             let ny = currentYX.0 + dy[i]
             let nx = currentYX.1 + dx[i]
             if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
-            if visited[ny][nx] > 0 { continue }
-            visited[ny][nx] = 1
             if adjMatrix[ny][nx] == "X" {
-                tempQueue.append((ny,nx))
+                nextWaterLocationQueue.append((ny,nx))
                 adjMatrix[ny][nx] = "."
             }
         }
     }
-    bfsQueue = tempQueue
-    idx = 0
-    tempQueue = []
-    result += 1
-    checkPossibleToMeet(swanLocation[0].0, swanLocation[0].1)
-    if meetVisited[swanLocation[1].0][swanLocation[1].1] > 0 {
-        break
+}
+
+
+var result = 0
+while found == false {
+    swanBFS()
+    if found == false {
+        waterMeltsIceBFS()
+        swanQueue = nextSwanQueue
+        swanIdx = 0
+        waterLocationQueue = nextWaterLocationQueue
+        waterIdx = 0
+        nextSwanQueue = []
+        nextWaterLocationQueue = []
+        result += 1
     }
-    //clearMeetVisited()
 }
 print(result)
