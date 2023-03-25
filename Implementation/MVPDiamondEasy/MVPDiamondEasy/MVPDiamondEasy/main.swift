@@ -37,6 +37,7 @@
  셋째달 -> 59만원
  다 더한 값 118이 답이다.
  */
+
 import Foundation
 
 extension String {
@@ -56,8 +57,7 @@ var testString = readLine()!
 var prevArr = [Int](repeating: 0, count: N)
 var prev: Int = 0
 
-
-
+// prevArr의 처음 값을 넣기위한 작업
 if testString[0] == "B" {
     prev = SGPD[0] - 1
 } else if testString[0] == "S" {
@@ -71,7 +71,7 @@ if testString[0] == "B" {
 }
 prevArr[0] = prev
 
-
+// 이전 값을 이용해서 현재달에 얼마를 썼는지 체크하는 로직
 for i in 1..<testString.count {
     if testString[i] == "B" {
         prevArr[i] = SGPD[0] - 1 - prev
@@ -87,7 +87,7 @@ for i in 1..<testString.count {
     prev = prevArr[i]
 }
 
-
+// prevArr를 반복하면서 최대 누적금액 계산
 var result = 0
 prevArr.enumerated().forEach {
     result += $0.element
