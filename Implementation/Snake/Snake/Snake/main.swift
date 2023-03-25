@@ -105,8 +105,8 @@ while true {
     }
     
     if turnStorage[time] != nil {
-        let secondDirectionTuple = turnStorage[time]
-        if secondDirectionTuple! == "D" {
+        let secondDirectionDictionary = turnStorage[time]
+        if secondDirectionDictionary! == "D" {
             currentDirection = (currentDirection + 1) % 4
         } else {
             currentDirection = (currentDirection + 3) % 4
