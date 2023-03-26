@@ -30,7 +30,6 @@ for i in 0..<N {
     total += num
 }
 
-
 var mostNum = 0
 var doubleCount = 0
 
@@ -39,7 +38,6 @@ for i in 0..<countingArr.count {
         doubleCount += 1
         mostNum = i - 4000
         if doubleCount == 2 {
-            mostNum = i - 4000
             break
         }
     }
@@ -51,6 +49,3 @@ print(Int(round(Double(total)/Double(N))))
 print(arr[arr.count/2])
 print(mostNum)
 print(arr[arr.count-1] - arr[0])
-
-
-
