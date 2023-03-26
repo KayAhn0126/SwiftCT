@@ -33,33 +33,32 @@ let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
 let N = NM[0] // 사람의 수
 let M = NM[1] // party 수
 
-
-
-
-// 기본적으로 주어진 "진실을 아는 사람들을 큐에 넣어서 (입 단속 리스트)에 넣는다."
-// 방지 리스트에 들어가면 이 리스트에 있는 사람들과 접촉하는 모든 사람들을 true로 만든다
+// 진실을 아는 사람들을 "떠벌이" 큐에 넣는다."
+// "떠벌이" 큐에 들어가면 이 리스트에 있는 사람들과 접촉하는 모든 사람들을 true로 만든다
 // 모든 파티를 돌면서 true인 사람이 하나라도 있다면 그 파티는 카운트하지 않는다.
 
+//MARK: 진실을 알고 있는 사람의 숫자와 누구누구가 알고 있는지 주어진다.
 let truthAndCount = readLine()!.split(separator: " ").map { Int(String($0))! }
 var queue = [Int](), idx = 0
 var truth = truthAndCount[0]
 
-// 진실을 알고 있는 사람이 아무도 없다면 지민이는 모든 파티에 갈 수 있다.
+//MARK: 진실을 알고 있는 사람이 아무도 없다면 지민이는 모든 파티에 갈 수 있다.
 if truth == 0 {
     print(M)
 } else {
+    //MARK: finalCheckArr는 각 파티 정보를 저장해 두었다가 나중에 지민이가 진실을 아는 사람들을 걸러내는 용도!
     var finalCheckArr = [[Int]](repeating: [Int](), count: M)
     var visited = [Bool](repeating: false, count: N + 1)
     var adjList = [[Int]](repeating: [Int](), count: N + 1)
 
-    //진실을 알고 있는 사람들을 큐에 넣어준다. 이 큐는
+    //진실을 알고 있는 사람들을 큐에 넣어준다.
     for i in 1..<truthAndCount.count {
         queue.append(truthAndCount[i])
         visited[truthAndCount[i]] = true
     }
 
     // 파티에 누가 오는지 입력받고 인접리스트를 활용해 접촉자 연관 짓기
-    // 처음에 연관이 없더라도 나중 파티에서 연관이 된다.
+    // 처음에 연관이 없더라도 나중에 다른 파티에서 연관이 된다.
     for i in 0..<M {
         let howManyPeopleAndWho = readLine()!.split(separator: " ").map { Int(String($0))! }
         let howManyPeople = howManyPeopleAndWho[0] // 몇명 오는지
@@ -73,7 +72,7 @@ if truth == 0 {
         }
     }
 
-    // 진실을 알고 있는 사람이 자신과 만난 사람에게 진실 퍼뜨리기
+    //MARK: 진실을 알고 있는 사람이 자신과 만난 사람에게 진실 퍼뜨리기
     while idx < queue.count {
         let current = queue[idx]; idx += 1
         for i in 0..<adjList[current].count {
@@ -84,6 +83,8 @@ if truth == 0 {
         }
     }
 
+    //MARK: 지민이가 파티 정보를 보고 진실이 있는 사람이 한명이라도 있으면 해당 파티를 가지 않는 로직.
+    // 반대로 한명도 없다면 그 파티는 카운트한다.
     var result = 0
     for i in 0..<finalCheckArr.count {
         var flag = true
@@ -98,14 +99,3 @@ if truth == 0 {
     }
     print(result)
 }
-
-
-
-
-
-
-
-
-
-
-
