@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0B5D1329D30C24006F624D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B5D1229D30C24006F624D /* main.swift */; };
 		6A22F3BA29A6035D0073E2E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A22F3B929A6035D0073E2E1 /* main.swift */; };
 		6A22F3C529A638CC0073E2E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A22F3C429A638CC0073E2E1 /* main.swift */; };
 		6A2B5896299255B000752F1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B5895299255B000752F1C /* main.swift */; };
@@ -60,6 +61,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6A0B5D0E29D30C23006F624D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6A22F3B529A6035D0073E2E1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +523,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A0B5D1029D30C23006F624D /* HideAndSeek4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HideAndSeek4; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0B5D1229D30C24006F624D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A22F3B729A6035D0073E2E1 /* Cheese */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cheese; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A22F3B929A6035D0073E2E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A22F3C229A638CC0073E2E1 /* Tomato */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tomato; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -616,6 +628,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A0B5D0D29D30C23006F624D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A22F3B429A6035D0073E2E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -969,6 +988,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0B5D1129D30C24006F624D /* HideAndSeek4 */ = {
+			isa = PBXGroup;
+			children = (
+				6A0B5D1229D30C24006F624D /* main.swift */,
+			);
+			path = HideAndSeek4;
+			sourceTree = "<group>";
+		};
 		6A22F3B829A6035D0073E2E1 /* Cheese */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1153,7 @@
 				6AA7903B29C58BA700AEF580 /* MathHomeworkAgain */,
 				6AA7905129C5BD5200AEF580 /* RobotCleaner */,
 				6AC314ED29CEBEF900A4B074 /* SharingSnack */,
+				6A0B5D1129D30C24006F624D /* HideAndSeek4 */,
 				6A73506D2985580D001F0255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1183,6 +1211,7 @@
 				6AA7903A29C58BA700AEF580 /* MathHomeworkAgain */,
 				6AA7905029C5BD5200AEF580 /* RobotCleaner */,
 				6AC314EC29CEBEF900A4B074 /* SharingSnack */,
+				6A0B5D1029D30C23006F624D /* HideAndSeek4 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1486,6 +1515,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A0B5D0F29D30C23006F624D /* HideAndSeek4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0B5D1629D30C24006F624D /* Build configuration list for PBXNativeTarget "HideAndSeek4" */;
+			buildPhases = (
+				6A0B5D0C29D30C23006F624D /* Sources */,
+				6A0B5D0D29D30C23006F624D /* Frameworks */,
+				6A0B5D0E29D30C23006F624D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HideAndSeek4;
+			productName = HideAndSeek4;
+			productReference = 6A0B5D1029D30C23006F624D /* HideAndSeek4 */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A22F3B629A6035D0073E2E1 /* Cheese */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A22F3BD29A6035D0073E2E1 /* Build configuration list for PBXNativeTarget "Cheese" */;
@@ -2346,6 +2392,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					6A0B5D0F29D30C23006F624D = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A22F3B629A6035D0073E2E1 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -2561,11 +2610,20 @@
 				6AA7903929C58BA700AEF580 /* MathHomeworkAgain */,
 				6AA7904F29C5BD5200AEF580 /* RobotCleaner */,
 				6AC314EB29CEBEF900A4B074 /* SharingSnack */,
+				6A0B5D0F29D30C23006F624D /* HideAndSeek4 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A0B5D0C29D30C23006F624D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0B5D1329D30C24006F624D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A22F3B329A6035D0073E2E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2969,6 +3027,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6A0B5D1429D30C24006F624D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A0B5D1529D30C24006F624D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6A22F3BB29A6035D0073E2E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3985,6 +4061,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A0B5D1629D30C24006F624D /* Build configuration list for PBXNativeTarget "HideAndSeek4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0B5D1429D30C24006F624D /* Debug */,
+				6A0B5D1529D30C24006F624D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A22F3BD29A6035D0073E2E1 /* Build configuration list for PBXNativeTarget "Cheese" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
