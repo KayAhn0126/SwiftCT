@@ -68,11 +68,11 @@ if N == K {
                     nextNumber *= 2
                 }
                 if nextNumber < 0 || nextNumber > 200000 { continue }
-                if visited[nextNumber] == 0 {
+                if visited[nextNumber] == 0 { // 아직 방문하지 않았다는 뜻은 이제 처음으로 방문 할 것이란 뜻이고 이 말은 지금 visited[nextNumber]에 저장되는 값이 최단거리가 된다는 뜻이다.
                     visited[nextNumber] = visited[currentNumber] + 1
                     waysToFind[nextNumber] += waysToFind[currentNumber]
                     bfsQueue.enqueue(nextNumber)
-                } else if visited[nextNumber] == visited[currentNumber] + 1 {
+                } else if visited[nextNumber] == visited[currentNumber] + 1 {  // if문을 안탔다는것은 이미 전에 방문했었다는 뜻. 다시 방문하는데 "다른 경로로 방문해도 최단거리라면" 찾을수 있는 방법의 수를 늘려준다.
                     waysToFind[nextNumber] += waysToFind[currentNumber]
                 }
                 
@@ -83,6 +83,3 @@ if N == K {
     print(waysToFind[K])
 }
 ```
-## 🍎 신경써야 하는 부분
-- 방문을 안했을 때와 방문했었을 때를 다르게 구해야한다.
-    - 방문했을때는 현재 방문하는 경로가 최단경로일 때만 가지 수에 더해준다.
