@@ -10,11 +10,6 @@
  문자 해독
  */
 
-/*
- 특정 문자들이 주어지고 어떤 문자열에서 있을수 있는 모든 경우의 수를 계산하면 된다.
- W와 S가 주어진다.
- 
- */
 import Foundation
 
 extension String {
