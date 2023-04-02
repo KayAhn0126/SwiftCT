@@ -10,10 +10,6 @@
  완전 이진 트리
  */
 
-/*
- 패턴이 있다.
- 
- */
 import Foundation
 
 let N = Int(readLine()!)!
