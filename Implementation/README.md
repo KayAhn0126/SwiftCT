@@ -20,7 +20,7 @@
 | [공](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Ball) | 시뮬레이션 | [1547](https://www.acmicpc.net/problem/1547) |
 | [ATM](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ATM) | 구현 및 정렬 | [11399](https://www.acmicpc.net/problem/11399) |
 | [단어 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/WordSort) | 구현 및 정렬 | [1181](https://www.acmicpc.net/problem/1181) |
-
+| [나이순 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SortByAge)| 구현 및 정렬 | [10814](https://www.acmicpc.net/problem/10814)|
 
 
 ## 🍎 Normal
@@ -46,6 +46,7 @@
 | [톱니바퀴2](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear2) | 시뮬레이션 | [15662](https://www.acmicpc.net/problem/15662) |
 | [뱀](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Snake) | 시뮬레이션, 큐 | [3190](https://www.acmicpc.net/problem/3190) |
 | [괄호 추가하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AddingParenthesis) | 구현, 브루트포스 | [16637](https://www.acmicpc.net/problem/16637) |
+| [문자해독](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/StringDecryption) | 슬라이딩 윈도우, 문자열 | [1593](https://www.acmicpc.net/problem/1593) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)
