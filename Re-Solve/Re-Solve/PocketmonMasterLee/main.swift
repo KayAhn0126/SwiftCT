@@ -1,31 +1,23 @@
-//
-//  main.swift
-//  PocketmonMasterLee
-//
-//  Created by Kay on 2023/02/02.
-//
-
 import Foundation
 
-let userInput = readLine()!.split(separator: " ").map { Int(String($0))! }
-let total = userInput[0]
-let ask = userInput[1]
+let totalPickNumber = readLine()!.split(separator: " ").map { Int(String($0))! }
+let total = totalPickNumber[0]
+let pick = totalPickNumber[1]
 
-var dictionaryStringInt: [String : Int] = [:]
-var dictionaryIntString: [Int : String] = [:]
+var nameNum: [String: Int] = [:]
+var numName: [Int: String] = [:]
 
-for order in 1...total {
-    let name = readLine()!
-    dictionaryStringInt[name] = order
-    dictionaryIntString[order] = name
+for i in 1...total {
+    let temp = readLine()!
+    nameNum[temp] = i
+    numName[i] = temp
 }
 
-for _ in 0..<ask {
-    let question = readLine()!
-    if Int(question) == nil {
-        print(dictionaryStringInt[question]!)
+for i in 0..<pick {
+    let temp = readLine()!
+    if Int(temp) == nil {
+        print(nameNum[temp]!)
     } else {
-        print(dictionaryIntString[Int(question)!]!)
+        print(numName[Int(temp)!]!)
     }
 }
-
