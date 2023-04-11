@@ -1,42 +1,29 @@
-//
-//  main.swift
-//  TruckParking
-//
-//  Created by Kay on 2023/01/28.
-//
-
-/*
- 2979
- 트럭 주차
- */
-
 import Foundation
 
-let ABC = readLine()!.split(separator: " ").map { Int(String($0))! }
+let arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+let a = arr[0]
+let b = arr[1]
+let c = arr[2]
 
-let A = ABC[0]
-let B = ABC[1]
-let C = ABC[2]
-
-var fare = [Int](repeating: 0, count: 101)
+var timeArr = [Int](repeating: 0, count: 101)
 for _ in 0..<3 {
-    let times = readLine()!.split(separator: " ").map { Int(String($0))! }
-    let arrive = times[0]
-    let departure = times[1]
-    for i in arrive..<departure {
-        fare[i] += 1
+    let time = readLine()!.split(separator: " ").map { Int(String($0))! }
+    let from = time[0]
+    let to = time[1]
+    for j in from..<to {
+        timeArr[j] += 1
     }
 }
-
-var total = 0
-
-fare.enumerated().forEach {
-    if $0.element == 1 {
-        total += A
-    } else if $0.element == 2 {
-        total += B * 2
-    } else if $0.element == 3 {
-        total += C * 3
+var result = 0
+for i in timeArr {
+    if i == 0 {
+        continue
+    } else if i == 1 {
+        result += (a * 1)
+    } else if i == 2 {
+        result += (b * 2)
+    } else if i == 3 {
+        result += (c * 3)
     }
 }
-print(total)
+print(result)
