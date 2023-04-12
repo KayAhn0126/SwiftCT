@@ -1,42 +1,34 @@
-//
-//  main.swift
-//  FrequencySort
-//
-//  Created by Kay on 2023/02/03.
-//
-
 import Foundation
 
-let userInput = readLine()!.split(separator: " ").map { Int(String($0))! }
+let NC = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NC[0]
+let C = NC[1]
 
-let N = userInput[0]
-let C = userInput[1]
+var arr = [Int](readLine()!.split(separator: " ").map { Int(String($0))! })
 
-let numbersArr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dictionary: [Int: (Int, Int)] = [:]
 
-var info: [Int:(Int, Int)] = [:] // [숫자 : (처음나온 인덱스, 빈도)]
-for i in 0..<N {
-    if info[numbersArr[i]] == nil {
-        info[numbersArr[i]] = (i,1)
+arr.enumerated().forEach {
+    if dictionary[$0.element] == nil {
+        dictionary[$0.element] = ($0.offset, 1)
     } else {
-        let indexAndFrequency = info[numbersArr[i]]!
-        let index = indexAndFrequency.0
-        let frequency = indexAndFrequency.1 + 1
-        info[numbersArr[i]] = (index, frequency)
+        let index = dictionary[$0.element]!.0
+        let count = dictionary[$0.element]!.1
+        dictionary[$0.element]! = (index, count + 1)
     }
 }
-
-//print(info)
-
-var result = ""
-info.sorted(by: {
+var result = [Int]()
+dictionary.sorted(by: {
     if $0.value.1 == $1.value.1 {
         return $0.value.0 < $1.value.0
     }
     return $0.value.1 > $1.value.1
 }).forEach {
     for _ in 0..<$0.value.1 {
-        result += String($0.key) + " "
+        result.append($0.key)
     }
 }
-print(result)
+result.enumerated().forEach {
+    print($0.element, terminator: " ")
+}
+print("")
