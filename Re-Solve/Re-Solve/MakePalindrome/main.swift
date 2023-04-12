@@ -1,65 +1,46 @@
-//
-//  main.swift
-//  MakePalindrome
-//
-//  Created by Kay on 2023/03/18.
-//
-
-/*
- 1213
- 팰린드롬 만들기 다시 풀기
- */
-
-/*
- 홀수인 문자가 2개 이상이면 안된다.
- 
- */
-
 import Foundation
 
-extension String {
-    subscript(idx: Int) -> Character? {
-        guard(0..<count).contains(idx) else { return nil }
-        let target = index(startIndex, offsetBy: idx)
-        return self[target]
-    }
-}
-
-var testString = readLine()!
+let temp = readLine()!
 
 var arr = [Int](repeating: 0, count: 26)
-var middleChar = ""
-// 계수 정렬
-for i in 0..<testString.count {
-    arr[Int(testString[i]!.asciiValue!) - 65] += 1
+
+for i in temp {
+    arr[Int(i.asciiValue!) - 65] += 1
 }
 
-var oddCount = 0
-var offset = 0
-arr.enumerated().forEach {
-    if $0.element % 2 != 0 {
-        oddCount += 1
-        middleChar = String(UnicodeScalar($0.offset + 65)!)
-        offset = $0.offset
+var flag = false
+var count = 0
+for i in arr {
+    if i % 2 != 0 {
+        count += 1
+        if count == 2 {
+            flag = true
+        }
     }
 }
-
-if oddCount > 1 {
+if flag == true {
     print("I'm Sorry Hansoo")
 } else {
     var result = ""
-    for i in stride(from: 25, through: 0, by: -1) {
-        if i == offset {
+    var myChar: Character = " "
+    var oneMoreFlag = false
+    for i in stride(from: 25, to: -1, by: -1) {
+        if arr[i] % 2 != 0 {
+            myChar = Character(UnicodeScalar(i + 65)!)
+            oneMoreFlag = true
             arr[i] -= 1
         }
         for _ in stride(from: 0, to: arr[i], by: 2) {
             result += String(UnicodeScalar(i + 65)!)
-            result = String(UnicodeScalar(i + 65)!) + result
+            result = String(result.reversed()) + String(UnicodeScalar(i + 65)!)
         }
     }
-    let middleIndex = result.count / 2
-    if !middleChar.isEmpty {
-        result.insert(Character(middleChar), at: result.index(result.startIndex, offsetBy: middleIndex))
+    if oneMoreFlag == true {
+        let index = result.index(result.startIndex, offsetBy: Int(result.count / 2))
+        result.insert(myChar, at: index)
+        print(result)
+    } else {
+        print(result)
     }
-    print(result)
 }
+
