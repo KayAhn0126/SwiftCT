@@ -1,70 +1,50 @@
-//
-//  main.swift
-//  PronouncePassword
-//
-//  Created by Kay on 2023/02/03.
-//
-
-/*
- 4659
- 비밀번호 발음하기
- */
-
 import Foundation
 
-extension String {
-    subscript(idx: Int) -> Character? {
-        guard (0..<count).contains(idx) else { return nil }
-        let target = index(startIndex, offsetBy: idx)
-        return self[target]
-    }
-}
-func checkVowel(_ char: Character) -> Bool {
+
+
+
+func checkIfItsVowel(_ char: Character) -> Bool {
     if char == "a" || char == "e" || char == "i" || char == "o" || char == "u" {
         return true
     }
     return false
 }
 
-func checkGoodPassword(_ element: String) {
-    var vowelContinousCounter = 0
-    var consonantContinousCounter = 0
-    var totalVowelCounter = 0
-    var previousLetter: Character = " "
-    var flag = true
-    for i in 0..<element.count {
-        if String(previousLetter) == String(element[i]!) {
-            var totalString = String(previousLetter) + String(element[i]!)
-            if totalString != "ee" && totalString != "oo" {
-                flag = false
-            }
-        }
-        previousLetter = element[i]!
-        if checkVowel(element[i]!) {
-            vowelContinousCounter += 1
-            if vowelContinousCounter == 3 {
-                flag = false
-            }
-            consonantContinousCounter = 0
-            totalVowelCounter += 1
-        } else {
-            consonantContinousCounter += 1
-            if consonantContinousCounter == 3 {
-                flag = false
-            }
-            vowelContinousCounter = 0
-        }
-    }
-    if flag == true && totalVowelCounter >= 1 {
-        print("<\(element)> is acceptable.")
-    } else {
-        print("<\(element)> is not acceptable.")
-    }
-}
-
-while let test = readLine() {
-    if test == "end" {
+while true {
+    let temp = readLine()!
+    if temp == "end" {
         break
     }
-    checkGoodPassword(test)
+    // 모음 자음 3개 연속
+    var vowelStrikeCount = 0
+    var consonantStrikeCount = 0
+    var notOkFlag = false
+    var previousChar: Character = " "
+    var atLeastOneVowelFlag = false
+    for i in temp {
+        if i == previousChar {
+            if i != "e" && i != "o" {
+                notOkFlag = true
+                break
+            }
+        }
+        if checkIfItsVowel(i) == true {
+            vowelStrikeCount += 1
+            consonantStrikeCount = 0
+            atLeastOneVowelFlag = true
+        } else {
+            consonantStrikeCount += 1
+            vowelStrikeCount = 0
+        }
+        if vowelStrikeCount == 3 || consonantStrikeCount == 3 {
+            notOkFlag = true
+            break
+        }
+        previousChar = i
+    }
+    if notOkFlag == true  || atLeastOneVowelFlag == false {
+        print("<\(temp)> is not acceptable.")
+    } else {
+        print("<\(temp)> is acceptable.")
+    }
 }
