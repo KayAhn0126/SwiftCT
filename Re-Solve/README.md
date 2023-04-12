@@ -20,7 +20,7 @@
 | [단어 정렬](https://www.acmicpc.net/problem/1181) | 🟥 | | | | |
 | [나이순 정렬](https://www.acmicpc.net/problem/10814)| 🟥 | | | | |
 | [팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | 🟥 | | | | |
-| [곱셈](https://www.acmicpc.net/problem/1629) | | | | | |
+| [곱셈](https://www.acmicpc.net/problem/1629) | 🟥 | | | | |
 | [빈도 정렬](https://www.acmicpc.net/problem/2910) | | | | | |
 | [수학 숙제](https://www.acmicpc.net/problem/2870) | | | | | |
 | [교수가 된 현우](https://www.acmicpc.net/problem/3474) | | | | | |
