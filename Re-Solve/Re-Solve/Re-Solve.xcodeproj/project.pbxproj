@@ -62,6 +62,7 @@
 		6AD31A3A29AB4BD30093E4B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD31A3929AB4BD30093E4B3 /* main.swift */; };
 		6AFA3F6229E6BD3300D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F6129E6BD3300D4934A /* main.swift */; };
 		6AFA3F6D29E6C0CD00D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F6C29E6C0CD00D4934A /* main.swift */; };
+		6AFA3F7829E6C26200D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F7729E6C26200D4934A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -560,6 +561,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AFA3F7329E6C26100D4934A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -673,6 +683,8 @@
 		6AFA3F6129E6BD3300D4934A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AFA3F6A29E6C0CD00D4934A /* WordSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFA3F6C29E6C0CD00D4934A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AFA3F7529E6C26100D4934A /* SortByAge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortByAge; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFA3F7729E6C26200D4934A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1061,6 +1073,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AFA3F7229E6C26100D4934A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1187,62 +1206,63 @@
 		6A7350632985580D001F0255 = {
 			isa = PBXGroup;
 			children = (
-				6A73506E2985580D001F0255 /* Re-Solve */,
-				6A73507B29855836001F0255 /* CountingAlphabet */,
-				6A735086298561C0001F0255 /* TruckParking */,
-				6A73509129856C10001F0255 /* BasketBallGame */,
-				6A513B8F298AA83400CD22D6 /* ROT13 */,
-				6A9A04BC298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
-				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
-				6A9A04E5298B8E7A00430218 /* GoodWord */,
-				6A9A04F0298BFC8000430218 /* Multiply */,
-				6A9A04FB298C089800430218 /* FrequencySort */,
-				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
-				6A7C4BAB298CDD2F00B5F6BA /* MathHomework */,
-				6AB2DD17298D15DA00C7831C /* WeatherCaster */,
-				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
-				6AB2DD2D298D38A400C7831C /* One */,
-				6AB2DD38298D452400C7831C /* NBABasketBall */,
-				6AB2DD43298D4C2600C7831C /* BreakEvenPoint */,
-				6AB2DD78298D4FDD00C7831C /* Sequence */,
-				6A2B5894299255B000752F1C /* SumOfIntervals4 */,
-				6A2B589F29925C2A00752F1C /* FashionKing */,
-				6A2B58AA29926C7E00752F1C /* QuadTree */,
 				6A2B58B529928A5500752F1C /* ApplePickingGame */,
-				6AB8175529978170009C0AE8 /* RightBiggerNumber */,
-				6AB8176029979A4D009C0AE8 /* DirectorShhom */,
-				6AB8176B2997A201009C0AE8 /* ChickenDelivery */,
-				6A495A0C2998A7CE006D0385 /* Parenthesis */,
-				6A495A172998DB7D006D0385 /* BalancedWorld */,
-				6A495A222998F2F5006D0385 /* Tree */,
-				6A495A2D29991B48006D0385 /* MazeSearch */,
-				6A495A3829992ADC006D0385 /* Cabbage */,
-				6A90C73B2999EBA8002AFB10 /* SafeArea */,
-				6A8E5871299E2C8400E231DB /* MeasureArea */,
-				6A8E587C299E45AF00E231DB /* DFSBFS */,
-				6AB64BBD299E65E50074D213 /* Laboratory */,
-				6A22F3B829A6035D0073E2E1 /* Cheese */,
-				6A22F3C329A638CC0073E2E1 /* Tomato */,
-				6AD31A3829AB4BD30093E4B3 /* Fire */,
-				6A87083429B5B89A000F09CA /* PopulationMovement */,
-				6A8709DD29C41F8500F65F98 /* RightBiggerNumberAgain */,
-				6A8709E829C442FC00F65F98 /* MakeToOne */,
-				6A92B3E229C44F71005DBF5A /* Ball */,
-				6AA86E8229C4759D007C072A /* FindingFraction */,
-				6A35B2BC29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */,
-				6AA7900F29C559C700AEF580 /* FrequencySortAgain */,
-				6AA7901A29C5635200AEF580 /* GoodWordAgain */,
-				6AA7902529C567F100AEF580 /* HoneyComb */,
-				6AA7903029C5761500AEF580 /* MakePalindrome */,
-				6AA7903B29C58BA700AEF580 /* MathHomeworkAgain */,
-				6AA7905129C5BD5200AEF580 /* RobotCleaner */,
-				6AC314ED29CEBEF900A4B074 /* SharingSnack */,
-				6A0B5D1129D30C24006F624D /* HideAndSeek4 */,
-				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
-				6A69B9CB29E5B27B00F8F0F4 /* ExamViewer */,
 				6AFA3F6029E6BD3300D4934A /* ATM */,
-				6AFA3F6B29E6C0CD00D4934A /* WordSort */,
+				6A495A172998DB7D006D0385 /* BalancedWorld */,
+				6A92B3E229C44F71005DBF5A /* Ball */,
+				6A73509129856C10001F0255 /* BasketBallGame */,
+				6AB2DD43298D4C2600C7831C /* BreakEvenPoint */,
+				6A495A3829992ADC006D0385 /* Cabbage */,
+				6A22F3B829A6035D0073E2E1 /* Cheese */,
+				6AB8176B2997A201009C0AE8 /* ChickenDelivery */,
+				6A73507B29855836001F0255 /* CountingAlphabet */,
+				6A8E587C299E45AF00E231DB /* DFSBFS */,
+				6AB8176029979A4D009C0AE8 /* DirectorShhom */,
+				6A69B9CB29E5B27B00F8F0F4 /* ExamViewer */,
+				6A2B589F29925C2A00752F1C /* FashionKing */,
+				6AA86E8229C4759D007C072A /* FindingFraction */,
+				6AD31A3829AB4BD30093E4B3 /* Fire */,
+				6A9A04FB298C089800430218 /* FrequencySort */,
+				6AA7900F29C559C700AEF580 /* FrequencySortAgain */,
+				6A9A04E5298B8E7A00430218 /* GoodWord */,
+				6AA7901A29C5635200AEF580 /* GoodWordAgain */,
+				6A0B5D1129D30C24006F624D /* HideAndSeek4 */,
+				6AA7902529C567F100AEF580 /* HoneyComb */,
+				6AB64BBD299E65E50074D213 /* Laboratory */,
+				6AA7903029C5761500AEF580 /* MakePalindrome */,
+				6A8709E829C442FC00F65F98 /* MakeToOne */,
+				6A7C4BAB298CDD2F00B5F6BA /* MathHomework */,
+				6AA7903B29C58BA700AEF580 /* MathHomeworkAgain */,
+				6A495A2D29991B48006D0385 /* MazeSearch */,
+				6A8E5871299E2C8400E231DB /* MeasureArea */,
+				6A9A04F0298BFC8000430218 /* Multiply */,
+				6AB2DD38298D452400C7831C /* NBABasketBall */,
+				6AB2DD2D298D38A400C7831C /* One */,
+				6A495A0C2998A7CE006D0385 /* Parenthesis */,
+				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
+				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
+				6A87083429B5B89A000F09CA /* PopulationMovement */,
+				6AFA3F7629E6C26200D4934A /* SortByAge */,
 				6A73506D2985580D001F0255 /* Products */,
+				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
+				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
+				6A2B58AA29926C7E00752F1C /* QuadTree */,
+				6A73506E2985580D001F0255 /* Re-Solve */,
+				6AB8175529978170009C0AE8 /* RightBiggerNumber */,
+				6A8709DD29C41F8500F65F98 /* RightBiggerNumberAgain */,
+				6AA7905129C5BD5200AEF580 /* RobotCleaner */,
+				6A513B8F298AA83400CD22D6 /* ROT13 */,
+				6A90C73B2999EBA8002AFB10 /* SafeArea */,
+				6AB2DD78298D4FDD00C7831C /* Sequence */,
+				6AC314ED29CEBEF900A4B074 /* SharingSnack */,
+				6A2B5894299255B000752F1C /* SumOfIntervals4 */,
+				6A22F3C329A638CC0073E2E1 /* Tomato */,
+				6A495A222998F2F5006D0385 /* Tree */,
+				6A735086298561C0001F0255 /* TruckParking */,
+				6AB2DD17298D15DA00C7831C /* WeatherCaster */,
+				6A9A04BC298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
+				6A35B2BC29C4AF67001F43C5 /* WhenIMissKoreaConnectToServerAgain */,
+				6AFA3F6B29E6C0CD00D4934A /* WordSort */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1304,6 +1324,7 @@
 				6A69B9CA29E5B27B00F8F0F4 /* ExamViewer */,
 				6AFA3F5F29E6BD3200D4934A /* ATM */,
 				6AFA3F6A29E6C0CD00D4934A /* WordSort */,
+				6AFA3F7529E6C26100D4934A /* SortByAge */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1626,6 +1647,14 @@
 				6AFA3F6C29E6C0CD00D4934A /* main.swift */,
 			);
 			path = WordSort;
+			sourceTree = "<group>";
+		};
+		6AFA3F7629E6C26200D4934A /* SortByAge */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA3F7729E6C26200D4934A /* main.swift */,
+			);
+			path = SortByAge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2566,6 +2595,23 @@
 			productReference = 6AFA3F6A29E6C0CD00D4934A /* WordSort */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AFA3F7429E6C26100D4934A /* SortByAge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AFA3F7929E6C26200D4934A /* Build configuration list for PBXNativeTarget "SortByAge" */;
+			buildPhases = (
+				6AFA3F7129E6C26100D4934A /* Sources */,
+				6AFA3F7229E6C26100D4934A /* Frameworks */,
+				6AFA3F7329E6C26100D4934A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortByAge;
+			productName = SortByAge;
+			productReference = 6AFA3F7529E6C26100D4934A /* SortByAge */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2741,6 +2787,9 @@
 					6AFA3F6929E6C0CD00D4934A = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AFA3F7429E6C26100D4934A = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A7350672985580D001F0255 /* Build configuration list for PBXProject "Re-Solve" */;
@@ -2811,6 +2860,7 @@
 				6A69B9C929E5B27B00F8F0F4 /* ExamViewer */,
 				6AFA3F5E29E6BD3200D4934A /* ATM */,
 				6AFA3F6929E6C0CD00D4934A /* WordSort */,
+				6AFA3F7429E6C26100D4934A /* SortByAge */,
 			);
 		};
 /* End PBXProject section */
@@ -3253,6 +3303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AFA3F6D29E6C0CD00D4934A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AFA3F7129E6C26100D4934A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFA3F7829E6C26200D4934A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4362,6 +4420,24 @@
 			};
 			name = Release;
 		};
+		6AFA3F7A29E6C26200D4934A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AFA3F7B29E6C26200D4934A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4865,6 +4941,15 @@
 			buildConfigurations = (
 				6AFA3F6F29E6C0CD00D4934A /* Debug */,
 				6AFA3F7029E6C0CD00D4934A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AFA3F7929E6C26200D4934A /* Build configuration list for PBXNativeTarget "SortByAge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AFA3F7A29E6C26200D4934A /* Debug */,
+				6AFA3F7B29E6C26200D4934A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
