@@ -1,66 +1,45 @@
-//
-//  main.swift
-//  MathHomework
-//
-//  Created by Kay on 2023/02/03.
-//
-
-/*
- 2870
- 수학 숙제
- */
-
-// 1. 문자열을 받는다.
-// 2. 반복문을 돌면서 숫자라고 판단되면 넣는다.
-// 3. 앞의 자리가 0인것들을 삭제하는 함수 만든다.
-// 4. 정상적인 숫자가 되었다면 배열에 넣는다.
-// 5. 결과 배열을 오름차순으로 정렬 후 출력.
-
-// 주의!
-// 처음엔 정수로 풀었는데 입력을 보니 각 줄은 최대 100글자이므로 String으로 풀어야 함
 import Foundation
 
-let testCase = Int(readLine()!)!
-var result = [String]()
+let number = Int(readLine()!)!
 
-func trim(_ element: String) {
-    var trimmedString = element
-    while trimmedString.hasPrefix("0") {
-        if trimmedString.count == 1 {
-            result.append(trimmedString)
-            return
+func removeZeroes(_ numInString: String) -> String {
+    var x = numInString
+    while x.first! == "0" {
+        if x.count == 1 {
+            return x
         }
-        trimmedString = String(trimmedString.dropFirst())
+        x.removeFirst()
     }
-    result.append(trimmedString)
+    return x
 }
 
-if 1 <= testCase && testCase <= 100 {
-    for _ in 0..<testCase {
-        let testString = readLine()!
-        var tempStoreDigits = ""
-        for i in testString {
-            let asciiValue = Int(i.asciiValue!)
-            if 48 <= asciiValue && asciiValue <= 57 {
-                tempStoreDigits += String(i)
+var result = [String]()
+
+for i in 0..<number {
+    let temp = readLine()!
+    var store = ""
+    for j in temp {
+        if 97 <= j.asciiValue! && j.asciiValue! <= 122 {
+            if store.isEmpty == true {
+                continue
             } else {
-                if !tempStoreDigits.isEmpty {
-                    trim(tempStoreDigits)
-                    tempStoreDigits = ""
-                }
+                result.append(removeZeroes(store))
+                store = ""
             }
-        }
-        if !tempStoreDigits.isEmpty {
-            trim(tempStoreDigits)
+        } else {
+            store += String(j)
         }
     }
-    
-    result.sorted(by: {
-        if $0.count == $1.count {
-            return $0 < $1
-        }
-        return $0.count < $1.count
-    }).enumerated().forEach {
-        print($0.element)
+    if store.isEmpty == false {
+        result.append(removeZeroes(store))
     }
+}
+
+result.sorted(by: {
+    if $0.count == $1.count {
+        return $0 < $1
+    }
+    return $0.count < $1.count
+}).forEach {
+    print($0)
 }
