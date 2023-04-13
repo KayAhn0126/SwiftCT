@@ -1,14 +1,24 @@
 # DP List
+
+## 🍎 Easy
+| 제목 | 키워드 | 풀어보기 |
+| :-: | :-: | :-: |
+| [피보나치 수 1](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/FibonacciNumber) | bottom - up | [24416](https://www.acmicpc.net/problem/24416) |
+| [01타일](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile) | bottom - up | [1904](https://www.acmicpc.net/problem/1904) |
+| [1로 만들기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/MakeToOne) | 순서가 중요한 DP | [1463](https://www.acmicpc.net/problem/1463) |
+| [신나는 함수 실행](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ExcitingFunctionExecution) | 메모이제이션 | [9184](https://www.acmicpc.net/problem/9184) |
+| [파도반 수열](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/PadovanSequence) | 패턴 찾기 + bottom - up | [9461](https://www.acmicpc.net/problem/9461) |
+| [연속합](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ConsecutiveSum) | 합이 최대인 부분배열 구하기 | [1912](https://www.acmicpc.net/problem/1912) |
+
+## 🍎 Normal
+| 제목 | 키워드 | 풀어보기 |
+| :-: | :-: | :-: |
+
+## 🍎 Hard
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
 | [퇴사](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Quit) | dp | [14501](https://www.acmicpc.net/problem/14501) |
-| [연속합](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ConsecutiveSum) | 합이 최대인 부분배열 구하기 | [1912](https://www.acmicpc.net/problem/1912) |
-| [피보나치 수 1](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/FibonacciNumber) | bottom - up | [24416](https://www.acmicpc.net/problem/24416) |
-| [신나는 함수 실행](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ExcitingFunctionExecution) | 메모이제이션 | [9184](https://www.acmicpc.net/problem/9184) |
-| [01타일](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile) | bottom - up | [1904](https://www.acmicpc.net/problem/1904) |
-| [파도반 수열](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/PadovanSequence) | 패턴 찾기 + bottom - up | [9461](https://www.acmicpc.net/problem/9461) |
 | [계단 오르기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ClimbingStairs) | 규칙에 맞게 구현 + bottom - up | [2579](https://www.acmicpc.net/problem/2579) |
-| [1로 만들기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/MakeToOne) | 순서가 중요한 DP | [1463](https://www.acmicpc.net/problem/1463) |
 | [RGB거리](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/RGBStreet) | 구현 및 DP | [1149](https://www.acmicpc.net/problem/1149) |
 | [RGB거리2](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/RGBStreet2) | 구현 및 DP | [17404](https://www.acmicpc.net/problem/17404) |
 
