@@ -1,37 +1,22 @@
-//
-//  main.swift
-//  SumOfIntervals4
-//
-//  Created by Kay on 2023/02/07.
-//
-
-/*
- 11659
- 구간 합 구하기 4
- */
-
 import Foundation
 
-let NK = readLine()!.split(separator: " ").map { Int(String($0))! }
-let N = NK[0]
-let K = NK[1]
+let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NM[0]
+let M = NM[1]
 
-var numList = readLine()!.split(separator: " ").map { Int(String($0))! }
-numList.insert(0, at: 0)
-var psum = [Int](repeating: 0, count: N + 1)
-
+var arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var prefixSum = [Int](repeating: 0, count: N + 1)
+arr.insert(0, at: 0)
 
 for i in 1...N {
-    psum[i] = psum[i-1] + numList[i]
+    prefixSum[i] = prefixSum[i-1] + arr[i]
 }
 
-func calculate(_ from: Int, _ to: Int) -> Int {
-    return psum[to] - psum[from-1]
+func findFromTo(_ from: Int, _ to: Int) -> Int {
+    return prefixSum[to] - prefixSum[from-1]
 }
 
-for i in 0..<K {
-    let test = readLine()!.split(separator: " ").map { Int(String($0))! }
-    print(calculate(test[0], test[1]))
+for i in 0..<M {
+    let fromTo = readLine()!.split(separator: " ").map { Int(String($0))! }
+    print(findFromTo(fromTo[0], fromTo[1]))
 }
-
-// 9분 25초
