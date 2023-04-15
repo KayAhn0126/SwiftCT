@@ -1,30 +1,27 @@
-//
-//  main.swift
-//  Sequence
-//
-//  Created by Kay on 2023/02/03.
-//
-
 import Foundation
 
 let NK = readLine()!.split(separator: " ").map { Int(String($0))! }
 let N = NK[0]
 let K = NK[1]
 
-var inputArr = readLine()!.split(separator: " ").map { Int(String($0))! }
-inputArr.insert(0, at: 0)
 
-var psum = [Int](repeating: 0, count: N + 1)
+var result = Int.min
+var arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+var prefixSum = [Int](repeating: 0, count: N + 1)
 
+arr.insert(0, at: 0)
 for i in 1...N {
-    psum[i] = psum[i-1] + inputArr[i]
+    prefixSum[i] = arr[i] + prefixSum[i-1]
 }
 
-var max = -987654321
-for i in K...N {
-    let challengeNumber = psum[i] - psum[i-K]
-    max = challengeNumber > max ? challengeNumber : max
+for i in 0...N-K {
+    let number = prefixSum[i+K] - prefixSum[i]
+    result = number > result ? number : result
 }
-print(max)
-
-
+print(result)
+/*
+ 10 2
+ 3 -2 -4  -9   0  3 7 13 8 -3
+ 3  1 -3 -12 -12  9
+ 
+ */
