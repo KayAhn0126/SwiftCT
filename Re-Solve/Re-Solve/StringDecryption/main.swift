@@ -12,8 +12,8 @@ let NL = readLine()!.split(separator: " ").map { Int(String($0))! }
 let N = NL[0]
 let L = NL[1]
 
-let find = readLine()!
-let given = readLine()!
+let find = readLine()!.map { Character(String($0)) }
+let given = readLine()!.map { Character(String($0)) }
 
 var findVisited = [Int](repeating: 0, count: 53)
 var givenVisited = [Int](repeating: 0, count: 53)
@@ -31,33 +31,24 @@ var count = 0
 var result = 0
 var flag = false
 
-func countingAndAdd(_ num: Int, _ char: Character) {
-    if char == "+" {
-        if 65 <= num && num <= 90 {
-            givenVisited[num - 65] += 1
-        } else if 97 <= num && num <= 122 {
-            givenVisited[num - 97 + 26] += 1
-        }
-    } else {
-        if 65 <= num && num <= 90 {
-            givenVisited[num - 65] -= 1
-        } else if 97 <= num && num <= 122 {
-            givenVisited[num - 97 + 26] -= 1
-        }
+for i in 0..<L {
+    let number = Int(given[i].asciiValue!)
+    if 65 <= number && number <= 90 {
+        givenVisited[number - 65] += 1
+    } else if 97 <= number && number <= 122 {
+        givenVisited[number - 97 + 26] += 1
     }
-    
-}
-
-given.enumerated().forEach {
-    let number = Int($0.element.asciiValue!)
-    countingAndAdd(number, "+")
     count += 1
     if count == N {
         if findVisited == givenVisited {
             result += 1
         }
-        let lastNumber = Int(given[$0.offset - (N - 1)]!.asciiValue!)
-        countingAndAdd(lastNumber, "-")
+        let lastNumber = Int(given[i - (N - 1)].asciiValue!)
+        if 65 <= lastNumber && lastNumber <= 90 {
+            givenVisited[lastNumber - 65] -= 1
+        } else if 97 <= lastNumber && lastNumber <= 122 {
+            givenVisited[lastNumber - 97 + 26] -= 1
+        }
         count -= 1
     }
 }
