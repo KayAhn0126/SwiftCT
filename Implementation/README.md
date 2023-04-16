@@ -20,7 +20,8 @@
 | [공](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Ball) | 시뮬레이션 | [1547](https://www.acmicpc.net/problem/1547) |
 | [ATM](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ATM) | 구현 및 정렬 | [11399](https://www.acmicpc.net/problem/11399) |
 | [단어 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/WordSort) | 구현 및 정렬 | [1181](https://www.acmicpc.net/problem/1181) |
-| [나이순 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SortByAge)| 구현 및 정렬 | [10814](https://www.acmicpc.net/problem/10814)|
+| [나이순 정렬](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SortByAge)| 구현 및 정렬 | [10814](https://www.acmicpc.net/problem/10814) |
+| [달팽이는 올라가고 싶다](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SnailWannaClimb)| 구현 및 정렬 | [2869](https://www.acmicpc.net/problem/2869) |
 
 
 ## 🍎 Normal
