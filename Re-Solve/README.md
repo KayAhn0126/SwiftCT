@@ -1,5 +1,3 @@
-###### tags: `SwiftCT`
-
 # Re-Solve
 | 제목 | 1회 | 2회 | 3회 | 4회 | 5회 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -20,7 +18,8 @@
 | [공](https://www.acmicpc.net/problem/1547) | 🟥 | | | | |
 | [ATM](https://www.acmicpc.net/problem/11399) | 🟥 | | | | |
 | [단어 정렬](https://www.acmicpc.net/problem/1181) | 🟥 | | | | |
-| [나이순 정렬](https://www.acmicpc.net/problem/10814)| 🟥 | | | | |
+| [나이순 정렬](https://www.acmicpc.net/problem/10814) | 🟥 | | | | |
+| [달팽이는 올라가고 싶다](https://www.acmicpc.net/problem/2869) | 🟥 | | | | |
 | [팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | 🟥 | | | | |
 | [빈도 정렬](https://www.acmicpc.net/problem/2910) | 🟥 | | | | |
 | [수학 숙제](https://www.acmicpc.net/problem/2870) | 🟥 | | | | |
@@ -31,15 +30,15 @@
 | [톱니바퀴](https://www.acmicpc.net/problem/14891) | 🟥 | | | | |
 | [톱니바퀴2](https://www.acmicpc.net/problem/15662) | 🟥 | | | | |
 | [뱀](https://www.acmicpc.net/problem/3190) | 🟥 | | | | |
-| [괄호 추가하기](https://www.acmicpc.net/problem/16637) | | | | | |
-| [문자해독](https://www.acmicpc.net/problem/1593) | | | | | |
-| [수열](https://www.acmicpc.net/problem/2559) | | | | | |
-| [구간 합 구하기4](https://www.acmicpc.net/problem/11659) | | | | | |
-| [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | | | | | |
-| [DFS와 BFS](https://www.acmicpc.net/problem/1260) | | | | | |
-| [단지번호붙이기](https://www.acmicpc.net/problem/2667) | | | | | |
-| [미로찾기](https://www.acmicpc.net/problem/2178) | | | | | |
-| [유기농 배추](https://www.acmicpc.net/problem/1012) | | | | | |
+| [괄호 추가하기](https://www.acmicpc.net/problem/16637) | 🟥 | | | | |
+| [문자해독](https://www.acmicpc.net/problem/1593) | 🟥 | | | | |
+| [수열](https://www.acmicpc.net/problem/2559) | 🟥 | | | | |
+| [구간 합 구하기4](https://www.acmicpc.net/problem/11659) | 🟥 | | | | |
+| [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | 🟥 | | | | |
+| [DFS와 BFS](https://www.acmicpc.net/problem/1260) | 🟥 | | | | |
+| [단지번호붙이기](https://www.acmicpc.net/problem/2667) | 🟥 | | | | |
+| [미로찾기](https://www.acmicpc.net/problem/2178) | 🟥 | | | | |
+| [유기농 배추](https://www.acmicpc.net/problem/1012) | 🟥 | | | | |
 | [보물섬](https://www.acmicpc.net/problem/2589) | | | | | |
 | [효율적인 해킹](https://www.acmicpc.net/problem/1325) | | | | | |
 | [바이러스](https://www.acmicpc.net/problem/2606) | | | | | |
