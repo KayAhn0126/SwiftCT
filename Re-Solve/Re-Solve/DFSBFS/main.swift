@@ -1,105 +1,68 @@
-//
-//  main.swift
-//  DFSBFS
-//
-//  Created by Kay on 2023/02/16.
-//
-
-/*
- 1260
- DFS와 BFS
- */
-
-/*
- 인접리스트 -> why? Sparse Graph
- */
-
 import Foundation
 
-struct Queue<T> {
-    var enqueueList: [T] = []
-    var dequeueList: [T] = []
-    
-    var count: Int {
-        return enqueueList.count + dequeueList.count
-    }
-    
-    var isEmpty: Bool {
-        return enqueueList.isEmpty && dequeueList.isEmpty
-    }
-    
-    mutating func enqueue(_ element: T) {
-        enqueueList.append(element)
-    }
-    
-    mutating func dequeue() -> T? {
-        if dequeueList.isEmpty {
-            dequeueList = enqueueList.reversed()
-            enqueueList.removeAll()
-        }
-        return dequeueList.popLast()
-    }
-}
-
-
-let NMV = readLine()!.split(separator: " ").map { Int(String($0))! }
-
-let N = NMV[0]
-let M = NMV[1]
-let V = NMV[2]
+let NEV = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NEV[0]
+let E = NEV[1]
+let V = NEV[2]
 
 var adjList = [[Int]](repeating: [Int](), count: N + 1)
-var visited = [Int](repeating: 0, count: N + 1)
 
-for _ in 0..<M {
-    let YX = readLine()!.split(separator: " ").map { Int(String($0))! }
-    let Y = YX[0]
-    let X = YX[1]
-    // 양방향 간선
-    adjList[Y].append(X)
-    adjList[X].append(Y)
+for i in 0..<E {
+    let fromTo = readLine()!.split(separator: " ").map { Int(String($0))! }
+    let from = fromTo[0]
+    let to = fromTo[1]
+    adjList[from].append(to)
+    adjList[to].append(from)
 }
 
-func dfs(_ number: Int) {
-    visited[number] = 1
-    print(number, terminator: " ")
-    for i in adjList[number] {
-        if visited[i] == 1 {
-            continue
-        }
+for i in 0..<N + 1 {
+    adjList[i].sort()
+}
+
+var visited = [Int](repeating: 0, count: N + 1)
+
+func clearVisited() {
+    visited = [Int](repeating: 0, count: N + 1)
+}
+
+var resultDFS = [Int]()
+var resultBFS = [Int]()
+
+// recursion
+func dfs(_ num: Int) {
+    visited[num] = 1
+    resultDFS.append(num)
+    for i in adjList[num] {
+        if visited[i] == 1 { continue }
         dfs(i)
     }
 }
 
-func bfs(_ number: Int) {
-    var queue = Queue<Int>()
-    visited[number] = 1
-    print(number, terminator: " ")
-    queue.enqueue(number)
-    while !queue.isEmpty {
-        let currentNum = queue.dequeue()!
-        for i in adjList[currentNum] {
+// Queue
+var queue = [Int](), idx = 0
+func bfs(_ num: Int) {
+    while idx < queue.count {
+        let currentNode = queue[idx]; idx += 1
+        for i in adjList[currentNode] {
             if visited[i] == 1 { continue }
-            print(i, terminator: " ")
             visited[i] = 1
-            queue.enqueue(i)
+            queue.append(i)
+            resultBFS.append(i)
         }
     }
 }
 
-func clearVisited() {
-    for i in 0..<N+1 {
-        visited[i] = 0
-    }
-}
-
-for i in 0..<adjList.count {
-    adjList[i].sort()
-}
-
 dfs(V)
 clearVisited()
-print("")
+queue.append(V)
+visited[V] = 1
+resultBFS.append(V)
 bfs(V)
 
-// 24분
+resultDFS.enumerated().forEach {
+    print($0.element, terminator: " ")
+}
+print("")
+resultBFS.enumerated().forEach {
+    print($0.element, terminator: " ")
+}
