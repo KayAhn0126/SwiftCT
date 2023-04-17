@@ -55,6 +55,7 @@
 		6AB2DD45298D4C2600C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD44298D4C2600C7831C /* main.swift */; };
 		6AB2DD7A298D4FDD00C7831C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2DD79298D4FDD00C7831C /* main.swift */; };
 		6AB30EFE29ECD9BB0029A9E2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB30EFD29ECD9BB0029A9E2 /* main.swift */; };
+		6AB30F0929ECEB160029A9E2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB30F0829ECEB160029A9E2 /* main.swift */; };
 		6AB38FEB29E836570064AD10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB38FEA29E836570064AD10 /* main.swift */; };
 		6AB64BBF299E65E50074D213 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB64BBE299E65E50074D213 /* main.swift */; };
 		6AB8175729978170009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8175629978170009C0AE8 /* main.swift */; };
@@ -503,6 +504,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AB30F0429ECEB160029A9E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AB38FE629E836570064AD10 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,6 +729,8 @@
 		6AB2DD79298D4FDD00C7831C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB30EFB29ECD9BB0029A9E2 /* TreasureIsland */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreasureIsland; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB30EFD29ECD9BB0029A9E2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AB30F0629ECEB160029A9E2 /* EffectiveHacking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EffectiveHacking; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB30F0829ECEB160029A9E2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB38FE829E836570064AD10 /* MVPDiamondEasy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MVPDiamondEasy; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB38FEA29E836570064AD10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AB64BBC299E65E50074D213 /* Laboratory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Laboratory; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1084,6 +1096,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AB30F0329ECEB160029A9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AB38FE529E836570064AD10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1322,6 +1341,7 @@
 				6A73507B29855836001F0255 /* CountingAlphabet */,
 				6A8E587C299E45AF00E231DB /* DFSBFS */,
 				6AB8176029979A4D009C0AE8 /* DirectorShhom */,
+				6AB30F0729ECEB160029A9E2 /* EffectiveHacking */,
 				6A69B9CB29E5B27B00F8F0F4 /* ExamViewer */,
 				6A2B589F29925C2A00752F1C /* FashionKing */,
 				6AA86E8229C4759D007C072A /* FindingFraction */,
@@ -1332,6 +1352,7 @@
 				6A9A04E5298B8E7A00430218 /* GoodWord */,
 				6A0B5D1129D30C24006F624D /* HideAndSeek4 */,
 				6AA7902529C567F100AEF580 /* HoneyComb */,
+				6A99050829EBA2D100D56B69 /* HumanComputerInteracts */,
 				6AB64BBD299E65E50074D213 /* Laboratory */,
 				6AA7903029C5761500AEF580 /* MakePalindrome */,
 				6A8709E829C442FC00F65F98 /* MakeToOne */,
@@ -1341,15 +1362,12 @@
 				6A9A04F0298BFC8000430218 /* Multiply */,
 				6AB38FE929E836570064AD10 /* MVPDiamondEasy */,
 				6AB2DD38298D452400C7831C /* NBABasketBall */,
+				6A99051329EBE99A00D56B69 /* NumberingOnHouse */,
 				6AB2DD2D298D38A400C7831C /* One */,
 				6A495A0C2998A7CE006D0385 /* Parenthesis */,
 				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
 				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
 				6A87083429B5B89A000F09CA /* PopulationMovement */,
-				6A36FD1629EAE15400F2A193 /* StringDecryption */,
-				6A99050829EBA2D100D56B69 /* HumanComputerInteracts */,
-				6A99051329EBE99A00D56B69 /* NumberingOnHouse */,
-				6AB30EFC29ECD9BB0029A9E2 /* TreasureIsland */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1364,8 +1382,10 @@
 				6AD778C329E94CAC0083EE44 /* Snake */,
 				6AFA3F7629E6C26200D4934A /* SortByAge */,
 				6A91978029E7FD5200300CC4 /* Statistics */,
+				6A36FD1629EAE15400F2A193 /* StringDecryption */,
 				6A2B5894299255B000752F1C /* SumOfIntervals4 */,
 				6A22F3C329A638CC0073E2E1 /* Tomato */,
+				6AB30EFC29ECD9BB0029A9E2 /* TreasureIsland */,
 				6A495A222998F2F5006D0385 /* Tree */,
 				6A735086298561C0001F0255 /* TruckParking */,
 				6AB2DD17298D15DA00C7831C /* WeatherCaster */,
@@ -1438,6 +1458,7 @@
 				6A99050729EBA2D100D56B69 /* HumanComputerInteracts */,
 				6A99051229EBE99A00D56B69 /* NumberingOnHouse */,
 				6AB30EFB29ECD9BB0029A9E2 /* TreasureIsland */,
+				6AB30F0629ECEB160029A9E2 /* EffectiveHacking */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1696,6 +1717,14 @@
 				6AB30EFD29ECD9BB0029A9E2 /* main.swift */,
 			);
 			path = TreasureIsland;
+			sourceTree = "<group>";
+		};
+		6AB30F0729ECEB160029A9E2 /* EffectiveHacking */ = {
+			isa = PBXGroup;
+			children = (
+				6AB30F0829ECEB160029A9E2 /* main.swift */,
+			);
+			path = EffectiveHacking;
 			sourceTree = "<group>";
 		};
 		6AB38FE929E836570064AD10 /* MVPDiamondEasy */ = {
@@ -2621,6 +2650,23 @@
 			productReference = 6AB30EFB29ECD9BB0029A9E2 /* TreasureIsland */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AB30F0529ECEB160029A9E2 /* EffectiveHacking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB30F0A29ECEB160029A9E2 /* Build configuration list for PBXNativeTarget "EffectiveHacking" */;
+			buildPhases = (
+				6AB30F0229ECEB160029A9E2 /* Sources */,
+				6AB30F0329ECEB160029A9E2 /* Frameworks */,
+				6AB30F0429ECEB160029A9E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectiveHacking;
+			productName = EffectiveHacking;
+			productReference = 6AB30F0629ECEB160029A9E2 /* EffectiveHacking */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AB38FE729E836570064AD10 /* MVPDiamondEasy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB38FEE29E836570064AD10 /* Build configuration list for PBXNativeTarget "MVPDiamondEasy" */;
@@ -2996,6 +3042,9 @@
 					6AB30EFA29ECD9BB0029A9E2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AB30F0529ECEB160029A9E2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AB38FE729E836570064AD10 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -3111,6 +3160,7 @@
 				6A99050629EBA2D100D56B69 /* HumanComputerInteracts */,
 				6A99051129EBE99A00D56B69 /* NumberingOnHouse */,
 				6AB30EFA29ECD9BB0029A9E2 /* TreasureIsland */,
+				6AB30F0529ECEB160029A9E2 /* EffectiveHacking */,
 			);
 		};
 /* End PBXProject section */
@@ -3497,6 +3547,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB30EFE29ECD9BB0029A9E2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB30F0229ECEB160029A9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB30F0929ECEB160029A9E2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4584,6 +4642,24 @@
 			};
 			name = Release;
 		};
+		6AB30F0B29ECEB160029A9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AB30F0C29ECEB160029A9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AB38FEC29E836570064AD10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5258,6 +5334,15 @@
 			buildConfigurations = (
 				6AB30EFF29ECD9BB0029A9E2 /* Debug */,
 				6AB30F0029ECD9BB0029A9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB30F0A29ECEB160029A9E2 /* Build configuration list for PBXNativeTarget "EffectiveHacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB30F0B29ECEB160029A9E2 /* Debug */,
+				6AB30F0C29ECEB160029A9E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
