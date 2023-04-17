@@ -6,13 +6,13 @@ let M = NM[1]
 var adjList = [[Int]](repeating: [Int](), count : N + 1)
 
 for i in 0..<M {
-    let toFrom = readLine()!.split(separator: " ").map { Int(String($0))! }
-    let from = toFrom[0]
-    let to = toFrom[1]
-    adjList[to].append(from)
+    let byTrusted = readLine()!.split(separator: " ").map { Int(String($0))! }
+    let by = byTrusted[0]
+    let trusted = byTrusted[1]
+    adjList[trusted].append(by)
 }
 
-var currentArr = [Int](repeating: 0, count: N + 1)
+var biggestArr = [Int](repeating: 0, count: N + 1)
 
 var max = Int.min
 func dfs(_ adjList: inout [[Int]], _ num: Int, _ visited: inout [Bool], _ tempResult: inout Int) {
@@ -29,13 +29,13 @@ for i in 1...N {
     var tempResult = 0
     var visited = [Bool](repeating: false, count: N + 1)
     dfs(&adjList, i, &visited, &tempResult)
-    currentArr[i] = tempResult
+    biggestArr[i] = tempResult
     max = tempResult > max ? tempResult : max
 }
 
 var resultArr = [Int]()
 for i in 1...N {
-    if currentArr[i] == max {
+    if biggestArr[i] == max {
         resultArr.append(i)
     }
 }
