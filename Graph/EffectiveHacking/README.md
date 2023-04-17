@@ -106,3 +106,167 @@ func bfs(_ node: Int) -> Int {
     return count
 }
 ```
+
+## 🍎 처음에 빠른 I/O를 사용해서 풀었던 방법 + BFS
+```swift
+import Foundation
+
+final class FileIO {
+    private let buffer:[UInt8]
+    private var index: Int = 0
+
+    init(fileHandle: FileHandle = FileHandle.standardInput) {
+        
+        buffer = Array(try! fileHandle.readToEnd()!)+[UInt8(0)] // 인덱스 범위 넘어가는 것 방지
+    }
+
+    @inline(__always) private func read() -> UInt8 {
+        defer { index += 1 }
+
+        return buffer[index]
+    }
+
+    @inline(__always) func readInt() -> Int {
+        var sum = 0
+        var now = read()
+        var isPositive = true
+
+        while now == 10
+                || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        if now == 45 { isPositive.toggle(); now = read() } // 음수 처리
+        while now >= 48, now <= 57 {
+            sum = sum * 10 + Int(now-48)
+            now = read()
+        }
+
+        return sum * (isPositive ? 1:-1)
+    }
+
+    @inline(__always) func readString() -> String {
+        var now = read()
+
+        while now == 10 || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        let beginIndex = index-1
+
+        while now != 10,
+              now != 32,
+              now != 0 { now = read() }
+
+        return String(bytes: Array(buffer[beginIndex..<(index-1)]), encoding: .ascii)!
+    }
+
+    @inline(__always) func readByteSequenceWithoutSpaceAndLineFeed() -> [UInt8] {
+        var now = read()
+
+        while now == 10 || now == 32 { now = read() } // 공백과 줄바꿈 무시
+        let beginIndex = index-1
+
+        while now != 10,
+              now != 32,
+              now != 0 { now = read() }
+
+        return Array(buffer[beginIndex..<(index-1)])
+    }
+}
+
+let fIO = FileIO()
+
+let N = fIO.readInt()
+let M = fIO.readInt()
+
+var adjList = [[Int]](repeating: [Int](), count: N + 1)
+
+var biggestList = [Int](repeating: 0, count: N + 1)
+var biggestNum = -100000
+
+for _ in 0..<M {
+    let by = fIO.readInt()
+    let trusted = fIO.readInt()
+    adjList[trusted].append(by)
+}
+
+func bfs(_ node: Int) -> Int {
+    var bfsQueue = [Int](), idx = 0
+    var visited = [Int](repeating: 0, count: N + 1)
+    var count = 1
+    visited[node] = count
+    bfsQueue.append(node)
+    while idx < bfsQueue.count {
+        let number = bfsQueue[idx]; idx += 1
+        for element in adjList[number] {
+            if visited[element] != 0 { continue }
+            count += 1
+            visited[element] = 1
+            bfsQueue.append(element)
+        }
+    }
+    return count
+}
+
+for i in 1...N {
+    let result = bfs(i)
+    biggestNum = biggestNum > result ? biggestNum : result
+    biggestList[i] = result
+}
+
+for i in 1...N {
+    if biggestList[i] == biggestNum {
+        print(i, terminator: " ")
+    }
+}
+print("")
+```
+
+## 🍎 빠른 입출력 없이 풀었던 방법 + DFS + 참조
+- 이 문제는 무조건 빠른 입출력이 있어야 풀 수 있는 문제인줄 알았는데 코드가 느렸던 이유는 따로 있다.
+- 전역 변수(배열)를 매번 호출 하는것 보다 인자에 배열의 참조(객체의 실제 위치를 가리키는 포인터)를 넣으면 더 빠르다!
+    - 참조를 하게 되면 사용하는 동안에는 배열의 참조가 스택의 레지스터에 쌓여서 실행 되고 레지스터는 가장 빠른 메모리이기 때문에 더 빠른것이라고 추측한다.
+```swift
+import Foundation
+let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NM[0]
+let M = NM[1]
+
+var adjList = [[Int]](repeating: [Int](), count : N + 1)
+
+for i in 0..<M {
+    let byTrusted = readLine()!.split(separator: " ").map { Int(String($0))! }
+    let by = byTrusted[0]
+    let trusted = byTrusted[1]
+    adjList[trusted].append(by)
+}
+
+var biggestArr = [Int](repeating: 0, count: N + 1)
+
+var max = Int.min
+func dfs(_ adjList: inout [[Int]], _ num: Int, _ visited: inout [Bool], _ tempResult: inout Int) {
+    visited[num] = true
+    for i in adjList[num] {
+        if visited[i] == true { continue }
+        tempResult += 1
+        dfs(&adjList, i, &visited, &tempResult)
+    }
+}
+
+var result = 0
+for i in 1...N {
+    var tempResult = 0
+    var visited = [Bool](repeating: false, count: N + 1)
+    dfs(&adjList, i, &visited, &tempResult)
+    biggestArr[i] = tempResult
+    max = tempResult > max ? tempResult : max
+}
+
+var resultArr = [Int]()
+for i in 1...N {
+    if biggestArr[i] == max {
+        resultArr.append(i)
+    }
+}
+
+resultArr.enumerated().forEach {
+    print($0.element, terminator: " ")
+}
+print("")
+
+```
