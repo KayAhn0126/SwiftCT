@@ -64,6 +64,7 @@
 		6AC0323629ED5528003A42D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0323529ED5528003A42D8 /* main.swift */; };
 		6AC0324129ED5D77003A42D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0324029ED5D77003A42D8 /* main.swift */; };
 		6AC314EF29CEBEF900A4B074 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC314EE29CEBEF900A4B074 /* main.swift */; };
+		6ACC3E4029EDA08B0045F669 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC3E3F29EDA08B0045F669 /* main.swift */; };
 		6AD31A3A29AB4BD30093E4B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD31A3929AB4BD30093E4B3 /* main.swift */; };
 		6AD778AF29E92E110083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778AE29E92E110083EE44 /* main.swift */; };
 		6AD778BA29E947F30083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778B929E947F30083EE44 /* main.swift */; };
@@ -587,6 +588,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6ACC3E3B29EDA08B0045F669 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AD31A3529AB4BD30093E4B3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -767,6 +777,8 @@
 		6AC0324029ED5D77003A42D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AC314EC29CEBEF900A4B074 /* SharingSnack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SharingSnack; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC314EE29CEBEF900A4B074 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6ACC3E3D29EDA08B0045F669 /* AlgoLecture-DFS2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AlgoLecture-DFS2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACC3E3F29EDA08B0045F669 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AD31A3729AB4BD30093E4B3 /* Fire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fire; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD31A3929AB4BD30093E4B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AD778AC29E92E110083EE44 /* Gear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gear; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1183,6 +1195,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ACC3E3A29EDA08B0045F669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AD31A3429AB4BD30093E4B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1407,6 +1426,7 @@
 				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
 				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
 				6A87083429B5B89A000F09CA /* PopulationMovement */,
+				6ACC3E3E29EDA08B0045F669 /* AlgoLecture-DFS2 */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1501,6 +1521,7 @@
 				6AB30F0629ECEB160029A9E2 /* EffectiveHacking */,
 				6AC0323329ED5528003A42D8 /* Virus */,
 				6AC0323E29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
+				6ACC3E3D29EDA08B0045F669 /* AlgoLecture-DFS2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1831,6 +1852,14 @@
 				6AC314EE29CEBEF900A4B074 /* main.swift */,
 			);
 			path = SharingSnack;
+			sourceTree = "<group>";
+		};
+		6ACC3E3E29EDA08B0045F669 /* AlgoLecture-DFS2 */ = {
+			isa = PBXGroup;
+			children = (
+				6ACC3E3F29EDA08B0045F669 /* main.swift */,
+			);
+			path = "AlgoLecture-DFS2";
 			sourceTree = "<group>";
 		};
 		6AD31A3829AB4BD30093E4B3 /* Fire */ = {
@@ -2861,6 +2890,23 @@
 			productReference = 6AC314EC29CEBEF900A4B074 /* SharingSnack */;
 			productType = "com.apple.product-type.tool";
 		};
+		6ACC3E3C29EDA08B0045F669 /* AlgoLecture-DFS2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACC3E4329EDA08B0045F669 /* Build configuration list for PBXNativeTarget "AlgoLecture-DFS2" */;
+			buildPhases = (
+				6ACC3E3929EDA08B0045F669 /* Sources */,
+				6ACC3E3A29EDA08B0045F669 /* Frameworks */,
+				6ACC3E3B29EDA08B0045F669 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlgoLecture-DFS2";
+			productName = "AlgoLecture-DFS2";
+			productReference = 6ACC3E3D29EDA08B0045F669 /* AlgoLecture-DFS2 */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AD31A3629AB4BD30093E4B3 /* Fire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AD31A3D29AB4BD30093E4B3 /* Build configuration list for PBXNativeTarget "Fire" */;
@@ -3161,6 +3207,9 @@
 					6AC314EB29CEBEF900A4B074 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6ACC3E3C29EDA08B0045F669 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AD31A3629AB4BD30093E4B3 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -3261,6 +3310,7 @@
 				6AB30F0529ECEB160029A9E2 /* EffectiveHacking */,
 				6AC0323229ED5528003A42D8 /* Virus */,
 				6AC0323D29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
+				6ACC3E3C29EDA08B0045F669 /* AlgoLecture-DFS2 */,
 			);
 		};
 /* End PBXProject section */
@@ -3719,6 +3769,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC314EF29CEBEF900A4B074 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACC3E3929EDA08B0045F669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACC3E4029EDA08B0045F669 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4920,6 +4978,24 @@
 			};
 			name = Release;
 		};
+		6ACC3E4129EDA08B0045F669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6ACC3E4229EDA08B0045F669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AD31A3B29AB4BD30093E4B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5567,6 +5643,15 @@
 			buildConfigurations = (
 				6AC314F029CEBEF900A4B074 /* Debug */,
 				6AC314F129CEBEF900A4B074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACC3E4329EDA08B0045F669 /* Build configuration list for PBXNativeTarget "AlgoLecture-DFS2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACC3E4129EDA08B0045F669 /* Debug */,
+				6ACC3E4229EDA08B0045F669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
