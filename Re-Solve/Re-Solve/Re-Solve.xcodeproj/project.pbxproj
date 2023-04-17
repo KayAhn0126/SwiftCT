@@ -62,6 +62,7 @@
 		6AB8176229979A4D009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8176129979A4D009C0AE8 /* main.swift */; };
 		6AB8176D2997A201009C0AE8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8176C2997A201009C0AE8 /* main.swift */; };
 		6AC0323629ED5528003A42D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0323529ED5528003A42D8 /* main.swift */; };
+		6AC0324129ED5D77003A42D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0324029ED5D77003A42D8 /* main.swift */; };
 		6AC314EF29CEBEF900A4B074 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC314EE29CEBEF900A4B074 /* main.swift */; };
 		6AD31A3A29AB4BD30093E4B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD31A3929AB4BD30093E4B3 /* main.swift */; };
 		6AD778AF29E92E110083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778AE29E92E110083EE44 /* main.swift */; };
@@ -568,6 +569,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AC0323C29ED5D77003A42D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AC314EA29CEBEF900A4B074 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,6 +763,8 @@
 		6AB8176C2997A201009C0AE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AC0323329ED5528003A42D8 /* Virus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Virus; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC0323529ED5528003A42D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AC0323E29ED5D77003A42D8 /* AlgoLecture-DFS1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AlgoLecture-DFS1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC0324029ED5D77003A42D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AC314EC29CEBEF900A4B074 /* SharingSnack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SharingSnack; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC314EE29CEBEF900A4B074 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AD31A3729AB4BD30093E4B3 /* Fire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fire; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1157,6 +1169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AC0323B29ED5D77003A42D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AC314E929CEBEF900A4B074 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1348,6 +1367,7 @@
 			isa = PBXGroup;
 			children = (
 				6A36FD0B29EA9A8900F2A193 /* AddingParenthesis */,
+				6AC0323F29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
 				6A2B58B529928A5500752F1C /* ApplePickingGame */,
 				6AFA3F6029E6BD3300D4934A /* ATM */,
 				6A495A172998DB7D006D0385 /* BalancedWorld */,
@@ -1387,7 +1407,6 @@
 				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
 				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
 				6A87083429B5B89A000F09CA /* PopulationMovement */,
-				6AC0323429ED5528003A42D8 /* Virus */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1408,6 +1427,7 @@
 				6AB30EFC29ECD9BB0029A9E2 /* TreasureIsland */,
 				6A495A222998F2F5006D0385 /* Tree */,
 				6A735086298561C0001F0255 /* TruckParking */,
+				6AC0323429ED5528003A42D8 /* Virus */,
 				6AB2DD17298D15DA00C7831C /* WeatherCaster */,
 				6A9A04BC298B5FD900430218 /* WhenIMissKoreaConnectToServer */,
 				6AFA3F6B29E6C0CD00D4934A /* WordSort */,
@@ -1480,6 +1500,7 @@
 				6AB30EFB29ECD9BB0029A9E2 /* TreasureIsland */,
 				6AB30F0629ECEB160029A9E2 /* EffectiveHacking */,
 				6AC0323329ED5528003A42D8 /* Virus */,
+				6AC0323E29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1794,6 +1815,14 @@
 				6AC0323529ED5528003A42D8 /* main.swift */,
 			);
 			path = Virus;
+			sourceTree = "<group>";
+		};
+		6AC0323F29ED5D77003A42D8 /* AlgoLecture-DFS1 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC0324029ED5D77003A42D8 /* main.swift */,
+			);
+			path = "AlgoLecture-DFS1";
 			sourceTree = "<group>";
 		};
 		6AC314ED29CEBEF900A4B074 /* SharingSnack */ = {
@@ -2798,6 +2827,23 @@
 			productReference = 6AC0323329ED5528003A42D8 /* Virus */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AC0323D29ED5D77003A42D8 /* AlgoLecture-DFS1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC0324429ED5D77003A42D8 /* Build configuration list for PBXNativeTarget "AlgoLecture-DFS1" */;
+			buildPhases = (
+				6AC0323A29ED5D77003A42D8 /* Sources */,
+				6AC0323B29ED5D77003A42D8 /* Frameworks */,
+				6AC0323C29ED5D77003A42D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlgoLecture-DFS1";
+			productName = "AlgoLecture-DFS1";
+			productReference = 6AC0323E29ED5D77003A42D8 /* AlgoLecture-DFS1 */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AC314EB29CEBEF900A4B074 /* SharingSnack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AC314F229CEBEF900A4B074 /* Build configuration list for PBXNativeTarget "SharingSnack" */;
@@ -3109,6 +3155,9 @@
 					6AC0323229ED5528003A42D8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AC0323D29ED5D77003A42D8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AC314EB29CEBEF900A4B074 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -3211,6 +3260,7 @@
 				6AB30EFA29ECD9BB0029A9E2 /* TreasureIsland */,
 				6AB30F0529ECEB160029A9E2 /* EffectiveHacking */,
 				6AC0323229ED5528003A42D8 /* Virus */,
+				6AC0323D29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
 			);
 		};
 /* End PBXProject section */
@@ -3653,6 +3703,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC0323629ED5528003A42D8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC0323A29ED5D77003A42D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC0324129ED5D77003A42D8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4826,6 +4884,24 @@
 			};
 			name = Release;
 		};
+		6AC0324229ED5D77003A42D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AC0324329ED5D77003A42D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AC314F029CEBEF900A4B074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5473,6 +5549,15 @@
 			buildConfigurations = (
 				6AC0323729ED5528003A42D8 /* Debug */,
 				6AC0323829ED5528003A42D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC0324429ED5D77003A42D8 /* Build configuration list for PBXNativeTarget "AlgoLecture-DFS1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC0324229ED5D77003A42D8 /* Debug */,
+				6AC0324329ED5D77003A42D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
