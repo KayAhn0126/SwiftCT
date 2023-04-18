@@ -1425,6 +1425,7 @@
 			children = (
 				6A36FD0B29EA9A8900F2A193 /* AddingParenthesis */,
 				6ACC3E4929EDA1D90045F669 /* AlgoLecture-BFS1 */,
+				6ACC3E5429EDADFD0045F669 /* AlgoLecture-BFS2 */,
 				6AC0323F29ED5D77003A42D8 /* AlgoLecture-DFS1 */,
 				6ACC3E3E29EDA08B0045F669 /* AlgoLecture-DFS2 */,
 				6A2B58B529928A5500752F1C /* ApplePickingGame */,
@@ -1466,7 +1467,6 @@
 				6AAC328D29D454BD0079A932 /* Pascal'sTriangle */,
 				6A9A04C7298B708700430218 /* PocketmonMasterLee */,
 				6A87083429B5B89A000F09CA /* PopulationMovement */,
-				6ACC3E5429EDADFD0045F669 /* AlgoLecture-BFS2 */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
