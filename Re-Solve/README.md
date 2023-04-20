@@ -39,22 +39,22 @@
 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | 🟥 | | | | |
 | [미로찾기](https://www.acmicpc.net/problem/2178) | 🟥 | | | | |
 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 🟥 | | | | |
-| [보물섬](https://www.acmicpc.net/problem/2589) | | | | | |
-| [효율적인 해킹](https://www.acmicpc.net/problem/1325) | | | | | |
-| [바이러스](https://www.acmicpc.net/problem/2606) | | | | | |
-| [알고리즘 수업 - 깊이 우선 탐색 1](https://www.acmicpc.net/problem/24479) | | | | | |
-| [알고리즘 수업 - 깊이 우선 탐색 2](https://www.acmicpc.net/problem/24480) | | | | | |
-| [알고리즘 수업 - 너비 우선 탐색 1](https://www.acmicpc.net/problem/24444) | | | | | |
-| [알고리즘 수업 - 너비 우선 탐색 2](https://www.acmicpc.net/problem/24445) | | | | | |
-| [안전영역](https://www.acmicpc.net/problem/2468) | | | | | |
-| [영역 구하기](https://www.acmicpc.net/problem/2583) | | | | | |
-| [촌수계산](https://www.acmicpc.net/problem/2644) | | | | | |
-| [스타트링크](https://www.acmicpc.net/problem/5014) | | | | | |
-| [적록색약](https://www.acmicpc.net/problem/10026) | | | | | |
-| [치즈](https://www.acmicpc.net/problem/2636) | | | | | |
-| [인구이동](https://www.acmicpc.net/problem/16234) | | | | | |
-| [불!](https://www.acmicpc.net/problem/4179) | | | | | |
-| [뮤탈리스크](https://www.acmicpc.net/problem/12869) | | | | | |
+| [보물섬](https://www.acmicpc.net/problem/2589) | 🟥 | | | | |
+| [효율적인 해킹](https://www.acmicpc.net/problem/1325) | 🟥 | | | | |
+| [바이러스](https://www.acmicpc.net/problem/2606) | 🟥 | | | | |
+| [알고리즘 수업 - 깊이 우선 탐색 1](https://www.acmicpc.net/problem/24479) | 🟥 | | | | |
+| [알고리즘 수업 - 깊이 우선 탐색 2](https://www.acmicpc.net/problem/24480) | 🟥 | | | | |
+| [알고리즘 수업 - 너비 우선 탐색 1](https://www.acmicpc.net/problem/24444) | 🟥 | | | | |
+| [알고리즘 수업 - 너비 우선 탐색 2](https://www.acmicpc.net/problem/24445) | 🟥 | | | | |
+| [안전영역](https://www.acmicpc.net/problem/2468) | 🟥 | | | | |
+| [영역 구하기](https://www.acmicpc.net/problem/2583) | 🟥 | | | | |
+| [촌수계산](https://www.acmicpc.net/problem/2644) | 🟥 | | | | |
+| [스타트링크](https://www.acmicpc.net/problem/5014) | 🟥 | | | | |
+| [적록색약](https://www.acmicpc.net/problem/10026) | 🟥 | | | | |
+| [치즈](https://www.acmicpc.net/problem/2636) | 🟥 | | | | |
+| [인구이동](https://www.acmicpc.net/problem/16234) | 🟥 | | | | |
+| [불!](https://www.acmicpc.net/problem/4179) | 🟥 | | | | |
+| [뮤탈리스크](https://www.acmicpc.net/problem/12869) | 🟥 | | | | |
 | [나이트의 이동](https://www.acmicpc.net/problem/7562) | | | | | |
 | [벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | | | | | |
 | [컴백홈](https://www.acmicpc.net/problem/1189) | | | | | |
@@ -99,7 +99,7 @@
 | [괄호](https://www.acmicpc.net/problem/9012) | | | | | |
 | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | | | | | |
 | [트리](https://www.acmicpc.net/problem/1068) | | | | | |
-| [완전 이진 트리](https://www.acmicpc.net/problem/9934) | | | | | |
+| [완전 이진 트리](https://www.acmicpc.net/problem/9934) | 🟥 | | | | |
 | [숫자 카드 2](https://www.acmicpc.net/problem/10816) | | | | | |
 | [수 찾기](https://www.acmicpc.net/problem/1920) | | | | | |
 | [나무 자르기](https://www.acmicpc.net/problem/2805) | | | | | |
