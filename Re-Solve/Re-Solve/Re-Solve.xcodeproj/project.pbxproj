@@ -32,6 +32,7 @@
 		6A73509329856C10001F0255 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73509229856C10001F0255 /* main.swift */; };
 		6A7C4BA2298CC30600B5F6BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C4BA1298CC30600B5F6BA /* main.swift */; };
 		6A7C4BAD298CDD2F00B5F6BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C4BAC298CDD2F00B5F6BA /* main.swift */; };
+		6A85301B29F1367A00E07CE1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A85301A29F1367A00E07CE1 /* main.swift */; };
 		6A87083629B5B89A000F09CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87083529B5B89A000F09CA /* main.swift */; };
 		6A8709EA29C442FC00F65F98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8709E929C442FC00F65F98 /* main.swift */; };
 		6A8E5873299E2C8400E231DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E5872299E2C8400E231DB /* main.swift */; };
@@ -299,6 +300,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A7C4BA8298CDD2F00B5F6BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A85301629F1367A00E07CE1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -783,6 +793,8 @@
 		6A7C4BA1298CC30600B5F6BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A7C4BAA298CDD2F00B5F6BA /* MathHomework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MathHomework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7C4BAC298CDD2F00B5F6BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A85301829F1367A00E07CE1 /* MovingOfKnights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MovingOfKnights; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A85301A29F1367A00E07CE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A87083329B5B899000F09CA /* PopulationMovement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PopulationMovement; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A87083529B5B89A000F09CA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A8709E729C442FC00F65F98 /* MakeToOne */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakeToOne; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1049,6 +1061,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A7C4BA7298CDD2F00B5F6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A85301529F1367A00E07CE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1590,6 +1609,7 @@
 				6A65DBCE29EE7DFA00E41FC8 /* RGColorBlind */,
 				6A65DBD929EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423929F1117000AF2CA5 /* Mutalisk */,
+				6A85301929F1367A00E07CE1 /* MovingOfKnights */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1693,6 +1713,7 @@
 				6A65DBCD29EE7DF900E41FC8 /* RGColorBlind */,
 				6A65DBD829EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423829F1117000AF2CA5 /* Mutalisk */,
+				6A85301829F1367A00E07CE1 /* MovingOfKnights */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1743,6 +1764,14 @@
 				6A7C4BAC298CDD2F00B5F6BA /* main.swift */,
 			);
 			path = MathHomework;
+			sourceTree = "<group>";
+		};
+		6A85301929F1367A00E07CE1 /* MovingOfKnights */ = {
+			isa = PBXGroup;
+			children = (
+				6A85301A29F1367A00E07CE1 /* main.swift */,
+			);
+			path = MovingOfKnights;
 			sourceTree = "<group>";
 		};
 		6A87083429B5B89A000F09CA /* PopulationMovement */ = {
@@ -2547,6 +2576,23 @@
 			name = MathHomework;
 			productName = MathHomework;
 			productReference = 6A7C4BAA298CDD2F00B5F6BA /* MathHomework */;
+			productType = "com.apple.product-type.tool";
+		};
+		6A85301729F1367A00E07CE1 /* MovingOfKnights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A85301E29F1367A00E07CE1 /* Build configuration list for PBXNativeTarget "MovingOfKnights" */;
+			buildPhases = (
+				6A85301429F1367A00E07CE1 /* Sources */,
+				6A85301529F1367A00E07CE1 /* Frameworks */,
+				6A85301629F1367A00E07CE1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovingOfKnights;
+			productName = MovingOfKnights;
+			productReference = 6A85301829F1367A00E07CE1 /* MovingOfKnights */;
 			productType = "com.apple.product-type.tool";
 		};
 		6A87083229B5B899000F09CA /* PopulationMovement */ = {
@@ -3433,6 +3479,9 @@
 					6A7C4BA9298CDD2F00B5F6BA = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A85301729F1367A00E07CE1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A87083229B5B899000F09CA = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -3661,6 +3710,7 @@
 				6A65DBCC29EE7DF900E41FC8 /* RGColorBlind */,
 				6A65DBD729EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423729F1117000AF2CA5 /* Mutalisk */,
+				6A85301729F1367A00E07CE1 /* MovingOfKnights */,
 			);
 		};
 /* End PBXProject section */
@@ -3863,6 +3913,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7C4BAD298CDD2F00B5F6BA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A85301429F1367A00E07CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A85301B29F1367A00E07CE1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4800,6 +4858,24 @@
 			name = Debug;
 		};
 		6A7C4BB0298CDD2F00B5F6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A85301C29F1367A00E07CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A85301D29F1367A00E07CE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -5887,6 +5963,15 @@
 			buildConfigurations = (
 				6A7C4BAF298CDD2F00B5F6BA /* Debug */,
 				6A7C4BB0298CDD2F00B5F6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A85301E29F1367A00E07CE1 /* Build configuration list for PBXNativeTarget "MovingOfKnights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A85301C29F1367A00E07CE1 /* Debug */,
+				6A85301D29F1367A00E07CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
