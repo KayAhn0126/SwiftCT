@@ -80,6 +80,7 @@
 		6AFA3F6229E6BD3300D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F6129E6BD3300D4934A /* main.swift */; };
 		6AFA3F6D29E6C0CD00D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F6C29E6C0CD00D4934A /* main.swift */; };
 		6AFA3F7829E6C26200D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F7729E6C26200D4934A /* main.swift */; };
+		6AFDF16229F164BF00D04A2B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDF16129F164BF00D04A2B /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -740,6 +741,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AFDF15D29F164BF00D04A2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -889,6 +899,8 @@
 		6AFA3F6C29E6C0CD00D4934A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AFA3F7529E6C26100D4934A /* SortByAge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortByAge; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFA3F7729E6C26200D4934A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AFDF15F29F164BF00D04A2B /* GoThroughTheWall */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GoThroughTheWall; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFDF16129F164BF00D04A2B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1403,6 +1415,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AFDF15C29F164BF00D04A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1610,6 +1629,7 @@
 				6A65DBD929EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423929F1117000AF2CA5 /* Mutalisk */,
 				6A85301929F1367A00E07CE1 /* MovingOfKnights */,
+				6AFDF16029F164BF00D04A2B /* GoThroughTheWall */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1714,6 +1734,7 @@
 				6A65DBD829EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423829F1117000AF2CA5 /* Mutalisk */,
 				6A85301829F1367A00E07CE1 /* MovingOfKnights */,
+				6AFDF15F29F164BF00D04A2B /* GoThroughTheWall */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2148,6 +2169,14 @@
 				6AFA3F7729E6C26200D4934A /* main.swift */,
 			);
 			path = SortByAge;
+			sourceTree = "<group>";
+		};
+		6AFDF16029F164BF00D04A2B /* GoThroughTheWall */ = {
+			isa = PBXGroup;
+			children = (
+				6AFDF16129F164BF00D04A2B /* main.swift */,
+			);
+			path = GoThroughTheWall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3394,6 +3423,23 @@
 			productReference = 6AFA3F7529E6C26100D4934A /* SortByAge */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AFDF15E29F164BF00D04A2B /* GoThroughTheWall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AFDF16529F164BF00D04A2B /* Build configuration list for PBXNativeTarget "GoThroughTheWall" */;
+			buildPhases = (
+				6AFDF15B29F164BF00D04A2B /* Sources */,
+				6AFDF15C29F164BF00D04A2B /* Frameworks */,
+				6AFDF15D29F164BF00D04A2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoThroughTheWall;
+			productName = GoThroughTheWall;
+			productReference = 6AFDF15F29F164BF00D04A2B /* GoThroughTheWall */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -3623,6 +3669,9 @@
 					6AFA3F7429E6C26100D4934A = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AFDF15E29F164BF00D04A2B = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A7350672985580D001F0255 /* Build configuration list for PBXProject "Re-Solve" */;
@@ -3711,6 +3760,7 @@
 				6A65DBD729EED57D00E41FC8 /* CompleteBinaryTree */,
 				6A65423729F1117000AF2CA5 /* Mutalisk */,
 				6A85301729F1367A00E07CE1 /* MovingOfKnights */,
+				6AFDF15E29F164BF00D04A2B /* GoThroughTheWall */,
 			);
 		};
 /* End PBXProject section */
@@ -4297,6 +4347,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AFA3F7829E6C26200D4934A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AFDF15B29F164BF00D04A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFDF16229F164BF00D04A2B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5730,6 +5788,24 @@
 			};
 			name = Release;
 		};
+		6AFDF16329F164BF00D04A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AFDF16429F164BF00D04A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -6395,6 +6471,15 @@
 			buildConfigurations = (
 				6AFA3F7A29E6C26200D4934A /* Debug */,
 				6AFA3F7B29E6C26200D4934A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AFDF16529F164BF00D04A2B /* Build configuration list for PBXNativeTarget "GoThroughTheWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AFDF16329F164BF00D04A2B /* Debug */,
+				6AFDF16429F164BF00D04A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
