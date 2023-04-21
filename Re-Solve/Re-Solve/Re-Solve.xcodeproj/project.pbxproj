@@ -49,6 +49,7 @@
 		6A9A04E7298B8E7A00430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04E6298B8E7A00430218 /* main.swift */; };
 		6A9A04F2298BFC8000430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04F1298BFC8000430218 /* main.swift */; };
 		6A9A04FD298C089800430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04FC298C089800430218 /* main.swift */; };
+		6AA6400429F29CCB00E68136 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6400329F29CCB00E68136 /* main.swift */; };
 		6AA7902729C567F100AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7902629C567F100AEF580 /* main.swift */; };
 		6AA7903229C5761500AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7903129C5761500AEF580 /* main.swift */; };
 		6AA7905329C5BD5200AEF580 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7905229C5BD5200AEF580 /* main.swift */; };
@@ -465,6 +466,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AA63FFF29F29CCB00E68136 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AA7902229C567F100AEF580 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -867,6 +877,8 @@
 		6A9A04F1298BFC8000430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A9A04FA298C089800430218 /* FrequencySort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FrequencySort; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A04FC298C089800430218 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AA6400129F29CCB00E68136 /* Iceberg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Iceberg; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA6400329F29CCB00E68136 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AA7902429C567F100AEF580 /* HoneyComb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HoneyComb; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA7902629C567F100AEF580 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AA7902F29C5761500AEF580 /* MakePalindrome */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakePalindrome; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1228,6 +1240,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A9A04F7298C089800430218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA63FFE29F29CCB00E68136 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1689,6 +1708,7 @@
 				6A87083429B5B89A000F09CA /* PopulationMovement */,
 				6AA7DE2929F22B77005EA7B6 /* Lie */,
 				6AA7DE3429F27555005EA7B6 /* Alphabet */,
+				6AA6400229F29CCB00E68136 /* Iceberg */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1798,6 +1818,7 @@
 				6AA7DE1D29F21BBB005EA7B6 /* ComebackHome */,
 				6AA7DE2829F22B77005EA7B6 /* Lie */,
 				6AA7DE3329F27555005EA7B6 /* Alphabet */,
+				6AA6400129F29CCB00E68136 /* Iceberg */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1984,6 +2005,14 @@
 				6A9A04FC298C089800430218 /* main.swift */,
 			);
 			path = FrequencySort;
+			sourceTree = "<group>";
+		};
+		6AA6400229F29CCB00E68136 /* Iceberg */ = {
+			isa = PBXGroup;
+			children = (
+				6AA6400329F29CCB00E68136 /* main.swift */,
+			);
+			path = Iceberg;
 			sourceTree = "<group>";
 		};
 		6AA7902529C567F100AEF580 /* HoneyComb */ = {
@@ -2983,6 +3012,23 @@
 			productReference = 6A9A04FA298C089800430218 /* FrequencySort */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AA6400029F29CCB00E68136 /* Iceberg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA6400729F29CCB00E68136 /* Build configuration list for PBXNativeTarget "Iceberg" */;
+			buildPhases = (
+				6AA63FFD29F29CCB00E68136 /* Sources */,
+				6AA63FFE29F29CCB00E68136 /* Frameworks */,
+				6AA63FFF29F29CCB00E68136 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iceberg;
+			productName = Iceberg;
+			productReference = 6AA6400129F29CCB00E68136 /* Iceberg */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AA7902329C567F100AEF580 /* HoneyComb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA7902829C567F100AEF580 /* Build configuration list for PBXNativeTarget "HoneyComb" */;
@@ -3714,6 +3760,9 @@
 					6A9A04F9298C089800430218 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6AA6400029F29CCB00E68136 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6AA7902329C567F100AEF580 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -3911,6 +3960,7 @@
 				6AA7DE1C29F21BBB005EA7B6 /* ComebackHome */,
 				6AA7DE2729F22B77005EA7B6 /* Lie */,
 				6AA7DE3229F27555005EA7B6 /* Alphabet */,
+				6AA6400029F29CCB00E68136 /* Iceberg */,
 			);
 		};
 /* End PBXProject section */
@@ -4249,6 +4299,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A04FD298C089800430218 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA63FFD29F29CCB00E68136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA6400429F29CCB00E68136 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5404,6 +5462,24 @@
 			};
 			name = Release;
 		};
+		6AA6400529F29CCB00E68136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AA6400629F29CCB00E68136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AA7902929C567F100AEF580 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6420,6 +6496,15 @@
 			buildConfigurations = (
 				6A9A04FF298C089800430218 /* Debug */,
 				6A9A0500298C089800430218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA6400729F29CCB00E68136 /* Build configuration list for PBXNativeTarget "Iceberg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA6400529F29CCB00E68136 /* Debug */,
+				6AA6400629F29CCB00E68136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
