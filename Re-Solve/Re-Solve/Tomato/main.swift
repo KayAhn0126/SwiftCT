@@ -1,95 +1,68 @@
-//
-//  main.swift
-//  Tomato
-//
-//  Created by Kay on 2023/02/22.
-//
-
-/*
- 7576
- 토마토
- */
-
-// BFS + 최단거리(마지막 숫자)
-// 토마토의 위치 알아야한다.
-// BFS 끝나고 맵 전체 체크했을때 0 있으면 -1 아니면 result 출력
-// 큐를 배열로 만들기
-
 import Foundation
-
-var bfsQueue = [(Int,Int)](), idx = 0
-let dy = [-1,0,1,0]
-let dx = [0,1,0,-1]
+// 1 익은 토마토
+// 0 익지 않은 토마토
+// -1 벽
+// 토마토는 여러개 있을 수 있다.
 
 let MN = readLine()!.split(separator: " ").map { Int(String($0))! }
 let N = MN[1]
 let M = MN[0]
 
 var adjMatrix = [[Int]](repeating: [Int](), count: N)
-var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
-var resultDays = 0
 
 for i in 0..<N {
     adjMatrix[i].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
 }
 
-var tomatoList: [(Int, Int)] = []
+
+var bfsQueue = [(Int,Int)](), idx = 0
+var visited = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
 
 for i in 0..<N {
     for j in 0..<M {
         if adjMatrix[i][j] == 1 {
-            tomatoList.append((i,j))
+            bfsQueue.append((i,j))
+            visited[i][j] = 1
         }
     }
 }
-var flag = false
-//MARK: 토마토 익게하는 BFS
-func ripensTomato() {
+
+let dy = [-1,0,1,0]
+let dx = [0,1,0,-1]
+
+var result = 1
+
+func bfs() {
     while idx < bfsQueue.count {
-        let tomatoLocation = bfsQueue[idx]; idx += 1
-        let Y = tomatoLocation.0
-        let X = tomatoLocation.1
+        let current = bfsQueue[idx]; idx += 1
         for i in 0..<4 {
-            let ny = Y + dy[i]
-            let nx = X + dx[i]
+            let ny = current.0 + dy[i]
+            let nx = current.1 + dx[i]
             if ny < 0 || nx < 0 || ny >= N || nx >= M { continue }
-            if visited[ny][nx] > 0 || adjMatrix[ny][nx] == -1 { continue }
-            flag = true
-            visited[ny][nx] = visited[Y][X] + 1
-            resultDays = visited[ny][nx]
+            if visited[ny][nx] != 0 { continue }
+            if adjMatrix[ny][nx] == -1 { continue }
+            let nextVisitNumber = visited[current.0][current.1] + 1
+            visited[ny][nx] = nextVisitNumber
+            result = nextVisitNumber > result ? nextVisitNumber : result
             bfsQueue.append((ny,nx))
         }
     }
 }
 
-//MARK: 벽이 아닌 0이 있다면 true, 아니면 false 반환
-func checkZero() -> Bool {
+func checkMap() -> Bool {
     for i in 0..<N {
         for j in 0..<M {
-            if visited[i][j] == 0 && adjMatrix[i][j] != -1 {
-                return true
-            }
+            if visited[i][j] == 0 && adjMatrix[i][j] != -1 { return false }
         }
     }
-    return false
+    return true
 }
 
-tomatoList.enumerated().forEach {
-    let tomatoY = $0.element.0
-    let tomatoX = $0.element.1
-    bfsQueue.append((tomatoY, tomatoX))
-    visited[tomatoY][tomatoX] = 1
-}
-ripensTomato()
 
-if checkZero() == true {
-    print(-1)
+bfs()
+
+if checkMap() == true {
+    print(result - 1)
 } else {
-    if flag == false {
-        print(0)
-    } else {
-        print(resultDays - 1)
-    }
+    print(-1)
 }
-
-
