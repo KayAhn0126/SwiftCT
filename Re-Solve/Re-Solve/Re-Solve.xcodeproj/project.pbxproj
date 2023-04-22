@@ -42,6 +42,7 @@
 		6A92B3E429C44F71005DBF5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3E329C44F71005DBF5A /* main.swift */; };
 		6A952E8F29EE4E140099B571 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A952E8E29EE4E140099B571 /* main.swift */; };
 		6A952E9A29EE63DE0099B571 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A952E9929EE63DE0099B571 /* main.swift */; };
+		6A9597A529F3860B00E66B1B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9597A429F3860B00E66B1B /* main.swift */; };
 		6A99050A29EBA2D100D56B69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99050929EBA2D100D56B69 /* main.swift */; };
 		6A99051529EBE99A00D56B69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99051429EBE99A00D56B69 /* main.swift */; };
 		6A9A04BE298B5FD900430218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A04BD298B5FD900430218 /* main.swift */; };
@@ -396,6 +397,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A952E9529EE63DE0099B571 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A9597A029F3860B00E66B1B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -873,6 +883,8 @@
 		6A952E8E29EE4E140099B571 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A952E9729EE63DE0099B571 /* StartLink */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StartLink; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A952E9929EE63DE0099B571 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A9597A229F3860B00E66B1B /* LakeOfSwan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LakeOfSwan; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9597A429F3860B00E66B1B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A99050729EBA2D100D56B69 /* HumanComputerInteracts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HumanComputerInteracts; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A99050929EBA2D100D56B69 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A99051229EBE99A00D56B69 /* NumberingOnHouse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberingOnHouse; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1203,6 +1215,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A952E9429EE63DE0099B571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A95979F29F3860B00E66B1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1729,6 +1748,7 @@
 				6AA7DE3429F27555005EA7B6 /* Alphabet */,
 				6AA6400229F29CCB00E68136 /* Iceberg */,
 				6AA6400D29F2D67800E68136 /* Junan */,
+				6A9597A329F3860B00E66B1B /* LakeOfSwan */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1840,6 +1860,7 @@
 				6AA7DE3329F27555005EA7B6 /* Alphabet */,
 				6AA6400129F29CCB00E68136 /* Iceberg */,
 				6AA6400C29F2D67700E68136 /* Junan */,
+				6A9597A229F3860B00E66B1B /* LakeOfSwan */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1970,6 +1991,14 @@
 				6A952E9929EE63DE0099B571 /* main.swift */,
 			);
 			path = StartLink;
+			sourceTree = "<group>";
+		};
+		6A9597A329F3860B00E66B1B /* LakeOfSwan */ = {
+			isa = PBXGroup;
+			children = (
+				6A9597A429F3860B00E66B1B /* main.swift */,
+			);
+			path = LakeOfSwan;
 			sourceTree = "<group>";
 		};
 		6A99050829EBA2D100D56B69 /* HumanComputerInteracts */ = {
@@ -2922,6 +2951,23 @@
 			productReference = 6A952E9729EE63DE0099B571 /* StartLink */;
 			productType = "com.apple.product-type.tool";
 		};
+		6A9597A129F3860B00E66B1B /* LakeOfSwan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9597A829F3860B00E66B1B /* Build configuration list for PBXNativeTarget "LakeOfSwan" */;
+			buildPhases = (
+				6A95979E29F3860B00E66B1B /* Sources */,
+				6A95979F29F3860B00E66B1B /* Frameworks */,
+				6A9597A029F3860B00E66B1B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LakeOfSwan;
+			productName = LakeOfSwan;
+			productReference = 6A9597A229F3860B00E66B1B /* LakeOfSwan */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A99050629EBA2D100D56B69 /* HumanComputerInteracts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A99050D29EBA2D100D56B69 /* Build configuration list for PBXNativeTarget "HumanComputerInteracts" */;
@@ -3785,6 +3831,9 @@
 					6A952E9629EE63DE0099B571 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A9597A129F3860B00E66B1B = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A99050629EBA2D100D56B69 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4011,6 +4060,7 @@
 				6AA7DE3229F27555005EA7B6 /* Alphabet */,
 				6AA6400029F29CCB00E68136 /* Iceberg */,
 				6AA6400B29F2D67700E68136 /* Junan */,
+				6A9597A129F3860B00E66B1B /* LakeOfSwan */,
 			);
 		};
 /* End PBXProject section */
@@ -4293,6 +4343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A952E9A29EE63DE0099B571 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A95979E29F3860B00E66B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9597A529F3860B00E66B1B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5386,6 +5444,24 @@
 			name = Debug;
 		};
 		6A952E9D29EE63DE0099B571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A9597A629F3860B00E66B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A9597A729F3860B00E66B1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -6509,6 +6585,15 @@
 			buildConfigurations = (
 				6A952E9C29EE63DE0099B571 /* Debug */,
 				6A952E9D29EE63DE0099B571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9597A829F3860B00E66B1B /* Build configuration list for PBXNativeTarget "LakeOfSwan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9597A629F3860B00E66B1B /* Debug */,
+				6A9597A729F3860B00E66B1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
