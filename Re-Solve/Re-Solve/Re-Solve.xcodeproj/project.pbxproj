@@ -37,6 +37,7 @@
 		6A8709EA29C442FC00F65F98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8709E929C442FC00F65F98 /* main.swift */; };
 		6A8E5873299E2C8400E231DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E5872299E2C8400E231DB /* main.swift */; };
 		6A8E587E299E45AF00E231DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E587D299E45AF00E231DB /* main.swift */; };
+		6A903D8829F4B93C00986AAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A903D8729F4B93C00986AAE /* main.swift */; };
 		6A90C73D2999EBA8002AFB10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90C73C2999EBA8002AFB10 /* main.swift */; };
 		6A91978229E7FD5200300CC4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A91978129E7FD5200300CC4 /* main.swift */; };
 		6A92B3E429C44F71005DBF5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3E329C44F71005DBF5A /* main.swift */; };
@@ -352,6 +353,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A8E5879299E45AF00E231DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A903D8329F4B93C00986AAE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -873,6 +883,8 @@
 		6A8E5872299E2C8400E231DB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A8E587B299E45AF00E231DB /* DFSBFS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DFSBFS; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E587D299E45AF00E231DB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A903D8529F4B93C00986AAE /* Tomato3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tomato3D; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A903D8729F4B93C00986AAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A90C73A2999EBA8002AFB10 /* SafeArea */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SafeArea; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A90C73C2999EBA8002AFB10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A91977F29E7FD5200300CC4 /* Statistics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Statistics; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1180,6 +1192,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A8E5878299E45AF00E231DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A903D8229F4B93C00986AAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1749,6 +1768,7 @@
 				6AA6400229F29CCB00E68136 /* Iceberg */,
 				6AA6400D29F2D67800E68136 /* Junan */,
 				6A9597A329F3860B00E66B1B /* LakeOfSwan */,
+				6A903D8629F4B93C00986AAE /* Tomato3D */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -1861,6 +1881,7 @@
 				6AA6400129F29CCB00E68136 /* Iceberg */,
 				6AA6400C29F2D67700E68136 /* Junan */,
 				6A9597A229F3860B00E66B1B /* LakeOfSwan */,
+				6A903D8529F4B93C00986AAE /* Tomato3D */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1951,6 +1972,14 @@
 				6A8E587D299E45AF00E231DB /* main.swift */,
 			);
 			path = DFSBFS;
+			sourceTree = "<group>";
+		};
+		6A903D8629F4B93C00986AAE /* Tomato3D */ = {
+			isa = PBXGroup;
+			children = (
+				6A903D8729F4B93C00986AAE /* main.swift */,
+			);
+			path = Tomato3D;
 			sourceTree = "<group>";
 		};
 		6A90C73B2999EBA8002AFB10 /* SafeArea */ = {
@@ -2864,6 +2893,23 @@
 			name = DFSBFS;
 			productName = DFSBFS;
 			productReference = 6A8E587B299E45AF00E231DB /* DFSBFS */;
+			productType = "com.apple.product-type.tool";
+		};
+		6A903D8429F4B93C00986AAE /* Tomato3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A903D8B29F4B93C00986AAE /* Build configuration list for PBXNativeTarget "Tomato3D" */;
+			buildPhases = (
+				6A903D8129F4B93C00986AAE /* Sources */,
+				6A903D8229F4B93C00986AAE /* Frameworks */,
+				6A903D8329F4B93C00986AAE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tomato3D;
+			productName = Tomato3D;
+			productReference = 6A903D8529F4B93C00986AAE /* Tomato3D */;
 			productType = "com.apple.product-type.tool";
 		};
 		6A90C7392999EBA8002AFB10 /* SafeArea */ = {
@@ -3816,6 +3862,9 @@
 					6A8E587A299E45AF00E231DB = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A903D8429F4B93C00986AAE = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					6A90C7392999EBA8002AFB10 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4061,6 +4110,7 @@
 				6AA6400029F29CCB00E68136 /* Iceberg */,
 				6AA6400B29F2D67700E68136 /* Junan */,
 				6A9597A129F3860B00E66B1B /* LakeOfSwan */,
+				6A903D8429F4B93C00986AAE /* Tomato3D */,
 			);
 		};
 /* End PBXProject section */
@@ -4303,6 +4353,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8E587E299E45AF00E231DB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A903D8129F4B93C00986AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A903D8829F4B93C00986AAE /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5354,6 +5412,24 @@
 			name = Debug;
 		};
 		6A8E5881299E45AF00E231DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A903D8929F4B93C00986AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A903D8A29F4B93C00986AAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -6540,6 +6616,15 @@
 			buildConfigurations = (
 				6A8E5880299E45AF00E231DB /* Debug */,
 				6A8E5881299E45AF00E231DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A903D8B29F4B93C00986AAE /* Build configuration list for PBXNativeTarget "Tomato3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A903D8929F4B93C00986AAE /* Debug */,
+				6A903D8A29F4B93C00986AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
