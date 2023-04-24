@@ -52,24 +52,24 @@
 | [스타트링크](https://www.acmicpc.net/problem/5014) | 🟥 | | | | |
 | [적록색약](https://www.acmicpc.net/problem/10026) | 🟥 | | | | |
 | [치즈](https://www.acmicpc.net/problem/2636) | 🟥 | | | | |
-| [인구이동](https://www.acmicpc.net/problem/16234) | 🟥 | | | | |
+| [인구이동](https://www.acmicpc.net/problem/16234) | 🟥 | 🟧 | | | |
 | [불!](https://www.acmicpc.net/problem/4179) | 🟥 | | | | |
 | [뮤탈리스크](https://www.acmicpc.net/problem/12869) | 🟥 | | | | |
-| [나이트의 이동](https://www.acmicpc.net/problem/7562) | | | | | |
-| [벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | | | | | |
-| [컴백홈](https://www.acmicpc.net/problem/1189) | | | | | |
-| [거짓말](https://www.acmicpc.net/problem/1043) | | | | | |
-| [알파벳](https://www.acmicpc.net/problem/1987) | | | | | |
-| [빙산](https://www.acmicpc.net/problem/2573) | | | | | |
-| [주난의 난](https://www.acmicpc.net/problem/14497) | | | | | |
-| [백조의호수](https://www.acmicpc.net/problem/3197) | | | | | |
-| [토마토](https://www.acmicpc.net/problem/7576) | | | | | |
-| [토마토 with 3차원배열](https://www.acmicpc.net/problem/7569) | | | | | |
-| [연구소](https://www.acmicpc.net/problem/14502) | | | | | |
-| [연구소 2](https://www.acmicpc.net/problem/17141) | | | | | |
-| [연구소 3](https://www.acmicpc.net/problem/17142) | | | | | |
-| [숨바꼭질](https://www.acmicpc.net/problem/1697) | | | | | |
-| [숨바꼭질2](https://www.acmicpc.net/problem/12851) | | | | | |
+| [나이트의 이동](https://www.acmicpc.net/problem/7562) | 🟥 | | | | |
+| [벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | 🟥 | | | | |
+| [컴백홈](https://www.acmicpc.net/problem/1189) | 🟥 | | | | |
+| [거짓말](https://www.acmicpc.net/problem/1043) | 🟥 | | | | |
+| [알파벳](https://www.acmicpc.net/problem/1987) | 🟥 | | | | |
+| [빙산](https://www.acmicpc.net/problem/2573) | 🟥 | | | | |
+| [주난의 난](https://www.acmicpc.net/problem/14497) | 🟥 | | | | |
+| [백조의호수](https://www.acmicpc.net/problem/3197) | 🟥 | | | | |
+| [토마토](https://www.acmicpc.net/problem/7576) | 🟥 | | | | |
+| [토마토 with 3차원배열](https://www.acmicpc.net/problem/7569) | 🟥 | | | | |
+| [연구소](https://www.acmicpc.net/problem/14502) | 🟥 | | | | |
+| [연구소 2](https://www.acmicpc.net/problem/17141) | 🟥 | | | | |
+| [연구소 3](https://www.acmicpc.net/problem/17142) | 🟥 | | | | |
+| [숨바꼭질](https://www.acmicpc.net/problem/1697) | 🟥 | | | | |
+| [숨바꼭질2](https://www.acmicpc.net/problem/12851) | 🟥 | | | | |
 | [숨바꼭질4](https://www.acmicpc.net/problem/13913) | | | | | |
 | [쿼드트리](https://www.acmicpc.net/problem/1992) | | | | | |
 | [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | | | | | |
