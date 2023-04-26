@@ -4,6 +4,7 @@
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
 | [피보나치 수 1](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/FibonacciNumber) | bottom - up | [24416](https://www.acmicpc.net/problem/24416) |
+| [파스칼의 삼각형](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/PascalsTriangle) | bottom - up | [16395](https://www.acmicpc.net/problem/16395) |
 | [01타일](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile) | bottom - up | [1904](https://www.acmicpc.net/problem/1904) |
 | [1로 만들기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/MakeToOne) | 순서가 중요한 DP | [1463](https://www.acmicpc.net/problem/1463) |
 | [신나는 함수 실행](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ExcitingFunctionExecution) | 메모이제이션 | [9184](https://www.acmicpc.net/problem/9184) |
@@ -71,7 +72,7 @@ while let line = readLine() {
 ```
 - 재귀적으로 실행되니 기저사례가 있고, solve()함수를 실행하면서 중간중간 계속 Memoization을 실행하고 있다.
 
-## 🍎 반복문 + DP (bottom - up)
+## 🍎 반복문 + DP (bottom - up
 - [01타일 문제](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile)
 ```swift
 import Foundation
