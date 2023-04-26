@@ -10,7 +10,7 @@
 | [보물섬](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/TreasureIsland) | BFS + 최단거리 | [2589](https://www.acmicpc.net/problem/2589) |
 | [효율적인 해킹](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/EffectiveHacking) | 빠른 I/O, <br> 배열을 이용한 큐 | [1325](https://www.acmicpc.net/problem/1325) |
 | [바이러스](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Virus) | 인접리스트 | [2606](https://www.acmicpc.net/problem/2606) |
-| [음식물 피하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AwayFromFood) | BFS + Connected Component | [1743](https://www.acmicpc.net/problem/1743) |
+| [음식물 피하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AwayFromFood) | DFS + Connected Component | [1743](https://www.acmicpc.net/problem/1743) |
 
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
