@@ -10,6 +10,7 @@
 | [보물섬](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/TreasureIsland) | BFS + 최단거리 | [2589](https://www.acmicpc.net/problem/2589) |
 | [효율적인 해킹](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/EffectiveHacking) | 빠른 I/O, <br> 배열을 이용한 큐 | [1325](https://www.acmicpc.net/problem/1325) |
 | [바이러스](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Virus) | 인접리스트 | [2606](https://www.acmicpc.net/problem/2606) |
+| [음식물 피하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AwayFromFood) | BFS + Connected Component | [1743](https://www.acmicpc.net/problem/1743) |
 
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
@@ -20,7 +21,7 @@
 | [알고리즘 수업 - 너비 우선 탐색 2](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/AlgorithmLectureBFS2) | BFS <br> 내림차순 방문 | [24445](https://www.acmicpc.net/problem/24445) |
 | [안전영역](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/SafeArea) | Connected Component, DFS, 예외처리 | [2468](https://www.acmicpc.net/problem/2468) |
 | [영역 구하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/MeasureArea) | Connected Component, 흑백 반전, DFS | [2583](https://www.acmicpc.net/problem/2583) |
-|[촌수계산](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/CountingKinship) | 구현, BFS + 최단거리 | [2644](https://www.acmicpc.net/problem/2644) |
+| [촌수계산](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/CountingKinship) | 구현, BFS + 최단거리 | [2644](https://www.acmicpc.net/problem/2644) |
 | [스타트링크](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/StartLink) | 인접리스트, BFS | [5014](https://www.acmicpc.net/problem/5014) |
 | [적록색약](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/RGColorBlind) | 구현 + DFS | [10026](https://www.acmicpc.net/problem/10026) |
 
