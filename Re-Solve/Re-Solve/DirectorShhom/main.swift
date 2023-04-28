@@ -29,6 +29,3 @@ func find(_ num: Int) -> Int {
 }
 
 print(find(num))
-
-
-
