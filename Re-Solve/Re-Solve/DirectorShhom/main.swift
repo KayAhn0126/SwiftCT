@@ -1,50 +1,34 @@
-//
-//  main.swift
-//  DirectorShhom
-//
-//  Created by Kay on 2023/02/11.
-//
-
-/*
- 1436
- 영화감독 숌
- */
-
-// 브루트포스
-// 범위: 666 * 10000 = 6660000
-
 import Foundation
 
-let userInput = Int(readLine()!)!
+// 666 부터 6666666까지 시작하면서 6이 연속으로 3개 들어가면 +1
+let num = Int(readLine()!)!
 
-// 1666
-// 26663
-func checkThreeSix(_ number: Int) -> Bool {
-    var testNumber = number
-    var counter = 0
-    while testNumber > 0 {
-        if testNumber % 10 == 6 {
-            counter += 1
-            if counter == 3 {
-                return true
+func find(_ num: Int) -> Int {
+    var count = 0
+    for i in 666...6666666 {
+        var temp = i
+        var sixCount = 0
+        while temp > 0 {
+            if temp % 10 == 6 {
+                sixCount += 1
+            } else {
+                sixCount = 0
             }
-        } else {
-            counter = 0
+            temp /= 10
+            
+            if sixCount == 3 {
+                count += 1
+                break
+            }
         }
-        testNumber /= 10
+        if count == num {
+            return i
+        }
     }
-    return false
+    return 0
 }
 
-var counter = 0
-for i in 666..<666*10000 {
-    if checkThreeSix(i) == true {
-        counter += 1
-    }
-    if counter == userInput {
-        print(i)
-        break
-    }
-}
+print(find(num))
 
-// 20분 소요
+
+
