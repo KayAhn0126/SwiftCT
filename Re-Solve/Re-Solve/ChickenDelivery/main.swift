@@ -1,142 +1,68 @@
-//
-//  main.swift
-//  ChickenDelivery
-//
-//  Created by Kay on 2023/02/11.
-//
-
-/*
- 15686
- 치킨배달
- */
-
-/*
- 브루트 포스 + 조합
- 
- 문제 해석:
- 
- N * N
- 빈칸, 집, 치킨집
- r과 c는 1부터 시작.
- 치킨거리 = 집과 가장 가까운 치킨집 사이의 거리.
- 도시의 치킨 거리 = 모든 집의 치킨 거리의 합.
- 임의의 두 칸(r1, c1)과 (r2, c2)사이의 거리는 |r1 - r2| + |c1 - c2| 이다.
- 
- 
- 문제 접근 :
- 특정 지점부터 다른 특정 지점까지의 거리를 구하면서 최소값을 구해야한다.
- 현재 존재하는 치킨집에서 M개를 선택해야한다. 즉, 현재 5개가 있고 M이 3이라면 2개를 돌아가면서 없애야한다.
- 
- 
- 문제 풀이 :
- 하나의 집에서 가장 가까운 치킨집을 찾는 과정 * 100 -> BFS로 0,0에서 49,49까지 50
- 즉, 100 * 50 = 5000
- 이제 치킨집을 바꿔보자.
- 치킨집은 최대 13개가 될수 있고 그 중 M 개 고르기
- 조합은 중앙으로 갈수록 최대값이고 13 C m => 최대 13C6 or 13C7 -> 1716
- 정말 최악의 경우 -> 5000 * 1716 = 858000
- 1000만 아래이므로 완탐으로 푼다.
- */
-
 import Foundation
 
-struct Queue<T> {
-    var enQueueList: [T] = []
-    var deQueueList: [T] = []
-    
-    var count: Int {
-        return enQueueList.count + deQueueList.count
-    }
-    
-    var isEmpty: Bool {
-        return enQueueList.isEmpty && deQueueList.isEmpty
-    }
-    
-    mutating func enqueue(_ element: T) {
-        enQueueList.append(element)
-    }
-    
-    mutating func dequeue() -> T? {
-        if deQueueList.isEmpty {
-            deQueueList = enQueueList.reversed()
-        }
-        return deQueueList.popLast()
-    }
+let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NM[0]
+let M = NM[1]
+
+var adjMatrix = [[Int]](repeating: [Int](), count: N)
+for i in 0..<N {
+    adjMatrix[i].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
 }
 
 
-func combination<T>(_ arr: [T], _ limit: Int) -> [[T]] {
-    var result = [[T]]()
-    guard arr.count >= limit else { return result }
+// 전체 치킨집의 위치를 구한다.
+// 치킨집의 콤비네이션 구한다.
+
+// 유효한 치킨집의 위치가 바뀔때마다
+// 집마다 현재 조합으로 있는 치킨집들과의 거리를 재보고 가장 작은것을 tmpResult에 더한다.
+// 한판이 끝나면 result와 비교한다. 가장 적은것으로 업데이트 한다.
+
+// 시간 복잡도 -> 13C 6 = 300정도 * 50 * 50  = 2500 * 300
+
+//MARK: 조합 함수 -> [[T]]
+func combination<T>(_ arr: [T], _ n: Int) -> [[T]] {
+    var result: [[T]] = []
+    if arr.count < n { return result }
     
-    func cycle(_ combArr: [T], _ index: Int) {
-        if combArr.count == limit {
-            result.append(combArr)
+    func cycle(_ now: [T], _ idx: Int) {
+        if now.count == n {
+            result.append(now)
             return
         }
-        
-        for i in index..<arr.count {
-            cycle(combArr + [arr[i]], i + 1)
+        for i in idx..<arr.count {
+            cycle(now + [arr[i]], i + 1)
         }
     }
     cycle([], 0)
     return result
 }
 
-let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
-let N = NM[0]
-let M = NM[1]
-
-var matrix = [[Int]](repeating: [Int](), count: N)
-
-for row in 0..<N {
-    matrix[row].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
-}
-
-
-var homeLocationList = [(Int,Int)]()
-var chickenLocationList = [(Int,Int)]()
-
-for row in 0..<N {
-    for col in 0..<N {
-        if matrix[row][col] == 1 {
-            homeLocationList.append((row,col))
-        } else if matrix[row][col] == 2 {
-            chickenLocationList.append((row,col))
+//MARK: 전체 치킨집의 위치 및 집 위치 구하기
+var chickenList: [(Int, Int)] = []
+var homeList: [(Int,Int)] = []
+for i in 0..<N {
+    for j in 0..<N {
+        if adjMatrix[i][j] == 2 {
+            chickenList.append((i,j))
+        } else if adjMatrix[i][j] == 1 {
+            homeList.append((i,j))
         }
     }
 }
 
-var combinationChickenLocation = combination(chickenLocationList, M)
-
-/*
- 치킨집 조합이 주어진다.
- 하나의 집에서 치킨집들의 위치를 비교하면서 가장 가까운 거리를 구한다.
- 조합을 바꿔서 다시 실행
- 
- 임의의 두 칸(r1, c1)과 (r2, c2)사이의 거리는 |r1 - r2| + |c1 - c2| 이다.
- */
-var result = 987654321
-for chickenLocation in combinationChickenLocation {
-    var roundTotal = 0
-    for homeLocation in homeLocationList {
-        let homeY = homeLocation.0
-        let homeX = homeLocation.1
-        var nearestValue = 987654321
-        for chickLocation in chickenLocation {
-            let chickenY = chickLocation.0
-            let chickenX = chickLocation.1
-            let distance =  abs(chickenY - homeY) + abs(chickenX - homeX)
-            nearestValue = nearestValue > distance ? distance : nearestValue
+//MARK: 메인 로직
+var combi = combination(chickenList, M)
+var result = Int.max
+for locations in combi {
+    var roundResult = 0
+    for home in homeList {
+        var tempMin = Int.max
+        for location in locations {
+            var distance = abs(location.0 - home.0) + abs(location.1 - home.1)
+            tempMin = distance < tempMin ? distance : tempMin
         }
-        roundTotal += nearestValue
+        roundResult += tempMin
     }
-    result = result > roundTotal ? roundTotal : result
+    result = roundResult < result ? roundResult : result
 }
-
 print(result)
-
-// 2시간 ~ 3시간
-
-
-
