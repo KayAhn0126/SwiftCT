@@ -70,15 +70,15 @@
 | [연구소 3](https://www.acmicpc.net/problem/17142) | 🟥 | | | | |
 | [숨바꼭질](https://www.acmicpc.net/problem/1697) | 🟥 | | | | |
 | [숨바꼭질2](https://www.acmicpc.net/problem/12851) | 🟥 | | | | |
-| [숨바꼭질4](https://www.acmicpc.net/problem/13913) | | | | | |
-| [쿼드트리](https://www.acmicpc.net/problem/1992) | | | | | |
-| [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | | | | | |
-| [종이의 개수](https://www.acmicpc.net/problem/1780) | | | | | |
-| [사과 담기 게임](https://www.acmicpc.net/problem/2828) | | | | | |
-| [오큰수](https://www.acmicpc.net/problem/17298) | | | | | |
-| [블랙잭](https://www.acmicpc.net/problem/2798) | | | | | |
-| [분해합](https://www.acmicpc.net/problem/2231) | | | | | |
-| [덩치](https://www.acmicpc.net/problem/7568) | | | | | |
+| [숨바꼭질4](https://www.acmicpc.net/problem/13913) | 🟥 | | | | |
+| [쿼드트리](https://www.acmicpc.net/problem/1992) | 🟥 | | | | |
+| [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | 🟥 | | | | |
+| [종이의 개수](https://www.acmicpc.net/problem/1780) | 🟥 | | | | |
+| [사과 담기 게임](https://www.acmicpc.net/problem/2828) | 🟥 | | | | |
+| [오큰수](https://www.acmicpc.net/problem/17298) | 🟥 | | | | |
+| [블랙잭](https://www.acmicpc.net/problem/2798) | 🟥 | | | | |
+| [분해합](https://www.acmicpc.net/problem/2231) | 🟥 | | | | |
+| [덩치](https://www.acmicpc.net/problem/7568) | 🟥 | | | | |
 | [영화감독 숌](https://www.acmicpc.net/problem/1436) | | | | | |
 | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | | | | | |
 | [치킨 배달](https://www.acmicpc.net/problem/15686) | | | | | |
