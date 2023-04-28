@@ -31,7 +31,7 @@
 | [톱니바퀴2](https://www.acmicpc.net/problem/15662) | 🟥 | | | | |
 | [뱀](https://www.acmicpc.net/problem/3190) | 🟥 | | | | |
 | [괄호 추가하기](https://www.acmicpc.net/problem/16637) | 🟥 | | | | |
-| [문자해독](https://www.acmicpc.net/problem/1593) | 🟥 | | | | |
+| [문자해독](https://www.acmicpc.net/problem/1593) | 🟥 | 🟧 | | | |
 | [수열](https://www.acmicpc.net/problem/2559) | 🟥 | | | | |
 | [구간 합 구하기4](https://www.acmicpc.net/problem/11659) | 🟥 | | | | |
 | [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | 🟥 | | | | |
@@ -79,10 +79,10 @@
 | [블랙잭](https://www.acmicpc.net/problem/2798) | 🟥 | | | | |
 | [분해합](https://www.acmicpc.net/problem/2231) | 🟥 | | | | |
 | [덩치](https://www.acmicpc.net/problem/7568) | 🟥 | | | | |
-| [영화감독 숌](https://www.acmicpc.net/problem/1436) | | | | | |
-| [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | | | | | |
-| [치킨 배달](https://www.acmicpc.net/problem/15686) | | | | | |
-| [테트로미노](https://www.acmicpc.net/problem/14500) | | | | | |
+| [영화감독 숌](https://www.acmicpc.net/problem/1436) | 🟥 | | | | |
+| [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | 🟥 | | | | |
+| [치킨 배달](https://www.acmicpc.net/problem/15686) | 🟥 | | | | |
+| [테트로미노](https://www.acmicpc.net/problem/14500) | 🟥 | | | | |
 | [리모컨](https://www.acmicpc.net/problem/1107) | | | | | |
 | [마인크래프트](https://www.acmicpc.net/problem/18111) | | | | | |
 | [부등호](https://www.acmicpc.net/problem/2529) | | | | | |
