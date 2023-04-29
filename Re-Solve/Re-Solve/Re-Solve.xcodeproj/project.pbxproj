@@ -47,6 +47,7 @@
 		6A903D9329F5636C00986AAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A903D9229F5636C00986AAE /* main.swift */; };
 		6A90C73D2999EBA8002AFB10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90C73C2999EBA8002AFB10 /* main.swift */; };
 		6A91978229E7FD5200300CC4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A91978129E7FD5200300CC4 /* main.swift */; };
+		6A926E2A29FD353300536460 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A926E2929FD353300536460 /* main.swift */; };
 		6A92B3E429C44F71005DBF5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3E329C44F71005DBF5A /* main.swift */; };
 		6A952E8F29EE4E140099B571 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A952E8E29EE4E140099B571 /* main.swift */; };
 		6A952E9A29EE63DE0099B571 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A952E9929EE63DE0099B571 /* main.swift */; };
@@ -454,6 +455,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6A91977D29E7FD5200300CC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A926E2529FD353300536460 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -1013,6 +1023,8 @@
 		6A90C73C2999EBA8002AFB10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A91977F29E7FD5200300CC4 /* Statistics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Statistics; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A91978129E7FD5200300CC4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A926E2729FD353300536460 /* MineCraft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MineCraft; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A926E2929FD353300536460 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A92B3E129C44F71005DBF5A /* Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ball; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A92B3E329C44F71005DBF5A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A952E8C29EE4E140099B571 /* CountingKinship */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountingKinship; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1394,6 +1406,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A91977C29E7FD5200300CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A926E2429FD353300536460 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2036,6 +2055,7 @@
 				6AF63CCD29FB7D9B00606248 /* RedrawingChessBoard */,
 				6AF63CD829FBCD7A00606248 /* Tetromino */,
 				6AE92E6A29FCD52500883129 /* RemoteControl */,
+				6A926E2829FD353300536460 /* MineCraft */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -2161,6 +2181,7 @@
 				6AF63CCC29FB7D9B00606248 /* RedrawingChessBoard */,
 				6AF63CD729FBCD7A00606248 /* Tetromino */,
 				6AE92E6929FCD52500883129 /* RemoteControl */,
+				6A926E2729FD353300536460 /* MineCraft */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2283,6 +2304,14 @@
 				6A91978129E7FD5200300CC4 /* main.swift */,
 			);
 			path = Statistics;
+			sourceTree = "<group>";
+		};
+		6A926E2829FD353300536460 /* MineCraft */ = {
+			isa = PBXGroup;
+			children = (
+				6A926E2929FD353300536460 /* main.swift */,
+			);
+			path = MineCraft;
 			sourceTree = "<group>";
 		};
 		6A92B3E229C44F71005DBF5A /* Ball */ = {
@@ -3384,6 +3413,23 @@
 			productReference = 6A91977F29E7FD5200300CC4 /* Statistics */;
 			productType = "com.apple.product-type.tool";
 		};
+		6A926E2629FD353300536460 /* MineCraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A926E2D29FD353300536460 /* Build configuration list for PBXNativeTarget "MineCraft" */;
+			buildPhases = (
+				6A926E2329FD353300536460 /* Sources */,
+				6A926E2429FD353300536460 /* Frameworks */,
+				6A926E2529FD353300536460 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MineCraft;
+			productName = MineCraft;
+			productReference = 6A926E2729FD353300536460 /* MineCraft */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A92B3E029C44F71005DBF5A /* Ball */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A92B3E729C44F71005DBF5A /* Build configuration list for PBXNativeTarget "Ball" */;
@@ -4398,6 +4444,9 @@
 					6A91977E29E7FD5200300CC4 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6A926E2629FD353300536460 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					6A92B3E029C44F71005DBF5A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4661,6 +4710,7 @@
 				6AF63CCB29FB7D9B00606248 /* RedrawingChessBoard */,
 				6AF63CD629FBCD7A00606248 /* Tetromino */,
 				6AE92E6829FCD52500883129 /* RemoteControl */,
+				6A926E2629FD353300536460 /* MineCraft */,
 			);
 		};
 /* End PBXProject section */
@@ -4983,6 +5033,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A91978229E7FD5200300CC4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A926E2329FD353300536460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A926E2A29FD353300536460 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6235,6 +6293,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A926E2B29FD353300536460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A926E2C29FD353300536460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -7552,6 +7630,15 @@
 			buildConfigurations = (
 				6A91978429E7FD5200300CC4 /* Debug */,
 				6A91978529E7FD5200300CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A926E2D29FD353300536460 /* Build configuration list for PBXNativeTarget "MineCraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A926E2B29FD353300536460 /* Debug */,
+				6A926E2C29FD353300536460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
