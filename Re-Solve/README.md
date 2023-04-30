@@ -72,7 +72,6 @@
 | [숨바꼭질2](https://www.acmicpc.net/problem/12851) | 🟥 | | | | |
 | [숨바꼭질4](https://www.acmicpc.net/problem/13913) | 🟥 | | | | |
 | [쿼드트리](https://www.acmicpc.net/problem/1992) | 🟥 | | | | |
-| [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | 🟥 | | | | |
 | [종이의 개수](https://www.acmicpc.net/problem/1780) | 🟥 | | | | |
 | [사과 담기 게임](https://www.acmicpc.net/problem/2828) | 🟥 | | | | |
 | [오큰수](https://www.acmicpc.net/problem/17298) | 🟥 | | | | |
@@ -83,8 +82,8 @@
 | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | 🟥 | | | | |
 | [치킨 배달](https://www.acmicpc.net/problem/15686) | 🟥 | | | | |
 | [테트로미노](https://www.acmicpc.net/problem/14500) | 🟥 | | | | |
-| [리모컨](https://www.acmicpc.net/problem/1107) | | | | | |
-| [마인크래프트](https://www.acmicpc.net/problem/18111) | | | | | |
+| [리모컨](https://www.acmicpc.net/problem/1107) | 🟥 | | | | |
+| [마인크래프트](https://www.acmicpc.net/problem/18111) | 🟥 | | | | |
 | [부등호](https://www.acmicpc.net/problem/2529) | | | | | |
 | [퇴사](https://www.acmicpc.net/problem/14501) | | | | | |
 | [연속합](https://www.acmicpc.net/problem/1912) | | | | | |
@@ -92,6 +91,7 @@
 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | | | | | |
 | [01타일](https://www.acmicpc.net/problem/1904) | | | | | |
 | [파도반 수열](https://www.acmicpc.net/problem/9461) | | | | | |
+| [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | 🟥 | | | | |
 | [계단 오르기](https://www.acmicpc.net/problem/2579) | | | | | |
 | [1로 만들기](https://www.acmicpc.net/problem/1463) | | | | | |
 | [RGB거리](https://www.acmicpc.net/problem/1149) | | | | | |
