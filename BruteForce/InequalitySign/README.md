@@ -92,7 +92,7 @@ func go(_ idx: Int, _ num: String) {
     }
     for i in 0...9 {
         if visited[i] == true { continue } // 이미 방문했다면 실행안함.
-        // num에 처음 들어가는 숫자거나, idx가 1이상인 상황에서 이전 부등호가 정상적이라면 실행된다.
+        // num에 처음 들어가는 숫자거나, idx가 1이상인 상황에서 현재 i를 넣었을때 식이 성립되면 더 깊이 가지치기를 한다.
         if idx == 0 || isValid(Int(String(num.last!))!, signArr[idx-1], i) == true { 
             visited[i] = true
             go(idx + 1, num + String(i))
@@ -114,3 +114,5 @@ resultArr = resultArr.sorted(by: {
 print(resultArr[resultArr.count-1])
 print(resultArr[0])
 ```
+- 정렬은 딱히 필요하지 않다.
+    - 왜? 어차피 처음 들어간 문자열이 가장 작은 숫자로 된 문자열이고, 가장 나중에 들어간 문자열이 가장 큰 숫자로 된 문자열이다.
