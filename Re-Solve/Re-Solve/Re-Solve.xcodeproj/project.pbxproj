@@ -95,6 +95,7 @@
 		6AD778BA29E947F30083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778B929E947F30083EE44 /* main.swift */; };
 		6AD778C529E94CAC0083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778C429E94CAC0083EE44 /* main.swift */; };
 		6AE92E6C29FCD52500883129 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE92E6B29FCD52500883129 /* main.swift */; };
+		6AED30CF29FF6C1C00582761 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED30CE29FF6C1C00582761 /* main.swift */; };
 		6AF63CCF29FB7D9B00606248 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF63CCE29FB7D9B00606248 /* main.swift */; };
 		6AF63CDA29FBCD7A00606248 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF63CD929FBCD7A00606248 /* main.swift */; };
 		6AFA3F6229E6BD3300D4934A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA3F6129E6BD3300D4934A /* main.swift */; };
@@ -896,6 +897,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AED30CA29FF6C1C00582761 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AF63CCA29FB7D9B00606248 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1129,6 +1139,8 @@
 		6AD778C429E94CAC0083EE44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AE92E6929FCD52500883129 /* RemoteControl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RemoteControl; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE92E6B29FCD52500883129 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AED30CC29FF6C1C00582761 /* InequalitySign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InequalitySign; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AED30CE29FF6C1C00582761 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AF63CCC29FB7D9B00606248 /* RedrawingChessBoard */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RedrawingChessBoard; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF63CCE29FB7D9B00606248 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AF63CD729FBCD7A00606248 /* Tetromino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tetromino; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1760,6 +1772,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AED30C929FF6C1C00582761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AF63CC929FB7D9B00606248 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2076,6 +2095,7 @@
 				6AE92E6A29FCD52500883129 /* RemoteControl */,
 				6A926E2829FD353300536460 /* MineCraft */,
 				6A9150D529FE537500D64A24 /* Quit */,
+				6AED30CD29FF6C1C00582761 /* InequalitySign */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -2203,6 +2223,7 @@
 				6AE92E6929FCD52500883129 /* RemoteControl */,
 				6A926E2729FD353300536460 /* MineCraft */,
 				6A9150D429FE537500D64A24 /* Quit */,
+				6AED30CC29FF6C1C00582761 /* InequalitySign */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2709,6 +2730,14 @@
 				6AE92E6B29FCD52500883129 /* main.swift */,
 			);
 			path = RemoteControl;
+			sourceTree = "<group>";
+		};
+		6AED30CD29FF6C1C00582761 /* InequalitySign */ = {
+			isa = PBXGroup;
+			children = (
+				6AED30CE29FF6C1C00582761 /* main.swift */,
+			);
+			path = InequalitySign;
 			sourceTree = "<group>";
 		};
 		6AF63CCD29FB7D9B00606248 /* RedrawingChessBoard */ = {
@@ -4258,6 +4287,23 @@
 			productReference = 6AE92E6929FCD52500883129 /* RemoteControl */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AED30CB29FF6C1C00582761 /* InequalitySign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AED30D229FF6C1C00582761 /* Build configuration list for PBXNativeTarget "InequalitySign" */;
+			buildPhases = (
+				6AED30C829FF6C1C00582761 /* Sources */,
+				6AED30C929FF6C1C00582761 /* Frameworks */,
+				6AED30CA29FF6C1C00582761 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InequalitySign;
+			productName = InequalitySign;
+			productReference = 6AED30CC29FF6C1C00582761 /* InequalitySign */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AF63CCB29FB7D9B00606248 /* RedrawingChessBoard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AF63CD229FB7D9B00606248 /* Build configuration list for PBXNativeTarget "RedrawingChessBoard" */;
@@ -4634,6 +4680,9 @@
 					6AE92E6829FCD52500883129 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					6AED30CB29FF6C1C00582761 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					6AF63CCB29FB7D9B00606248 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -4761,6 +4810,7 @@
 				6AE92E6829FCD52500883129 /* RemoteControl */,
 				6A926E2629FD353300536460 /* MineCraft */,
 				6A9150D329FE537500D64A24 /* Quit */,
+				6AED30CB29FF6C1C00582761 /* InequalitySign */,
 			);
 		};
 /* End PBXProject section */
@@ -5467,6 +5517,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE92E6C29FCD52500883129 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED30C829FF6C1C00582761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AED30CF29FF6C1C00582761 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7228,6 +7286,26 @@
 			};
 			name = Release;
 		};
+		6AED30D029FF6C1C00582761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AED30D129FF6C1C00582761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AF63CD029FB7D9B00606248 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8140,6 +8218,15 @@
 			buildConfigurations = (
 				6AE92E6D29FCD52500883129 /* Debug */,
 				6AE92E6E29FCD52500883129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AED30D229FF6C1C00582761 /* Build configuration list for PBXNativeTarget "InequalitySign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AED30D029FF6C1C00582761 /* Debug */,
+				6AED30D129FF6C1C00582761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
