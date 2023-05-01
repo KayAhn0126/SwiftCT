@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A03596329FF9D4200005730 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03596229FF9D4200005730 /* main.swift */; };
+		6A03596E29FFA38B00005730 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03596D29FFA38B00005730 /* main.swift */; };
 		6A04213729F622A400A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04213629F622A400A684A8 /* main.swift */; };
 		6A04215529F671C200A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04215429F671C200A684A8 /* main.swift */; };
 		6A04216029F686B000A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04215F29F686B000A684A8 /* main.swift */; };
@@ -107,6 +108,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6A03595E29FF9D4200005730 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A03596929FFA38B00005730 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -975,6 +985,8 @@
 /* Begin PBXFileReference section */
 		6A03596029FF9D4200005730 /* ConsecutiveSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsecutiveSum; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A03596229FF9D4200005730 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A03596B29FFA38B00005730 /* FibonacciNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FibonacciNumber; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A03596D29FFA38B00005730 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A04213429F622A400A684A8 /* Laboratory3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Laboratory3; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A04213629F622A400A684A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A04215229F671C200A684A8 /* HideAndSeek */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HideAndSeek; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1169,6 +1181,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6A03595D29FF9D4200005730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A03596829FFA38B00005730 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1851,6 +1870,14 @@
 			path = ConsecutiveSum;
 			sourceTree = "<group>";
 		};
+		6A03596C29FFA38B00005730 /* FibonacciNumber */ = {
+			isa = PBXGroup;
+			children = (
+				6A03596D29FFA38B00005730 /* main.swift */,
+			);
+			path = FibonacciNumber;
+			sourceTree = "<group>";
+		};
 		6A04213529F622A400A684A8 /* Laboratory3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2124,6 +2151,7 @@
 				6A9150D529FE537500D64A24 /* Quit */,
 				6AED30CD29FF6C1C00582761 /* InequalitySign */,
 				6A03596129FF9D4200005730 /* ConsecutiveSum */,
+				6A03596C29FFA38B00005730 /* FibonacciNumber */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -2253,6 +2281,7 @@
 				6A9150D429FE537500D64A24 /* Quit */,
 				6AED30CC29FF6C1C00582761 /* InequalitySign */,
 				6A03596029FF9D4200005730 /* ConsecutiveSum */,
+				6A03596B29FFA38B00005730 /* FibonacciNumber */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2835,6 +2864,23 @@
 			name = ConsecutiveSum;
 			productName = ConsecutiveSum;
 			productReference = 6A03596029FF9D4200005730 /* ConsecutiveSum */;
+			productType = "com.apple.product-type.tool";
+		};
+		6A03596A29FFA38B00005730 /* FibonacciNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A03596F29FFA38B00005730 /* Build configuration list for PBXNativeTarget "FibonacciNumber" */;
+			buildPhases = (
+				6A03596729FFA38B00005730 /* Sources */,
+				6A03596829FFA38B00005730 /* Frameworks */,
+				6A03596929FFA38B00005730 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FibonacciNumber;
+			productName = FibonacciNumber;
+			productReference = 6A03596B29FFA38B00005730 /* FibonacciNumber */;
 			productType = "com.apple.product-type.tool";
 		};
 		6A04213329F622A400A684A8 /* Laboratory3 */ = {
@@ -4465,6 +4511,9 @@
 					6A03595F29FF9D4200005730 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					6A03596A29FFA38B00005730 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					6A04213329F622A400A684A8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4861,6 +4910,7 @@
 				6A9150D329FE537500D64A24 /* Quit */,
 				6AED30CB29FF6C1C00582761 /* InequalitySign */,
 				6A03595F29FF9D4200005730 /* ConsecutiveSum */,
+				6A03596A29FFA38B00005730 /* FibonacciNumber */,
 			);
 		};
 /* End PBXProject section */
@@ -4871,6 +4921,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A03596329FF9D4200005730 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A03596729FFA38B00005730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03596E29FFA38B00005730 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5648,6 +5706,26 @@
 			name = Debug;
 		};
 		6A03596529FF9D4200005730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A03597029FFA38B00005730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A03597129FFA38B00005730 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -7504,6 +7582,15 @@
 			buildConfigurations = (
 				6A03596429FF9D4200005730 /* Debug */,
 				6A03596529FF9D4200005730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A03596F29FFA38B00005730 /* Build configuration list for PBXNativeTarget "FibonacciNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A03597029FFA38B00005730 /* Debug */,
+				6A03597129FFA38B00005730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
