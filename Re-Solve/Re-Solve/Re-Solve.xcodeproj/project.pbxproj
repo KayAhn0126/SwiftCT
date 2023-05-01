@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A03596329FF9D4200005730 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03596229FF9D4200005730 /* main.swift */; };
 		6A04213729F622A400A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04213629F622A400A684A8 /* main.swift */; };
 		6A04215529F671C200A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04215429F671C200A684A8 /* main.swift */; };
 		6A04216029F686B000A684A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04215F29F686B000A684A8 /* main.swift */; };
@@ -105,6 +106,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6A03595E29FF9D4200005730 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6A04213229F622A400A684A8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -963,6 +973,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A03596029FF9D4200005730 /* ConsecutiveSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsecutiveSum; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A03596229FF9D4200005730 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A04213429F622A400A684A8 /* Laboratory3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Laboratory3; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A04213629F622A400A684A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A04215229F671C200A684A8 /* HideAndSeek */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HideAndSeek; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1156,6 +1168,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A03595D29FF9D4200005730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A04213129F622A400A684A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1824,6 +1843,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A03596129FF9D4200005730 /* ConsecutiveSum */ = {
+			isa = PBXGroup;
+			children = (
+				6A03596229FF9D4200005730 /* main.swift */,
+			);
+			path = ConsecutiveSum;
+			sourceTree = "<group>";
+		};
 		6A04213529F622A400A684A8 /* Laboratory3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2096,6 +2123,7 @@
 				6A926E2829FD353300536460 /* MineCraft */,
 				6A9150D529FE537500D64A24 /* Quit */,
 				6AED30CD29FF6C1C00582761 /* InequalitySign */,
+				6A03596129FF9D4200005730 /* ConsecutiveSum */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -2224,6 +2252,7 @@
 				6A926E2729FD353300536460 /* MineCraft */,
 				6A9150D429FE537500D64A24 /* Quit */,
 				6AED30CC29FF6C1C00582761 /* InequalitySign */,
+				6A03596029FF9D4200005730 /* ConsecutiveSum */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2791,6 +2820,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A03595F29FF9D4200005730 /* ConsecutiveSum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A03596629FF9D4200005730 /* Build configuration list for PBXNativeTarget "ConsecutiveSum" */;
+			buildPhases = (
+				6A03595C29FF9D4200005730 /* Sources */,
+				6A03595D29FF9D4200005730 /* Frameworks */,
+				6A03595E29FF9D4200005730 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConsecutiveSum;
+			productName = ConsecutiveSum;
+			productReference = 6A03596029FF9D4200005730 /* ConsecutiveSum */;
+			productType = "com.apple.product-type.tool";
+		};
 		6A04213329F622A400A684A8 /* Laboratory3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A04213A29F622A400A684A8 /* Build configuration list for PBXNativeTarget "Laboratory3" */;
@@ -4416,6 +4462,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					6A03595F29FF9D4200005730 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					6A04213329F622A400A684A8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4811,11 +4860,20 @@
 				6A926E2629FD353300536460 /* MineCraft */,
 				6A9150D329FE537500D64A24 /* Quit */,
 				6AED30CB29FF6C1C00582761 /* InequalitySign */,
+				6A03595F29FF9D4200005730 /* ConsecutiveSum */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A03595C29FF9D4200005730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03596329FF9D4200005730 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A04213029F622A400A684A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5579,6 +5637,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6A03596429FF9D4200005730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A03596529FF9D4200005730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6A04213829F622A400A684A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7421,6 +7499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A03596629FF9D4200005730 /* Build configuration list for PBXNativeTarget "ConsecutiveSum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A03596429FF9D4200005730 /* Debug */,
+				6A03596529FF9D4200005730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A04213A29F622A400A684A8 /* Build configuration list for PBXNativeTarget "Laboratory3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
