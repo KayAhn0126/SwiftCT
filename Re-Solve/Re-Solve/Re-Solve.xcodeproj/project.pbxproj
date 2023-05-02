@@ -100,6 +100,7 @@
 		6AD778BA29E947F30083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778B929E947F30083EE44 /* main.swift */; };
 		6AD778C529E94CAC0083EE44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD778C429E94CAC0083EE44 /* main.swift */; };
 		6AE92E6C29FCD52500883129 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE92E6B29FCD52500883129 /* main.swift */; };
+		6AEB9CF72A00F54C00821455 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEB9CF62A00F54C00821455 /* main.swift */; };
 		6AED30CF29FF6C1C00582761 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED30CE29FF6C1C00582761 /* main.swift */; };
 		6AF63CCF29FB7D9B00606248 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF63CCE29FB7D9B00606248 /* main.swift */; };
 		6AF63CDA29FBCD7A00606248 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF63CD929FBCD7A00606248 /* main.swift */; };
@@ -947,6 +948,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6AEB9CF22A00F54C00821455 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AED30CA29FF6C1C00582761 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1199,6 +1209,8 @@
 		6AD778C429E94CAC0083EE44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AE92E6929FCD52500883129 /* RemoteControl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RemoteControl; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE92E6B29FCD52500883129 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AEB9CF42A00F54C00821455 /* ClimbingStairs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClimbingStairs; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEB9CF62A00F54C00821455 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AED30CC29FF6C1C00582761 /* InequalitySign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InequalitySign; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AED30CE29FF6C1C00582761 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6AF63CCC29FB7D9B00606248 /* RedrawingChessBoard */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RedrawingChessBoard; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1867,6 +1879,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AEB9CF12A00F54C00821455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AED30C929FF6C1C00582761 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2236,6 +2255,7 @@
 				6A03597729FFAAE500005730 /* ExcitingFunctionExecution */,
 				6A03598229FFB77F00005730 /* 01Tile */,
 				6A03598D29FFE0BD00005730 /* PadovanSequence */,
+				6AEB9CF52A00F54C00821455 /* ClimbingStairs */,
 				6A73506D2985580D001F0255 /* Products */,
 				6AB2DD22298D337500C7831C /* ProfessorHyunwoo */,
 				6A7C4BA0298CC30600B5F6BA /* PronouncePassword */,
@@ -2369,6 +2389,7 @@
 				6A03597629FFAAE500005730 /* ExcitingFunctionExecution */,
 				6A03598129FFB77E00005730 /* 01Tile */,
 				6A03598C29FFE0BD00005730 /* PadovanSequence */,
+				6AEB9CF42A00F54C00821455 /* ClimbingStairs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2875,6 +2896,14 @@
 				6AE92E6B29FCD52500883129 /* main.swift */,
 			);
 			path = RemoteControl;
+			sourceTree = "<group>";
+		};
+		6AEB9CF52A00F54C00821455 /* ClimbingStairs */ = {
+			isa = PBXGroup;
+			children = (
+				6AEB9CF62A00F54C00821455 /* main.swift */,
+			);
+			path = ClimbingStairs;
 			sourceTree = "<group>";
 		};
 		6AED30CD29FF6C1C00582761 /* InequalitySign */ = {
@@ -4517,6 +4546,23 @@
 			productReference = 6AE92E6929FCD52500883129 /* RemoteControl */;
 			productType = "com.apple.product-type.tool";
 		};
+		6AEB9CF32A00F54C00821455 /* ClimbingStairs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AEB9CFA2A00F54C00821455 /* Build configuration list for PBXNativeTarget "ClimbingStairs" */;
+			buildPhases = (
+				6AEB9CF02A00F54C00821455 /* Sources */,
+				6AEB9CF12A00F54C00821455 /* Frameworks */,
+				6AEB9CF22A00F54C00821455 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClimbingStairs;
+			productName = ClimbingStairs;
+			productReference = 6AEB9CF42A00F54C00821455 /* ClimbingStairs */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AED30CB29FF6C1C00582761 /* InequalitySign */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AED30D229FF6C1C00582761 /* Build configuration list for PBXNativeTarget "InequalitySign" */;
@@ -4925,6 +4971,9 @@
 					6AE92E6829FCD52500883129 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					6AEB9CF32A00F54C00821455 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					6AED30CB29FF6C1C00582761 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -5061,6 +5110,7 @@
 				6A03597529FFAAE500005730 /* ExcitingFunctionExecution */,
 				6A03598029FFB77E00005730 /* 01Tile */,
 				6A03598B29FFE0BD00005730 /* PadovanSequence */,
+				6AEB9CF32A00F54C00821455 /* ClimbingStairs */,
 			);
 		};
 /* End PBXProject section */
@@ -5807,6 +5857,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE92E6C29FCD52500883129 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AEB9CF02A00F54C00821455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AEB9CF72A00F54C00821455 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7676,6 +7734,26 @@
 			};
 			name = Release;
 		};
+		6AEB9CF82A00F54C00821455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AEB9CF92A00F54C00821455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6AED30D029FF6C1C00582761 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8653,6 +8731,15 @@
 			buildConfigurations = (
 				6AE92E6D29FCD52500883129 /* Debug */,
 				6AE92E6E29FCD52500883129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AEB9CFA2A00F54C00821455 /* Build configuration list for PBXNativeTarget "ClimbingStairs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AEB9CF82A00F54C00821455 /* Debug */,
+				6AEB9CF92A00F54C00821455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
