@@ -1,7 +1,7 @@
 import Foundation
 
 var num = Int(readLine()!)!
-var dp = [Int](repeating: 0, count: 1000001)
+var dp = [Int](repeating: 0, count: num + 1)
 
 if num == 1 {
     print(0)
@@ -12,7 +12,7 @@ if num == 1 {
     dp[2] = 1
     dp[3] = 1
 
-    for i in 4..<1000001 {
+    for i in 4...num {
         dp[i] = dp[i-1] + 1
         if i % 2 == 0 {
             dp[i] = min(dp[i], dp[i/2] + 1)
