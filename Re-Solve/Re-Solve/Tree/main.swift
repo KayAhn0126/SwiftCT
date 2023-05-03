@@ -1,61 +1,40 @@
-//
-//  main.swift
-//  Tree
-//
-//  Created by Kay on 2023/02/12.
-//
-
-/*
- 1068
- 트리
- */
-
-/*
- 
- */
 import Foundation
-let number = Int(readLine()!)!
+
+// -1은 최상위 노드
+// 현재 인덱스를 현재 값에 넣어준다.
+let num = Int(readLine()!)!
 
 var arr = readLine()!.split(separator: " ").map { Int(String($0))! }
+let nodeToRemove = Int(readLine()!)!
 
-let deleteNum = Int(readLine()!)!
-
-var dArr = [[Int]](repeating: [Int](), count: 51)
-var visited = [Int](repeating: 0, count: number)
-
-var root = -1
-var result = 0
-
-func dfs(_ number: Int) {
-    visited[number] = 1
-    if dArr[number].count == 0 {
-        result += 1
-    } else {
-        for number in dArr[number] {
-            if visited[number] == 1 {
-                continue
-            }
-            dfs(number)
-        }
-    }
-}
+var adjList = [[Int]](repeating: [Int](), count: num)
+var root = 0
 
 for i in 0..<arr.count {
     if arr[i] == -1 {
         root = i
     } else {
-        if i == deleteNum {
-            continue
-        }
-        dArr[arr[i]].append(i)
+        if i == nodeToRemove { continue }
+        adjList[arr[i]].append(i)
     }
 }
 
-if root == deleteNum {
+var visited = [Bool](repeating: false, count: num)
+
+var result = 0
+func dfs(_ num: Int) {
+    if adjList[num].count == 0 { result += 1; return }
+    for i in adjList[num] {
+        if visited[i] == true { continue }
+        visited[i] = true
+        dfs(i)
+    }
+}
+
+if root == nodeToRemove {
     print(0)
 } else {
     dfs(root)
     print(result)
 }
 
-// 40분
