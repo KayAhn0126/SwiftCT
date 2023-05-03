@@ -1,20 +1,7 @@
-//
-//  main.swift
-//  Parenthesis
-//
-//  Created by Kay on 2023/02/12.
-//
-
-/*
- 괄호
- 9012
- */
-
 import Foundation
 
 struct Stack<T> {
     var elements: [T] = []
-    
     var count: Int {
         return elements.count
     }
@@ -30,32 +17,20 @@ struct Stack<T> {
     mutating func push(_ element: T) {
         elements.append(element)
     }
-    
     mutating func pop() -> T? {
         return elements.popLast()
     }
 }
 
-extension String {
-    subscript(idx: Int) -> Character? {
-        guard(0..<count).contains(idx) else { return nil }
-        let target = index(startIndex, offsetBy: idx)
-        return self[target]
-    }
-}
-
-func checkParenthesis(_ element: String) {
-    var testString = element
+let num = Int(readLine()!)!
+for _ in 0..<num {
     var myStack = Stack<Character>()
-    for i in testString {
-        if !myStack.isEmpty {
-            if myStack.top! == "(" && i == ")" {
-                myStack.pop()
-            } else {
-                myStack.push(i)
-            }
-        } else {
-            myStack.push(i)
+    let tempString = readLine()!
+    for char in tempString {
+        if myStack.isEmpty || (!myStack.isEmpty && myStack.top! == char) {
+            myStack.push(char)
+        } else if myStack.top! == "(" && char == ")" {
+            myStack.pop()
         }
     }
     if myStack.isEmpty {
@@ -65,11 +40,3 @@ func checkParenthesis(_ element: String) {
     }
 }
 
-let userInput = Int(readLine()!)!
-
-for i in 0..<userInput {
-    let testString = readLine()!
-    checkParenthesis(testString)
-}
-
-// 30분
