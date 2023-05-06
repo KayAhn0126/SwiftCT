@@ -18,7 +18,6 @@ import Foundation
 let num = Int(readLine()!)!
 
 // 정렬이 필요한가? -> 처음엔 필요 없다고 생각했는데, from을 오름차순으로 놓으면 최대값이 도출된다.
-var max = 0
 
 var arr: [(Int,Int)] = []
 var dp = [Int](repeating: 0, count: num)
