@@ -108,5 +108,5 @@
 | [**나무 자르기**](https://www.acmicpc.net/problem/2805) | 🟥 | | | | |
 | [랜선 자르기](https://www.acmicpc.net/problem/1654) | 🟥 | | | | |
 | [과자 나눠주기](https://www.acmicpc.net/problem/16401) | 🟥 | | | | |
-| [집합의 표현](https://www.acmicpc.net/problem/1717) | | | | | |
-| [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | | | | | |
+| [**집합의 표현**](https://www.acmicpc.net/problem/1717) | 🟥 | | | | |
+| [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | 🟥 | | | | |
