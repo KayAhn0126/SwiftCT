@@ -1,18 +1,6 @@
-# 삼성 기출 문제
-| 제목 |
-| :-: | 
-| [뱀](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Snake) |
-| [시험감독](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ExamViewer) | 
-| [테트로미노](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Tetromino) | 
-| [퇴사](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Quit) | 
-| [연구소](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory) | 
-| [로봇청소기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/RobotCleaner) | 
-| [톱니바퀴](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear) | 
-| [치킨배달](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/ChickenDelivery) | 
-| [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 
-| [연구소3](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory3) | 
-
 # Swift CT
+
+## 🍎 BOJ
 | 제목 | 설명 |
 | :-: | :-: |
 | [General](https://github.com/KayAhn0126/SwiftCT/tree/main/General) | 코테 관련 내용 |
@@ -34,3 +22,16 @@
 | [LIS](https://github.com/KayAhn0126/SwiftCT/tree/main/LIS) | LIS |
 | [다시 풀기](https://github.com/KayAhn0126/SwiftCT/tree/main/Re-Solve) | 다시 풀기 모음 |
 
+## 🍎 삼성 기출 문제
+| 제목 |
+| :-: | 
+| [뱀](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Snake) |
+| [시험감독](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ExamViewer) | 
+| [테트로미노](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Tetromino) | 
+| [퇴사](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Quit) | 
+| [연구소](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory) | 
+| [로봇청소기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/RobotCleaner) | 
+| [톱니바퀴](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear) | 
+| [치킨배달](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/ChickenDelivery) | 
+| [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 
+| [연구소3](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory3) | 
