@@ -5,6 +5,7 @@
 | :-: | :-: |
 | [General](https://github.com/KayAhn0126/SwiftCT/tree/main/General) | 코테 관련 내용 |
 | [Data Structure](https://github.com/KayAhn0126/SwiftCT/tree/main/DataStructure) | 자료구조 |
+| [Algorithm](https://github.com/KayAhn0126/SwiftCT/tree/main/Algorithm) | 알고리즘 정리 |
 | [Implementation](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation) | 구현 |
 | [Permutation & Combination](https://github.com/KayAhn0126/SwiftCT/tree/main/PermutationCombination) | 순열과 조합 |
 | [Prefix Sum](https://github.com/KayAhn0126/SwiftCT/tree/main/PrefixSum) | 누적합 |
