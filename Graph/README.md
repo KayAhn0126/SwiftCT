@@ -38,6 +38,7 @@
 | [거짓말](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Lie) | 구현, BFS | [1043](https://www.acmicpc.net/problem/1043) |
 | [알파벳](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Alphabet) | 백트래킹, 비트마스킹 | [1987](https://www.acmicpc.net/problem/1987) |
 | [빙산](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Iceberg) | 구현, connectedComponent | [2573](https://www.acmicpc.net/problem/2573) |
+| [맥주 마시면서 걸어가기](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/DrinkingBeerWhileWalking) | 구현, BFS | [9205](https://www.acmicpc.net/problem/9205) |
 
 ## 🍎 그래프 + 플러드 필 (Hard)
 | 제목 | 키워드 | 풀어보기 |
