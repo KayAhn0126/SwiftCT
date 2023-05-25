@@ -3,6 +3,7 @@
 ## 🍎 Easy
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
+| [1,2,3 더하기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/AddingOneTwoThree) | DP | [9095](https://www.acmicpc.net/problem/9095) |
 | [피보나치 수 1](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/FibonacciNumber) | bottom - up | [24416](https://www.acmicpc.net/problem/24416) |
 | [파스칼의 삼각형](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/PascalsTriangle) | bottom - up | [16395](https://www.acmicpc.net/problem/16395) |
 | [01타일](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile) | bottom - up | [1904](https://www.acmicpc.net/problem/1904) |
