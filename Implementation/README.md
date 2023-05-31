@@ -24,6 +24,7 @@
 | [카드 놓기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/PutDownCard) | 순열 | [5568](https://www.acmicpc.net/problem/5568) |
 | [소트 인사이드](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SortInside) | 구현 및 정렬 | [1427](https://www.acmicpc.net/problem/1427) |
 | [달팽이는 올라가고 싶다](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/SnailWannaClimb)| 구현 | [2869](https://www.acmicpc.net/problem/2869) |
+| [좌표 압축](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/CoordinateCompression) | 구현 및 정렬 | [18870](https://www.acmicpc.net/problem/18870) |
 
 
 ## 🍎 Normal
