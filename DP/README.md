@@ -15,6 +15,7 @@
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
+| [1로 만들기 2](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/MakeToOne2) | DP + 경로 추적 | [12852](https://www.acmicpc.net/problem/12852) |
 
 ## 🍎 Hard
 | 제목 | 키워드 | 풀어보기 |
