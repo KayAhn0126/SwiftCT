@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A940C652A207AD500474109 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A940C642A207AD500474109 /* main.swift */; };
+		6A266F542A27529000B23742 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A266F532A27529000B23742 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6A940C5F2A207AD500474109 /* CopyFiles */ = {
+		6A266F4E2A27529000B23742 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6A940C612A207AD500474109 /* MakeToOne2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakeToOne2; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A940C642A207AD500474109 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6A266F502A27529000B23742 /* MakeToOne2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakeToOne2; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A266F532A27529000B23742 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6A940C5E2A207AD500474109 /* Frameworks */ = {
+		6A266F4D2A27529000B23742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A940C582A207AD500474109 = {
+		6A266F472A27529000B23742 = {
 			isa = PBXGroup;
 			children = (
-				6A940C632A207AD500474109 /* MakeToOne2 */,
-				6A940C622A207AD500474109 /* Products */,
+				6A266F522A27529000B23742 /* MakeToOne2 */,
+				6A266F512A27529000B23742 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6A940C622A207AD500474109 /* Products */ = {
+		6A266F512A27529000B23742 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A940C612A207AD500474109 /* MakeToOne2 */,
+				6A266F502A27529000B23742 /* MakeToOne2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A940C632A207AD500474109 /* MakeToOne2 */ = {
+		6A266F522A27529000B23742 /* MakeToOne2 */ = {
 			isa = PBXGroup;
 			children = (
-				6A940C642A207AD500474109 /* main.swift */,
+				6A266F532A27529000B23742 /* main.swift */,
 			);
 			path = MakeToOne2;
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A940C602A207AD500474109 /* MakeToOne2 */ = {
+		6A266F4F2A27529000B23742 /* MakeToOne2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A940C682A207AD500474109 /* Build configuration list for PBXNativeTarget "MakeToOne2" */;
+			buildConfigurationList = 6A266F572A27529000B23742 /* Build configuration list for PBXNativeTarget "MakeToOne2" */;
 			buildPhases = (
-				6A940C5D2A207AD500474109 /* Sources */,
-				6A940C5E2A207AD500474109 /* Frameworks */,
-				6A940C5F2A207AD500474109 /* CopyFiles */,
+				6A266F4C2A27529000B23742 /* Sources */,
+				6A266F4D2A27529000B23742 /* Frameworks */,
+				6A266F4E2A27529000B23742 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,25 +79,25 @@
 			);
 			name = MakeToOne2;
 			productName = MakeToOne2;
-			productReference = 6A940C612A207AD500474109 /* MakeToOne2 */;
+			productReference = 6A266F502A27529000B23742 /* MakeToOne2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6A940C592A207AD500474109 /* Project object */ = {
+		6A266F482A27529000B23742 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					6A940C602A207AD500474109 = {
+					6A266F4F2A27529000B23742 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 6A940C5C2A207AD500474109 /* Build configuration list for PBXProject "MakeToOne2" */;
+			buildConfigurationList = 6A266F4B2A27529000B23742 /* Build configuration list for PBXProject "MakeToOne2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,29 +105,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 6A940C582A207AD500474109;
-			productRefGroup = 6A940C622A207AD500474109 /* Products */;
+			mainGroup = 6A266F472A27529000B23742;
+			productRefGroup = 6A266F512A27529000B23742 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A940C602A207AD500474109 /* MakeToOne2 */,
+				6A266F4F2A27529000B23742 /* MakeToOne2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A940C5D2A207AD500474109 /* Sources */ = {
+		6A266F4C2A27529000B23742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A940C652A207AD500474109 /* main.swift in Sources */,
+				6A266F542A27529000B23742 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6A940C662A207AD500474109 /* Debug */ = {
+		6A266F552A27529000B23742 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		6A940C672A207AD500474109 /* Release */ = {
+		6A266F562A27529000B23742 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +240,7 @@
 			};
 			name = Release;
 		};
-		6A940C692A207AD500474109 /* Debug */ = {
+		6A266F582A27529000B23742 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		6A940C6A2A207AD500474109 /* Release */ = {
+		6A266F592A27529000B23742 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -261,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A940C5C2A207AD500474109 /* Build configuration list for PBXProject "MakeToOne2" */ = {
+		6A266F4B2A27529000B23742 /* Build configuration list for PBXProject "MakeToOne2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A940C662A207AD500474109 /* Debug */,
-				6A940C672A207AD500474109 /* Release */,
+				6A266F552A27529000B23742 /* Debug */,
+				6A266F562A27529000B23742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A940C682A207AD500474109 /* Build configuration list for PBXNativeTarget "MakeToOne2" */ = {
+		6A266F572A27529000B23742 /* Build configuration list for PBXNativeTarget "MakeToOne2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A940C692A207AD500474109 /* Debug */,
-				6A940C6A2A207AD500474109 /* Release */,
+				6A266F582A27529000B23742 /* Debug */,
+				6A266F592A27529000B23742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6A940C592A207AD500474109 /* Project object */;
+	rootObject = 6A266F482A27529000B23742 /* Project object */;
 }
