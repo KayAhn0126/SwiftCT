@@ -27,3 +27,26 @@ while true {
     }
 }
 ```
+
+## 🍎 브루트포스로도 풀 수 있다!
+```swift
+import Foundation
+
+ let x = Int(readLine()!)!
+
+ var min = Int.max
+
+ for i in 0...1667 {
+     for j in 0..<1667 {
+         if (5 * i) + (3 * j) == x {
+             let temp = i + j
+             min = temp < min ? temp : min
+         }
+     }
+ }
+ if min == Int.max {
+     print(-1)
+ } else {
+     print(min)
+ }
+```
