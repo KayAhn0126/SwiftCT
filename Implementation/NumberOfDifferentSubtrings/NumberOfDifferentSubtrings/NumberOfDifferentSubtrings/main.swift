@@ -15,15 +15,13 @@ import Foundation
 let userInput = readLine()!.map { String($0) }
 
 let count = userInput.count
-var resultArr = [String]()
+var resultSet = Set<String>()
 
-for i in 1...count {
-    for j in 0...count-i {
-        var tempStr = ""
-        for k in j..<j+i {
-            tempStr += userInput[k]
-        }
-        resultArr.append(tempStr)
+for i in 0..<count {
+    var tempString = ""
+    for j in i..<count {
+        tempString += userInput[j]
+        resultSet.insert(tempString)
     }
 }
-print(Set(resultArr).count)
+print(resultSet.count)
