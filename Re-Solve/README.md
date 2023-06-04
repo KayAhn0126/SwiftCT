@@ -103,9 +103,9 @@
 | [**프린터 큐**](https://www.acmicpc.net/problem/1966) | 🟥 | | | | |
 | [**트리**](https://www.acmicpc.net/problem/1068) | 🟥 | | | | |
 | [완전 이진 트리](https://www.acmicpc.net/problem/9934) | 🟥 | | | | |
-| [숫자 카드 2](https://www.acmicpc.net/problem/10816) | 🟥 | | | | |
-| [수 찾기](https://www.acmicpc.net/problem/1920) | 🟥 | | | | |
-| [**나무 자르기**](https://www.acmicpc.net/problem/2805) | 🟥 | | | | |
+| [숫자 카드 2](https://www.acmicpc.net/problem/10816) | 🟥 | 🟧 | | | |
+| [수 찾기](https://www.acmicpc.net/problem/1920) | 🟥 | 🟧 | | | |
+| [**나무 자르기**](https://www.acmicpc.net/problem/2805) | 🟥 | 🟧 | | | |
 | [랜선 자르기](https://www.acmicpc.net/problem/1654) | 🟥 | | | | |
 | [과자 나눠주기](https://www.acmicpc.net/problem/16401) | 🟥 | | | | |
 | [**집합의 표현**](https://www.acmicpc.net/problem/1717) | 🟥 | | | | |
