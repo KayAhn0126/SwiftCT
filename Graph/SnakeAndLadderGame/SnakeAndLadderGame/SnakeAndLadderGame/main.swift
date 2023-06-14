@@ -11,14 +11,16 @@
  */
 
 // 문제 접근.
+// BFS로 풀면 된다. 하지만 중간중간 특정 상황에서 딕셔너리 체크와 더 작은 값인지 확인 후 업데이트 하는 로직이 필요하다.
 
-// 주사위의 범위인 1~6까지 한번씩 던져보고 거기에 맞는 로직 처리
-// [Int] 타입의 visited 선언. 여기에 최소 값을 갱신할 예정
-// 100이 넘어가면 무효처리
-// 현재 값 + 1이 visited의 값보다 작으면 업데이트 시켜준다.
-// visited[100]의 값
+// 입력 받기 + 딕셔너리에 사다리와 뱀 추가하기
+// bfsQueue 큐, 최단거리를 구하기 위한 visited 배열 선언
+// 현재 bfsQueue에 있는 요소를 하나 빼고 해당 숫자와 1~6까지 하나씩 가져온 수를 더한다.
+// 더한 수를 nextNum이라고 한다. -> 100 초과면 무효처리
 
-// 딕셔너리를 돌면서 값이 있다면 바로 벨류로 넘어가기
+// nextNum이 만약 딕셔너리에 있다면 즉, 사다리나 뱀이여서 움직이는 경우이기 때문에 딕셔너리의 value 로 nextNum을 변경시켜준다.
+// 처음 방문하는 경우에는 현재 방문한 값 + 1로 초기화 해주고 nextNum을 queue에 넣어준다.
+// 아니라면 현재 최단거리가 이전 최단거리보다 작은지 확인 후 업데이트 시켜준다.
 
 import Foundation
 
@@ -27,7 +29,7 @@ let ladder = ladderSnakeCount[0]
 let snake = ladderSnakeCount[1]
 
 var dictionary: [Int: Int] = [:]
-for i in 0..<ladder+snake {
+for _ in 0..<ladder+snake {
     let temp = readLine()!.split(separator: " ").map { Int(String($0))! }
     dictionary[temp[0]] = temp[1]
 }
