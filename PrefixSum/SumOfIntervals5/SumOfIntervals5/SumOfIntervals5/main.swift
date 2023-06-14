@@ -85,21 +85,16 @@ for i in 0..<M {
         var tempLeft = 0
         var tempUp = 0
         var common = 0
-        if startLocationY != 0 && startLocationX != 0 {
-            tempLeft = visited[endLocationY][startLocationX - 1]
+        if startLocationY != 0 {
             tempUp = visited[startLocationY - 1][endLocationX]
+        }
+        if startLocationX != 0 {
+            tempLeft = visited[endLocationY][startLocationX - 1]
+        }
+        if startLocationY != 0 && startLocationX != 0 {
             common = visited[startLocationY - 1][startLocationX - 1]
         }
         let tempResult = visited[endLocationY][endLocationX]
         print(tempResult - (tempLeft + tempUp - common))
     }
 }
-
-/*
- 2-1. 주어지는 좌표 두개 중 시작 좌표를 tempStartLocation, 뒤의 좌표를 tempEndLocation이라고 하자
- 2-2. tempEndLocation의 마지막 좌표에 들어있는 누적합을 tempResult라고 하자
- 2-3. tempEndLocation의 y좌표는 그대로 x좌표는 -1한 좌표를 tempLeft라고 하자
- 2-4. tempEndLocation의 y좌표를 -1 x좌표는 그대로 한 좌표를 tempUp이라고 하자.
- 2-5. tempStartLocation의 y좌표를 -1, x좌표를 -1한 좌표를 common이라고 하자.
- 2-6. 정답은 tempResult - (tempLeft + tempUp - common) 이 된다.
- */
