@@ -70,10 +70,6 @@ for i in 1..<N {
     }
 }
 
-//visited.enumerated().forEach {
-//    print($0.element)
-//}
-
 for i in 0..<M {
     let startLocationY = locations[i][0] - 1
     let startLocationX = locations[i][1] - 1
