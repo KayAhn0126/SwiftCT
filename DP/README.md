@@ -74,7 +74,7 @@ while let line = readLine() {
 ```
 - 재귀적으로 실행되니 기저사례가 있고, solve()함수를 실행하면서 중간중간 계속 Memoization을 실행하고 있다.
 
-## 🍎 반복문 + DP (bottom - up
+## 🍎 반복문 + DP (bottom - up)
 - [01타일 문제](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/01Tile)
 ```swift
 import Foundation
@@ -94,4 +94,3 @@ for i in 5...1000000 { // 이미 가지고 있는 데이터를 기반으로 다�
 print(DP[N])
 ```
 - **반복문 + DP 방식이 속도가 상대적으로 더 빠르다!**
-
