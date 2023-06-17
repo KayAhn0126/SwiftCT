@@ -34,6 +34,19 @@
         - tempStartLocation의 y좌표를 -1, x좌표를 -1한 좌표를 common이라고 하자.
     - 2-6.
         - 정답은 tempResult - (tempLeft + tempUp - common) 이 된다.
+### 📖 이미지로 각 자리의 누적합 구하는 로직 이해하기
+- 0,0을 문제에서는 1,1로 표현한다는 점을 기억하자.
+![](https://hackmd.io/_uploads/rJts6RcP3.png)
+- 빨간색 자리의 누적합을 구하기 위해서는 빨간색 자리의 상측, 좌측에 있는 초록색 위치의 누적합이 필요하다.
+- 그리고 초록색 누적합들에 공통으로 더해져 있는 보라색 누적합을 빼주면 된다.
+- 즉, 2,2 위치의 누적합 p(2,2)를 구하기 위해서는 (p(2,1) + p(1,2)) - p(1,1) + 현재 2,2에 있는 값이라는 공식이 나온다.
+- 이를 이용해 현재 2차원 배열을 2차원 누적합 배열로 만들어주고 위의 로직을 활용해 특정 구간의 누적합을 구하면 된다.
+
+### 📖 이미지로 특정 구간의 총 합 구하기 로직 이해하기 
+![](https://hackmd.io/_uploads/r1m2RR9Dn.png)
+- **2,2에서 3,4구간의 총 합을 구하는 로직을 살펴보자!**
+- 빨간색 구간의 총 합을 구하면 되는 문제다.
+- 빨간색 끝(3,4)의 누적합 - (왼쪽 초록색 끝(3,1) + 위쪽 초록색 끝(1,4)) - 공통으로 누적합에 더해진 보라색(1,1)을 빼주면 된다.
 
 ## 🍎 전체 코드
 ```swift
@@ -93,5 +106,43 @@ for i in 0..<M {
         print(tempResult - (tempLeft + tempUp - common))
     }
 }
+```
 
+## 🍎 게시판에서 발견한 반례
+- 처음 시도했던 방법
+```swift
+...
+...
+for i in 0..<M {
+    let startLocationY = locations[i][0] - 1
+    let startLocationX = locations[i][1] - 1
+    let endLocationY = locations[i][2] - 1
+    let endLocationX = locations[i][3] - 1
+    if startLocationY == endLocationY && startLocationX == endLocationX {
+        print(adjMatrix[startLocationY][startLocationX])
+    } else {
+        var tempLeft = 0
+        var tempUp = 0
+        var common = 0
+        if startLocationY != 0 && startLocationX != 0 {
+            tempLeft = visited[endLocationY][startLocationX - 1]
+            tempUp = visited[startLocationY - 1][endLocationX]
+            common = visited[startLocationY - 1][startLocationX - 1]
+        }
+        let tempResult = visited[endLocationY][endLocationX]
+        print(tempResult - (tempLeft + tempUp - common))
+    }
+}
+```
+```bash
+입력값
+4 1
+1 2 3 4
+2 3 4 5
+3 4 5 6
+4 5 6 7
+3 1 3 4
+
+답
+18
 ```
