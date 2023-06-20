@@ -53,6 +53,7 @@
 | [뱀](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Snake) | 시뮬레이션, 큐 | [3190](https://www.acmicpc.net/problem/3190) |
 | [괄호 추가하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AddingParenthesis) | 구현, 브루트포스 | [16637](https://www.acmicpc.net/problem/16637) |
 | [문자해독](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/StringDecryption) | 슬라이딩 윈도우, 문자열 | [1593](https://www.acmicpc.net/problem/1593) |
+| [주사위 굴리기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/DiceRolling) | 시뮬레이션 | [14499](https://www.acmicpc.net/problem/14499) |
 
 ## 🍎 ReadLine
 - [readLine 사용법](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ReadLine)
