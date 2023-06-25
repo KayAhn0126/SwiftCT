@@ -39,7 +39,7 @@ import Foundation
 struct CCTV {
     var y: Int
     var x: Int
-    var type: Int // 여기서 type이란 몇 방향으로 돌수 있는지 확인하는 용도.
+    var type: Int // type이라는 프로퍼티는 CCTV가 어떤 타입인지 저장한다. 또, 이 정보를 이용해 rotate 배열에서 최대 몇 방향을 회전해야 하는지 알 수 있다.
 }
 
 let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
@@ -58,7 +58,7 @@ func mapCopy(_ to: inout [[Int]], _ from: inout [[Int]]) {
     to = from
 }
 
-//MARK: 카메라가 비추는 곳의 값 변경하기
+//MARK: 카메라가 감시하는 영역의 값 변경하기
 func update(_ dir: Int, _ cctv: CCTV) {
     var currentDir = dir % 4
     // 시계 방향으로 0,1,2,3
@@ -90,6 +90,7 @@ func update(_ dir: Int, _ cctv: CCTV) {
 
 //MARK: 깊이 우선 탐색 + 백트래킹을 이용해서
 func dfs(_ cctv_index: Int) {
+    // cctvSize에 도달했다는것은 마지막 cctv까지 왔다는 이야기
     if cctv_index == cctvSize {
         var tempResult = 0
         for i in 0..<N {
@@ -104,8 +105,11 @@ func dfs(_ cctv_index: Int) {
         }
         return
     }
+    // 백트래킹을 위해 현재 맵을 저장하기 위한 2차원 배열
     var backUp = [[Int]](repeating: [Int](repeating: 0, count: M), count: N)
+    // 카메라가 들어있는 배열에서 cctv_index로 접근해 카메라가 어느 종류의 카메라인지 확인한다.
     var type = cctvMap[cctv_index].type
+    // 카메라의 종류를 알았다면 얼만큼 회전해야 하는지 저장되어 있는 rotate 배열에 접근해 값을 가져온다.
     for dir in 0..<rotate[type] {
         mapCopy(&backUp, &map)
         if type == 0 {
@@ -135,6 +139,7 @@ func dfs(_ cctv_index: Int) {
     }
 }
 
+// DFS 탐색시 끝에 도달했다라는 기저사례를 만들기 위한 cctvSize.
 var cctvSize = 0
 for i in 0..<N {
     for j in 0..<M {
@@ -144,6 +149,9 @@ for i in 0..<N {
         }
     }
 }
+
+// 최대 사각지대의 갯수는 8 * 8인 64개 이지만 100으로 놓았다.
 var result = 100
+// cctv 객체들이 들어있는 cctvMap의 첫번째 요소부터 시작한다.
 dfs(0)
 print(result)
