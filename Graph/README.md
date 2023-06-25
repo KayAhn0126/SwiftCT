@@ -28,6 +28,7 @@
 ## 🍎 Hard
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
+| [뱀과 사다리 게임](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/SnakeAndLadderGame) | 시뮬레이션, BFS | [16928](https://www.acmicpc.net/problem/16928) |
 | [치즈](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Cheese) | 시뮬레이션, DFS | [2636](https://www.acmicpc.net/problem/2636) |
 | [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 구현, 특정 상황까지 DFS 탐색 | [16234](https://www.acmicpc.net/problem/16234) |
 | [불!](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Fire) | BFS, 구현 | [4179](https://www.acmicpc.net/problem/4179) |
