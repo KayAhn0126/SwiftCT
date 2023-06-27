@@ -21,6 +21,7 @@
 | [Binary Search](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch) | 이분 탐색 |
 | [Union Find](https://github.com/KayAhn0126/SwiftCT/tree/main/UnionFind) | 유니언 파인드 |
 | [LIS](https://github.com/KayAhn0126/SwiftCT/tree/main/LIS) | LIS |
+| [Two Pointer](https://github.com/KayAhn0126/SwiftCT/tree/main/TwoPointer) | 투 포인터 |
 | [다시 풀기](https://github.com/KayAhn0126/SwiftCT/tree/main/Re-Solve) | 다시 풀기 모음 |
 
 ## 🍎 삼성 기출 문제
