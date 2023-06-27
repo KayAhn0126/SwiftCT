@@ -30,14 +30,14 @@ var result = Int.max
 
 while end < N {
     let temp = arr[end] - arr[start]
-    if temp == M {
+    if temp == M { // 차이가 딱 M만큼 난다 -> 더 이상 진행하지 않고 종료
         result = M
         break
     }
     if temp > M { // 차이가 m보다 크다
         result = min(temp, result)
         start += 1
-    } else {
+    } else { // 차이가 m 보다 작다
         end += 1
     }
 }
