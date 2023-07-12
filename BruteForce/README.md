@@ -24,3 +24,4 @@
 | [리모컨](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/RemoteControl) | 브루트포스, 다수의 예외처리 | [1107](https://www.acmicpc.net/problem/1107) |
 | [마인크래프트](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/MineCraft) | 브루트포스, 큰 범위 생각하기 | [18111](https://www.acmicpc.net/problem/18111) |
 | [부등호](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/InequalitySign) | 브루트포스, 백트래킹 | [2529](https://www.acmicpc.net/problem/2529) |
+| [감시](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Surveillance) | 브루트포스, 백트래킹 | [15683](https://www.acmicpc.net/problem/15683) |
