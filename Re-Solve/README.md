@@ -30,7 +30,7 @@
 | [로봇청소기](https://www.acmicpc.net/problem/14503) | 🟥 | | | | |
 | [톱니바퀴](https://www.acmicpc.net/problem/14891) | 🟥 | | | | |
 | [톱니바퀴2](https://www.acmicpc.net/problem/15662) | 🟥 | | | | |
-| [뱀](https://www.acmicpc.net/problem/3190) | 🟥 | | | | |
+| [**뱀**](https://www.acmicpc.net/problem/3190) | 🟥 | 🟧 | | | |
 | [괄호 추가하기](https://www.acmicpc.net/problem/16637) | 🟥 | | | | |
 | [문자해독](https://www.acmicpc.net/problem/1593) | 🟥 | 🟧 | | | |
 | [수열](https://www.acmicpc.net/problem/2559) | 🟥 | | | | |
