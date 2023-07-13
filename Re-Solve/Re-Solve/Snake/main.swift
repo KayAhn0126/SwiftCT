@@ -1,81 +1,58 @@
-// 벽 = 1
-// 사과 = 3
-// 뱀의 몸 = 방문배열에서 true로 관리
-
-// N * N
-// 사과 위치는 받자마자 맵에 적용
-
-// 뱀이 늘어나는 과정 -> 머리를 다음칸에 위치 시킨다.
-// 머리가 늘어난 공간에 사과가 있다면 꼬리 유지
-// 사과가 없다면 꼬리 삭제
-
 import Foundation
 
 let dy = [-1,0,1,0]
 let dx = [0,1,0,-1]
 
+var snake: [(Int, Int)] = [(1,1)] // 배열로 뱀 몸통 구현 큐처럼 활용
+// 몸통길이 최대 100 * 10000초 = 100만, removFirst해도 괜찮다!
+// 머리는 snake 배열의 맨 마지막
+var head = 1 // 오른쪽
+
 var time = 0
-var snake: [(Int, Int)] = []
-var snakeDirection = 1
-var timeTurnArr = [Character](repeating: " ", count: 10001)
 
-func turnLeft() {
-    snakeDirection = (snakeDirection + 3) % 4
-}
-
-func turnRight() {
-    snakeDirection = (snakeDirection + 1) % 4
-}
-
-//MARK: 입력 받기
 let N = Int(readLine()!)!
-var adjMatrix = [[Int]](repeating: [Int](repeating: 0, count: N + 1), count: N + 1)
-var visited = [[Bool]](repeating: [Bool](repeating: false, count: N + 1), count: N + 1)
+let K = Int(readLine()!)!
+var adjMatrix = [[Int]](repeating: [Int](repeating: 0, count: N+1), count: N+1)
 
-
-let appleCount = Int(readLine()!)!
-for _ in 0..<appleCount {
-    let YX = readLine()!.split(separator: " ").map { Int(String($0))! }
-    let Y = YX[0]
-    let X = YX[1]
-    adjMatrix[Y][X] = 3
-}
-let orderCount = Int(readLine()!)!
-for _ in 0..<orderCount {
-    let order = readLine()!.split(separator: " ").map { String($0) }
-    let time = Int(order[0])!
-    let to = Character(order[1])
-    timeTurnArr[time] = to
+for _ in 0..<K {
+    let tempAppleLoc = readLine()!.split(separator: " ").map { Int(String($0))! }
+    adjMatrix[tempAppleLoc[0]][tempAppleLoc[1]] = 2
 }
 
-snake.append((1,1))
-visited[1][1] = true
+let turnCount = Int(readLine()!)!
+var turnLocation: [Int: String] = [:]
+for _ in 0..<turnCount {
+    let tempTurnLoc = readLine()!.split(separator: " ").map { String($0) }
+    let num = Int(tempTurnLoc[0])!
+    turnLocation[num] = tempTurnLoc[1]
+}
+
+func turnHead(_ dir: String) {
+    if dir == "L" {
+        head = (head + 3) % 4
+    } else {
+        head = (head + 1) % 4
+    }
+}
 
 while true {
     time += 1
-    
-    let currentHead = snake.last!
-    let ny = currentHead.0 + dy[snakeDirection]
-    let nx = currentHead.1 + dx[snakeDirection]
-    if ny < 1 || nx < 1 || ny > N || nx > N || visited[ny][nx] == true {
-        print(time)
+    let currentHeadLoc = snake.last!
+    let ny = currentHeadLoc.0 + dy[head]
+    let nx = currentHeadLoc.1 + dx[head]
+    if ny < 1 || ny > N || nx < 1 || nx > N { break }
+    if snake.contains(where: { $0 == (ny,nx) }) {
         break
     }
     snake.append((ny,nx))
-    visited[ny][nx] = true
-    
-    if adjMatrix[ny][nx] == 3 {
+    if adjMatrix[ny][nx] == 2 {
         adjMatrix[ny][nx] = 0
     } else {
-        let first = snake.first!
-        visited[first.0][first.1] = false
         snake.removeFirst()
     }
-    if timeTurnArr[time] != " " {
-        if timeTurnArr[time] == "L" {
-            turnLeft()
-        } else {
-            turnRight()
-        }
+
+    if turnLocation[time] != nil { // 머리 방향을 바꿔야 하면 바꿔주기
+        turnHead(turnLocation[time]!)
     }
 }
+print(time)
