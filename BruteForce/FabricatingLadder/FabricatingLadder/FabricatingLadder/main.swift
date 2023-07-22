@@ -85,18 +85,19 @@ for i in 0..<M {
     let levelAndFrom = readLine()!.split(separator: " ").map { Int(String($0))! }
     let level = levelAndFrom[0]
     let from = levelAndFrom[1]
+    if from == N { continue }
     visited[level][from] = 1
 }
 
-func go(_ here: Int, _ count: Int) {
+func go(_ currentLevel: Int, _ count: Int) {
     if count > 3 || count >= result { return }
     if checkStartResultSame() == true {
         result = min(result, count)
         return
     }
-    for i in here...Level {
-        for j in 1...N {
-            if visited[i][j] == 1 || visited[i][j-1] == 1 || visited[i][j+1] == 1 { continue }
+    for i in currentLevel...Level {
+        for j in 1..<N {
+            if visited[i][j] == 1 || visited[i][j+1] == 1 { continue }
             visited[i][j] = 1
             go(i, count + 1)
             visited[i][j] = 0
@@ -110,10 +111,4 @@ if result == Int.max {
 }
 print(result)
 
-/*
-visited.enumerated().forEach {
-    if $0.offset != 0 {
-        print($0.element)
-    }
-}
-*/
+
