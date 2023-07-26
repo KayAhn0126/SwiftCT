@@ -70,34 +70,60 @@ false
 - **하지만, 가장 자리에 우리가 찾으려는 값이 있을 수도 있으므로 이분 탐색에서 특정한 수를 찾을때는, 가장 왼쪽, 가장 오른쪽까지의 탐색을 위해 start < end 조건 대신 start <= end라는 조건을 사용해서 s 또는 e가 가장자리 까지 갈 수 있도록 해주면 된다.**
 
 
-## 🍎 upper bound, lower bound 정리
+## 🍎 lower bound, upper bound 정리
 - lower bound -> 데이터 내에서 특정 값보다 같거나 큰 값이 처음 나오는 위치
 - upper bound -> 특정 값보다 처음으로 큰 값이 나오는 위치
+<img src = './lowerupper.jpg' width = 500>
 
-### 📖 코드를 통해 조금 더 자세히 알아보자.
+### 📖 먼저 lower bound를 코드를 통해 조금 더 자세히 알아보자!
 ```swift
 var arr = [1,1,1,2,2,3,3,3,4,4,5,5]
-var l = 0
-var r = arr.count
+var low = 0
+var high = arr.count
 var mid = 0
 
-lowerBound(9) 9랑 같거나 큰값이 처음나오는 위치 -> 8
-[1,2,3,4,5,6,7,8,9,10]
-l    r    mid     arr[mid]
-0.   9    4          5
-5.   9    7          8
-8.   9.   8.         9
-8.   7.   
-
-
 // lower bound 구하는 코드
-while l <= r {
-    mid = (l + r) / 2
-    if extractedArr[mid] < score {
-        l = mid + 1
-    } else { // extractedArr[mid] >= score
-        r = mid - 1
+while low < high {
+    mid = (low + high) / 2
+    if target <= arr[mid] {      // 찾으려는 숫자(target)이 arr[mid]보다 작거나 같다면,
+        high = mid               // high를 mid로, 점점 왼쪽으로 가려고 한다.
+    } else {                     // 찾으려는 숫자가 arr[mid]보다 크다면
+        low = mid + 1            // low를 현재 mid의 오른쪽에 둔다.
     }
-    print(l,r)
 }
 ```
+### 📖 알아두기!
+- high를 arr.count로 초기화한다
+    - 위의 배열에서 100을 찾는다고 가정하고, 만약 high를 arr.count - 1로 놓는다면 실제로는 100이 없음에도 불구하고 11을 반환한다.
+    - 이러한 불상사를 막기 위해서 high를 arr.count로 초기화 한다.
+- **lower bound에서 찾으려는 값이 arr[0]보다 작아서 없을때, 0이 나온다.**
+- **lower bound에서 찾으려는 값이 arr[arr.count - 1] 보다 커서 없을때, arr.count가 나온다.**
+
+### 📖 lower bound내 while의 조건문에서 "<=" 이 안되는 이유, "<"만 가능한 이유
+- 만약 찾으려는 수(target num)가 arr[arr.count-1]보다 커서 배열에 없는 경우에는 low가 계속 올라가 high와 같아지는데,
+- 이때 high를 살펴보면 arr.count로 값이 설정 되어있다. 위의 arr 배열을 예시로 보면 low는 0부터 7, 10, 12가 된다. 이때 mid를 구하면 (12 + 12) / 2 = 12가 되고, arr[12]은 배열의 범위를 벗어나 접근할 수 없기 때문에 런타임 에러를 발생시킨다.
+
+### 📖 이제 upper bound를 코드를 통해 자세히 살펴보자!
+```swift
+var arr = [1,1,1,2,2,3,3,3,4,4,5,5]
+var low = 0
+var high = arr.count
+var mid = 0
+
+// upper bound 구하는 코드
+while low < high {
+    mid = (low + high) / 2
+    if target < arr[mid] {
+        high = mid
+    } else {
+        low = mid + 1
+    }
+}
+print(low)
+```
+- **lower bound 코드와 다른점은 if 조건문에서 lower bound의 <= 이 < 으로 변한것 뿐.**
+- **마찬가지로 타겟 넘버가 arr[0]보다 작으면 0을 출력, 타겟 넘버가 arr[arr.count - 1]보다 큰 경우는, arr.count를 출력한다.**
+
+
+## 🍎 참고 블로그
+- [lower / upper bound](https://hee96-story.tistory.com/80)
