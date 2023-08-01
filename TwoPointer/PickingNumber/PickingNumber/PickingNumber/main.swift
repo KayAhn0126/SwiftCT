@@ -34,10 +34,10 @@ while end < N {
         result = M
         break
     }
-    if temp > M { // 차이가 m보다 크다
+    if temp > M { // 차이가 M보다 크다 -> 이때는 start를 늘려준다.
         result = min(temp, result)
         start += 1
-    } else { // 차이가 m 보다 작다
+    } else { // 차이가 M보다 작거나 같다 -> 이때도 end를 늘려준다.
         end += 1
     }
 }
