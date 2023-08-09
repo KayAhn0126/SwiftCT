@@ -40,7 +40,7 @@ public struct Heap<T> {
         
         nodes.append(element)
         
-        while index > 0, !comparer(nodes[index],nodes[(index-1)/2]) {
+        while index > 0, comparer(nodes[index], nodes[(index-1)/2]) {
             nodes.swapAt(index, (index-1)/2)
             index = (index-1)/2
         }
@@ -66,18 +66,18 @@ public struct Heap<T> {
             let right = left + 1
             
             if right < nodes.count {
-                if comparer(nodes[left], nodes[right]),
-                   !comparer(nodes[right], nodes[index]) {
+                if comparer(nodes[right], nodes[left]),
+                   comparer(nodes[right], nodes[index]) {
                     nodes.swapAt(right, index)
                     index = right
-                } else if !comparer(nodes[left], nodes[index]){
+                } else if comparer(nodes[left], nodes[index]){
                     nodes.swapAt(left, index)
                     index = left
                 } else {
                     break
                 }
             } else if left < nodes.count {
-                if !comparer(nodes[left], nodes[index]) {
+                if comparer(nodes[left], nodes[index]) {
                     nodes.swapAt(left, index)
                     index = left
                 } else {
@@ -93,8 +93,8 @@ public struct Heap<T> {
 
 extension Heap where T: Comparable {
     init() {
-        self.init(comparer: >) // min heap
-        // self.init(comparer: <)  max heap
+        self.init(comparer: <) // min heap
+        // self.init(comparer: >)  max heap
     }
 }
 
