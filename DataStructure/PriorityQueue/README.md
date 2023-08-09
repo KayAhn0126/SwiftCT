@@ -1,4 +1,6 @@
-# Priority Queue and Heap
+# Priority Queue
+- Priority Queue의 실질적인 자료구조인 Heap을 먼저 알아보자!
+
 ## 🍎 Heap이란?
 - 자료구조이다.
 - 우선순위 큐와 힙은 같은거 아닌가? -> 아니다!
@@ -32,3 +34,186 @@
     - 제거
         - 마지막 노드와 루트 노드의 위치를 바꿔준다. -> 루트 노드(가장 작은 값)이 트리의 마지막에 위치하게 되고 이때 트리의 마지막을 제거한다.
         - 현재 루트노드로 온 값을 자식 노드들과 비교하면서 현재 노드가 더 크다면 둘중 더 값이 작은 노드와 위치를 바꾸면서 depth를 내려간다.
+
+## 🍎 라이노님의 힙
+```swift
+import Foundation
+
+// 주석은 최소힙을 기준으로 작성
+public struct Heap<T> {
+  var nodes: [T] = []
+  let comparer: (T,T) -> Bool
+
+  var isEmpty: Bool {
+      return nodes.isEmpty
+  }
+
+  init(comparer: @escaping (T,T) -> Bool) {
+      self.comparer = comparer
+  }
+
+  func peek() -> T? {
+      return nodes.first
+  }
+
+  mutating func insert(_ element: T) {
+      var index = nodes.count
+
+      nodes.append(element)
+
+      while index > 0, !comparer(nodes[index],nodes[(index-1)/2]) {
+          nodes.swapAt(index, (index-1)/2)
+          index = (index-1)/2
+      }
+  }
+
+  mutating func delete() -> T? {
+      guard !nodes.isEmpty else {
+          return nil
+      }
+
+      if nodes.count == 1 {
+          return nodes.removeFirst()
+      }
+
+      let result = nodes.first
+      nodes.swapAt(0, nodes.count-1)
+      _ = nodes.popLast()
+
+      var index = 0
+
+      while index < nodes.count {
+          let left = index * 2 + 1
+          let right = left + 1
+
+          if right < nodes.count { // 만약 자식 노드중 오른쪽 노드가 있다면,
+              if comparer(nodes[left], nodes[right]),
+                  !comparer(nodes[right], nodes[index]) { // 왼쪽이 오른쪽보다 크고, 오른쪽 노드가 현재 노드보다 작다면
+                  nodes.swapAt(right, index) // 오른쪽 노드를 현재 노드와 바꿔준다.
+                  index = right
+              } else if !comparer(nodes[left], nodes[index]){ // 왼쪽노드가 현재 노드보다 작다면
+                  nodes.swapAt(left, index)
+                  index = left
+              } else { // 위의 두 케이스 모두 아니라면 더 이상 할 일이 없으므로 while문 종료.
+                  break
+              }
+          } else if left < nodes.count { // 자식 노드 중 왼쪽 노드만 있다면,
+              if !comparer(nodes[left], nodes[index]) { // 왼쪽 노드가 현재 노드보다 작다면
+                  nodes.swapAt(left, index)
+                  index = left
+              } else {
+                  break
+              }
+          } else {
+              break
+          }
+      }
+
+      return result
+  }
+}
+
+extension Heap where T: Comparable {
+    init() {
+        self.init(comparer: >) // min heap
+        // self.init(comparer: <) // max heap
+    }
+}
+
+// 힙 만들고 테스트!
+var myHeap = Heap<Int>() // 기본적으로 min heap
+myHeap.insert(3)
+myHeap.insert(4)
+myHeap.insert(5)
+myHeap.insert(2)
+myHeap.insert(9)
+print(myHeap)
+```
+- [라이노님의 힙 구현](https://gist.github.com/JCSooHwanCho/a3f070c2160bb8c0047a5ddbb831f78e)
+
+## 🍎 조금 개선해보자!
+- [라이노님의 블로그](https://jcsoohwancho.github.io/2019-11-05-Heap%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/)를 보면 위의 코드는 c++의 힙 자료구조를 기반으로 구현되었다. 그래서 그런지 인스턴스 생성시 인자로 필요한 부등호 때문에 min heap인지 max heap인지 헷갈린다.
+    - 위의 코드에서는 > 가 min heap, < 가 max heap이다.
+- < 를 min heap, > 를 max heap으로 바꿔보자!
+```swift
+import Foundation
+
+public struct Heap<T> {
+    var nodes: [T] = []
+    let comparer: (T,T) -> Bool
+    
+    var isEmpty: Bool {
+        return nodes.isEmpty
+    }
+    
+    init(comparer: @escaping (T,T) -> Bool) {
+        self.comparer = comparer
+    }
+    
+    func peek() -> T? {
+        return nodes.first
+    }
+    
+    mutating func insert(_ element: T) {
+        var index = nodes.count
+        
+        nodes.append(element)
+        
+        while index > 0, comparer(nodes[index], nodes[(index-1)/2]) {
+            nodes.swapAt(index, (index-1)/2)
+            index = (index-1)/2
+        }
+    }
+    
+    mutating func delete() -> T? {
+        guard !nodes.isEmpty else {
+            return nil
+        }
+        
+        if nodes.count == 1 {
+            return nodes.removeFirst()
+        }
+        
+        let result = nodes.first
+        nodes.swapAt(0, nodes.count-1)
+        _ = nodes.popLast()
+        
+        var index = 0
+        
+        while index < nodes.count {
+            let left = index * 2 + 1
+            let right = left + 1
+            
+            if right < nodes.count {
+                if comparer(nodes[right], nodes[left]),
+                   comparer(nodes[right], nodes[index]) {
+                    nodes.swapAt(right, index)
+                    index = right
+                } else if comparer(nodes[left], nodes[index]){
+                    nodes.swapAt(left, index)
+                    index = left
+                } else {
+                    break
+                }
+            } else if left < nodes.count {
+                if comparer(nodes[left], nodes[index]) {
+                    nodes.swapAt(left, index)
+                    index = left
+                } else {
+                    break
+                }
+            } else {
+                break
+            }
+        }
+        return result
+    }
+}
+
+extension Heap where T: Comparable {
+    init() {
+        self.init(comparer: <) // min heap
+        // self.init(comparer: >)  max heap
+    }
+}
+```
