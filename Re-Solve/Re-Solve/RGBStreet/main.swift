@@ -1,22 +1,25 @@
 import Foundation
 
-var num = Int(readLine()!)!
-
-var adjMatrix = [[Int]](repeating: [Int](), count: num)
-for i in 0..<num {
-    adjMatrix[i].append(contentsOf: readLine()!.split(separator: " ").map { Int(String($0))! })
+let N = Int(readLine()!)!
+var adjMatrix = [[Int]]()
+var dp = [[Int]](repeating: [Int](repeating: 0, count: 3), count: N)
+for _ in 0..<N {
+    adjMatrix.append(readLine()!.split(separator: " ").map { Int(String($0))! })
 }
-
-var dp = [[Int]](repeating: [Int](repeating: 0, count: 3), count: num)
 
 dp[0][0] = adjMatrix[0][0]
 dp[0][1] = adjMatrix[0][1]
 dp[0][2] = adjMatrix[0][2]
 
-for i in 1..<num {
-    dp[i][0] = min(dp[i-1][1], dp[i-1][2]) + adjMatrix[i][0]
-    dp[i][1] = min(dp[i-1][0], dp[i-1][2]) + adjMatrix[i][1]
-    dp[i][2] = min(dp[i-1][0], dp[i-1][1]) + adjMatrix[i][2]
+for i in 1..<N {
+    for j in 0..<3 {
+        if j == 0 { // 0번 집일 경우
+            dp[i][j] = min(dp[i-1][j+1], dp[i-1][j+2]) + adjMatrix[i][j]
+        } else if j == 1 { // 1번 집일 경우
+            dp[i][j] = min(dp[i-1][j-1], dp[i-1][j+1]) + adjMatrix[i][j]
+        } else { // 2번 집일 경우
+            dp[i][j] = min(dp[i-1][j-2], dp[i-1][j-1]) + adjMatrix[i][j]
+        }
+    }
 }
-print(dp[num-1].sorted()[0])
-
+print(dp[N-1].min()!)
