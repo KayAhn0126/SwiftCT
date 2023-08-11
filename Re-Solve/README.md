@@ -95,8 +95,8 @@
 | [파스칼의 삼각형](https://www.acmicpc.net/problem/16395) | 🟥 | | | | |
 | [**계단 오르기**](https://www.acmicpc.net/problem/2579) | 🟥 | | | | |
 | [**1로 만들기**](https://www.acmicpc.net/problem/1463) | 🟥 | | | | |
-| [**RGB거리**](https://www.acmicpc.net/problem/1149) | 🟥 | | | | |
-| [**RGB거리2**](https://www.acmicpc.net/problem/17404) | 🟥 | | | | |
+| [**RGB거리**](https://www.acmicpc.net/problem/1149) | 🟥 | 🟧 | | | |
+| [**RGB거리2**](https://www.acmicpc.net/problem/17404) | 🟥 | 🟧 | | | |
 | [괄호](https://www.acmicpc.net/problem/9012) | 🟥 | | | | |
 | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | 🟥 | | | | |
 | [스택 수열](https://www.acmicpc.net/problem/1874) | 🟥 | | | | |
