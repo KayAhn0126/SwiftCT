@@ -69,9 +69,9 @@
 | [연구소](https://www.acmicpc.net/problem/14502) | 🟥 | | | | |
 | [**연구소 2**](https://www.acmicpc.net/problem/17141) | 🟥 | | | | |
 | [**연구소 3**](https://www.acmicpc.net/problem/17142) | 🟥 | | | | |
-| [숨바꼭질](https://www.acmicpc.net/problem/1697) | 🟥 | | | | |
-| [**숨바꼭질2**](https://www.acmicpc.net/problem/12851) | 🟥 | | | | |
-| [**숨바꼭질4**](https://www.acmicpc.net/problem/13913) | 🟥 | | | | |
+| [숨바꼭질](https://www.acmicpc.net/problem/1697) | 🟥 | 🟧 | | | |
+| [**숨바꼭질2**](https://www.acmicpc.net/problem/12851) | 🟥 | 🟧 | | | |
+| [**숨바꼭질4**](https://www.acmicpc.net/problem/13913) | 🟥 | 🟧 | | | |
 | [쿼드트리](https://www.acmicpc.net/problem/1992) | 🟥 | | | | |
 | [종이의 개수](https://www.acmicpc.net/problem/1780) | 🟥 | | | | |
 | [사과 담기 게임](https://www.acmicpc.net/problem/2828) | 🟥 | | | | |
