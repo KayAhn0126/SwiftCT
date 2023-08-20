@@ -21,6 +21,7 @@
 | [Binary Search](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch) | 이분 탐색 |
 | [Union Find](https://github.com/KayAhn0126/SwiftCT/tree/main/UnionFind) | 유니언 파인드 |
 | [LIS](https://github.com/KayAhn0126/SwiftCT/tree/main/LIS) | LIS |
+| [LCS](https://github.com/KayAhn0126/SwiftCT/tree/main/LCS) | LCSubsequence/Substring |
 | [Two Pointer](https://github.com/KayAhn0126/SwiftCT/tree/main/TwoPointer) | 투 포인터 |
 | [다시 풀기](https://github.com/KayAhn0126/SwiftCT/tree/main/Re-Solve) | 다시 풀기 모음 |
 
@@ -36,4 +37,4 @@
 | [톱니바퀴](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear) | 
 | [치킨배달](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/ChickenDelivery) | 
 | [인구이동](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/PopulationMovement) | 
-| [연구소3](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory3) | 
+| [연구소3](https://github.com/KayAhn0126/SwiftCT/tree/main/Graph/Laboratory3) |
