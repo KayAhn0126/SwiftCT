@@ -3,13 +3,13 @@
 ## 🍎 Easy
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
+| [덩치](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/BigGuy) | 구현 + 브루트포스 | [7568](https://www.acmicpc.net/problem/7568) |
 | [수학은 비대면강의입니다](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/OnlineCourseMath) | 수학 + 브루트 포스 | [19532](https://www.acmicpc.net/problem/19532) |
 | [설탕 배달](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/SugarDelivery) | 구현 | [2839](https://www.acmicpc.net/problem/2839) |
 | [블랙잭](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/BlackJack) | 구현 + 브루트포스 | [2798](https://www.acmicpc.net/problem/2798) |
 | [분해합](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/DivideSum) | 브루트포스 | [2231](https://www.acmicpc.net/problem/2231) |
-| [덩치](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/BigGuy) | 구현 + 브루트포스 | [7568](https://www.acmicpc.net/problem/7568) |
 | [영화감독 숌](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/DirectorShhom) | 브루트포스 | [1436](https://www.acmicpc.net/problem/1436) |
-
+| [떡 먹는 호랑이](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/RiceCakeTiger) | 브루트포스, DP | [2502](https://www.acmicpc.net/problem/2502) |
 
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
