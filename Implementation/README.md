@@ -43,7 +43,9 @@
 | [NBA 농구](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/NBABasketBall) | 구현 및 <br> 시간 계산 | [2852](https://www.acmicpc.net/problem/2852) |
 | [통계학](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Statistics) | 구현 및 음수 배열 관리 | [2108](https://www.acmicpc.net/problem/2108) |
 | [MVP다이아몬드(Easy)](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MVPDiamondEasy) | 구현, prev사용 | [20413](https://www.acmicpc.net/problem/20413) |
-| [신입 사원](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Newbie) | 정렬, 순위 따지기 | [1946](https://www.acmicpc.net/problem/1946) |
+| [신입 사원](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Newbie) | 순위 기준 정렬 | [1946](https://www.acmicpc.net/problem/1946) |
+| [등수 구하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/GetRank) | 정렬, 커트라인 | [1205](https://www.acmicpc.net/problem/1205) |
+| [문자열 폭발](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/StringExplosion) | 문자열, 스택 | [9935](https://www.acmicpc.net/problem/9935) |
 
 
 
@@ -52,6 +54,7 @@
 | :-: | :-: | :-: |
 | [쇠막대기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/IronStick) | 치환, 일반 괄호와 레이저 구분하기 | [10799](https://www.acmicpc.net/problem/10799) |
 | [빗물](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/RainWater) | 2차원 배열 및 시뮬레이션 | [14719](https://www.acmicpc.net/problem/14719) |
+| [마법사 상어와 비바라기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MagicianSharkRainDance) | 구현 | [21610](https://www.acmicpc.net/problem/21610) |
 | [로봇청소기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/RobotCleaner) | 시뮬레이션 | [14503](https://www.acmicpc.net/problem/14503) |
 | [톱니바퀴](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear) | 시뮬레이션 | [14891](https://www.acmicpc.net/problem/14891) |
 | [톱니바퀴2](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Gear2) | 시뮬레이션 | [15662](https://www.acmicpc.net/problem/15662) |
