@@ -16,9 +16,6 @@
  */
 import Foundation
 var tc = Int(readLine()!)!
-func solve(_ y: Int, _ x: Int) {
-    
-}
 
 while tc != 0 {
     let n = Int(readLine()!)!
@@ -40,6 +37,3 @@ while tc != 0 {
     print(max(dp[0][n-1], dp[1][n-1]))
     tc -= 1
 }
-
-
-
