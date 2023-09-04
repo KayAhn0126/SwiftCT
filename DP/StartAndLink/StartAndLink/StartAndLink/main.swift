@@ -48,11 +48,9 @@ var visited = [Int](repeating: 0, count: N)
 var filterSet = Set<Set<Int>>()
 func dfs(_ depth: Int, _ currentArr: [Int], _ index: Int) {
     if depth == N/2 {
-        let tempSet = Set(currentArr)
-        if filterSet.contains(tempSet) { return }
-        filterSet.insert(tempSet)
         let temp = calculate(currentArr)
         result = result > temp ? temp : result
+        return
     }
     for i in index..<N {
         if visited[i] == 1 { continue }
