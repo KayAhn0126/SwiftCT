@@ -46,6 +46,7 @@
 | [신입 사원](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Newbie) | 순위 기준 정렬 | [1946](https://www.acmicpc.net/problem/1946) |
 | [등수 구하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/GetRank) | 정렬, 커트라인 | [1205](https://www.acmicpc.net/problem/1205) |
 | [문자열 폭발](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/StringExplosion) | 문자열, 스택 | [9935](https://www.acmicpc.net/problem/9935) |
+| [놀이공원](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AmusementPark) | 구현, 시간, 스위핑 | [2594](https://www.acmicpc.net/problem/2594) |
 
 
 
