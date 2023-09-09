@@ -45,7 +45,7 @@ func calculate(_ arr: [Int]) -> Int {
 
 var result = Int.max
 var visited = [Int](repeating: 0, count: N)
-var filterSet = Set<Set<Int>>()
+
 func dfs(_ depth: Int, _ currentArr: [Int], _ index: Int) {
     if depth == N/2 {
         let temp = calculate(currentArr)
