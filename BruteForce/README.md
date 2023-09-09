@@ -16,6 +16,9 @@
 | :-: | :-: | :-: |
 | [체스판 다시 칠하기](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/RedrawingChessBoard) | 슬라이딩 윈도우 + 브루트포스 | [1018](https://www.acmicpc.net/problem/1018) |
 | [치킨 배달](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/ChickenDelivery) | 구현 및 브루트포스 | [15686](https://www.acmicpc.net/problem/15686) |
+| [연산자 끼워넣기](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/OperatorInsertion) | 브루트포스, 백트래킹 | [14888](https://www.acmicpc.net/problem/14888) |
+| [스타트와 링크](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/StartAndLink) | 브루트포스, 백트래킹 | [14889](https://www.acmicpc.net/problem/14889) |
+| [로또](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Lotto) | 브루트포스, 백트래킹 | [6603](https://www.acmicpc.net/problem/6603) |
 
 ## 🍎 Hard
 | 제목 | 키워드 | 풀어보기 |
