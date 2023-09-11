@@ -7,3 +7,4 @@
 | [랜선 자르기](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch/CuttingLanCable) | 이분 탐색 | [1654](https://www.acmicpc.net/problem/1654) |
 | [과자 나눠주기](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch/SharingSnack) | 이분 탐색 | [16401](https://www.acmicpc.net/problem/16401) |
 | [예산](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch/Budget) | 이분 탐색| [2512](https://www.acmicpc.net/problem/2512) |
+| [세 수의 합](https://github.com/KayAhn0126/SwiftCT/tree/main/BinarySearch/SumOfThreeNumbers) | 이분 탐색 | [2295](https://www.acmicpc.net/problem/2295) |
