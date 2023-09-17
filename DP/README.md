@@ -11,19 +11,24 @@
 | [신나는 함수 실행](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ExcitingFunctionExecution) | 메모이제이션 | [9184](https://www.acmicpc.net/problem/9184) |
 | [파도반 수열](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/PadovanSequence) | 패턴 찾기 + bottom - up | [9461](https://www.acmicpc.net/problem/9461) |
 | [연속합](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ConsecutiveSum) | 합이 최대인 부분배열 구하기 | [1912](https://www.acmicpc.net/problem/1912) |
+| [이동하기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Move) | 2차원배열 + DP | [11048](https://www.acmicpc.net/problem/11048) |
+| [정수 삼각형](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/IntegerTriangle) | bottom - up | [1932](https://www.acmicpc.net/problem/1932) |
 
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
 | [1로 만들기 2](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/MakeToOne2) | DP + 경로 추적 | [12852](https://www.acmicpc.net/problem/12852) |
 
+
 ## 🍎 Hard
 | 제목 | 키워드 | 풀어보기 |
 | :-: | :-: | :-: |
-| [퇴사](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Quit) | dp | [14501](https://www.acmicpc.net/problem/14501) |
+| [퇴사](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Quit) | 선택적 DP | [14501](https://www.acmicpc.net/problem/14501) |
+| [스티커](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/Sticker) | 선택적 DP | [9465](https://www.acmicpc.net/problem/9465) |
 | [계단 오르기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/ClimbingStairs) | 규칙에 맞게 구현 + bottom - up | [2579](https://www.acmicpc.net/problem/2579) |
 | [RGB거리](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/RGBStreet) | 구현 및 DP | [1149](https://www.acmicpc.net/problem/1149) |
 | [RGB거리2](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/RGBStreet2) | 구현 및 DP | [17404](https://www.acmicpc.net/problem/17404) |
+| [내려가기](https://github.com/KayAhn0126/SwiftCT/tree/main/DP/GoingDown) | 선택적 DP | [2096](https://www.acmicpc.net/problem/2096) |
 
 # DP 개념
 
