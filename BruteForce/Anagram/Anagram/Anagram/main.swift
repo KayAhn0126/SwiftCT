@@ -13,35 +13,33 @@
 import Foundation
 
 var num = Int(readLine()!)!
-
-
+var result = [String]()
 
 while num > 0 {
-    let tempStrArr = readLine()!.map { String($0) }.sorted()
-    let count = tempStrArr.count
-    var mySet = Set<String>()
-    var visited = [Bool](repeating: false, count: count)
+    let strArr = readLine()!.map { $0 }
+    let count = strArr.count
+    var countingArr = [Int](repeating: 0, count: 26)
+    for char in strArr {
+        countingArr[Int(char.asciiValue!) - 97] += 1
+    }
     
-    func getAnagram(_ current: String, _ idx: Int, _ weighted: Int) {
-        if weighted == count {
-            if mySet.contains(current) {
-                return
-            }
-            print(current)
-            mySet.insert(current)
+    func getAnagram(_ currentStr: String) {
+        if currentStr.count == count {
+            result.append(currentStr)
             return
         }
-        for i in idx..<count {
-            if visited[i] { continue }
-            visited[i] = true
-            getAnagram(current + String(tempStrArr[i]), i, weighted + 1)
-            visited[i] = false
+        for i in 0..<26 {
+            if countingArr[i] > 0 {
+                countingArr[i] -= 1
+                getAnagram(currentStr + "\(UnicodeScalar(i+97)!)")
+                countingArr[i] += 1
+            }
         }
     }
-
-    getAnagram("", 0, 0)
+    getAnagram("")
     num -= 1
 }
 
-
-
+for i in result {
+    print(i)
+}
