@@ -21,13 +21,10 @@ func permutationWithRecursive<T: Comparable>(_ array: [T], _ n: Int) -> [[T]] {
         }
         
         for i in 0..<array.count {
-            if visited[i] {
-                continue
-            } else {
-                visited[i] = true
-                cycle(now + [array[i]])
-                visited[i] = false
-            }
+            if visited[i] { continue }
+            visited[i] = true
+            cycle(now + [array[i]])
+            visited[i] = false
         }
     }
     

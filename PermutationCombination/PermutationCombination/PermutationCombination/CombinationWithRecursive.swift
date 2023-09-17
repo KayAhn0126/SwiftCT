@@ -45,15 +45,15 @@ func combinationWithRecursive<T: Comparable>(_ array: [T], _ n: Int) -> [[T]] {
  }
  
  2 in index..<array.count {
-    cycle([1,2,3], 3) return
+    cycle([1,2,3], 3) -> return
  }
  
  2 in index..<array.count {
-    cycle([1,2,4], 3) return
+    cycle([1,2,4], 3) -> return
  }
  
  2 in index..<array.count {
-    cycle([1,2,5], 3) return
+    cycle([1,2,5], 3) -> return
  }
  
  1 in index..<array.count {
@@ -61,7 +61,7 @@ func combinationWithRecursive<T: Comparable>(_ array: [T], _ n: Int) -> [[T]] {
  }
  
  2 in index..<array.count {
-    cycle([1,3,4], 3) return
+    cycle([1,3,4], 3) -> return
  }
  
  */
