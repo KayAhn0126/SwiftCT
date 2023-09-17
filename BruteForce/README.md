@@ -38,3 +38,4 @@
 | [로또](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Lotto) | 브루트포스, 백트래킹 | [6603](https://www.acmicpc.net/problem/6603) |
 | [부등호](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/InequalitySign) | 브루트포스, 백트래킹 | [2529](https://www.acmicpc.net/problem/2529) |
 | [감시](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Surveillance) | 브루트포스, 백트래킹 | [15683](https://www.acmicpc.net/problem/15683) |
+| [애너그램](https://github.com/KayAhn0126/SwiftCT/tree/main/BruteForce/Anagram) | 브루트포스, 백트래킹 | [6443](https://www.acmicpc.net/problem/6443) |
