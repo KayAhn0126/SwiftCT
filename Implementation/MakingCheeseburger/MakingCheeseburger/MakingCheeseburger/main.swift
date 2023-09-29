@@ -28,3 +28,6 @@ if a < b || a == b {
     }
     print(count)
 }
+
+var x = "abc123cd1234acd"
+var y = x.split(separator: "123").map { String($0) }
