@@ -29,6 +29,8 @@
 | [진법 변환2](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/RadixNumberConverter2) | 10진법 -> B진법 | [11005](https://www.acmicpc.net/problem/11005) |
 | [색종이](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/ColoredPaper) | 구현, 겹치는 부분 처리하기 | [2563](https://www.acmicpc.net/problem/2563) |
 | [종이자르기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/CuttingPaper) | 정렬, 가장 큰 부분 구하기 | [2628](https://www.acmicpc.net/problem/2628) |
+| [개미 수열](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AntSequence) | 애드-혹 | [28292](https://www.acmicpc.net/problem/28292) |
+| [빙고](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Bingo) | 구현, 2차원 배열 | [2578](https://www.acmicpc.net/problem/2578) |
 
 
 ## 🍎 Normal
