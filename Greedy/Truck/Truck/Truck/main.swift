@@ -54,5 +54,4 @@ while !queue.isEmpty {
     }
     time += 1
 }
-
 print(time)
