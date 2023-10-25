@@ -31,6 +31,7 @@
 | [종이자르기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/CuttingPaper) | 정렬, 가장 큰 부분 구하기 | [2628](https://www.acmicpc.net/problem/2628) |
 | [개미 수열](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AntSequence) | 애드-혹 | [28292](https://www.acmicpc.net/problem/28292) |
 | [빙고](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/Bingo) | 구현, 2차원 배열 | [2578](https://www.acmicpc.net/problem/2578) |
+| [치즈버거 만들기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/MakingCheeseburger) | 구현 | [30017](https://www.acmicpc.net/problem/30017) |
 
 
 ## 🍎 Normal
@@ -49,7 +50,6 @@
 | [등수 구하기](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/GetRank) | 정렬, 커트라인 | [1205](https://www.acmicpc.net/problem/1205) |
 | [문자열 폭발](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/StringExplosion) | 문자열, 스택 | [9935](https://www.acmicpc.net/problem/9935) |
 | [놀이공원](https://github.com/KayAhn0126/SwiftCT/tree/main/Implementation/AmusementPark) | 구현, 시간, 스위핑 | [2594](https://www.acmicpc.net/problem/2594) |
-
 
 
 ## 🍎 Hard
