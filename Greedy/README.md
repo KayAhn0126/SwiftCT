@@ -5,6 +5,9 @@
 | :-: | :-: | :-: |
 | [회의실 배정](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy/AssigningRoom) | 그리디(라인스위핑) | [1931](https://www.acmicpc.net/problem/1931) |
 | [A와 B](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy/AandB) | 구현, 그리디 | [12904](https://www.acmicpc.net/problem/12904) |
+| [트럭](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy/Truck) | 그리디 | [13335](https://www.acmicpc.net/problem/13335) |
+| [추월](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy/Overtaking) | 그리디 | [2002](https://www.acmicpc.net/problem/2002) |
+| [배](https://github.com/KayAhn0126/SwiftCT/tree/main/Greedy/Ship) | 그리디 | [1092](https://www.acmicpc.net/problem/1092) |
 
 ## 🍎 Normal
 | 제목 | 키워드 | 풀어보기 |
